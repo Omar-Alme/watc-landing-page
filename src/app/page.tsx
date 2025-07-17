@@ -1,9 +1,11 @@
 import { ContactForm } from "@/components/ContactForm"
 import { Footer } from "@/components/Footer"
+import { GlobalReach } from "@/components/GlobalReach"
 import { Header } from "@/components/Header"
 import { Hero } from "@/components/Hero"
 import { Services } from "@/components/Services"
 import { Testimonials } from "@/components/Testimonials"
+import { TrustLogos } from "@/components/TrustLogos"
 import { WhyChooseUs } from "@/components/WhyChooseUs"
 
 export default function HomePage() {
@@ -12,8 +14,10 @@ export default function HomePage() {
       <Header />
       <main>
         <Hero />
+        <TrustLogos />
         <Services />
         <WhyChooseUs />
+        <GlobalReach />
         <Testimonials />
         <ContactForm />
         <Footer />

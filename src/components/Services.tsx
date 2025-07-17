@@ -45,18 +45,42 @@ export function Services() {
         <section className="w-full bg-white py-28 px-6" id="services">
             <div className="max-w-6xl mx-auto relative">
                 {/* Heading */}
+                <motion.span
+                    initial={{ opacity: 0, y: 10 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.4 }}
+                    className="text-lg font-medium text-green-600 mb-2 block text-center"
+                >
+                    Our Services
+                </motion.span>
+
+                {/* Heading */}
                 <motion.h2
                     initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
-                    className="text-4xl font-bold tracking-tight text-center mb-20"
+                    className="text-4xl font-bold text-center mb-6"
                 >
-                    What We Do
+                    From Sourcing to Shipping — We Handle It All
                 </motion.h2>
 
+                {/* Subtext */}
+                <motion.p
+                    initial={{ opacity: 0, y: 10 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6, delay: 0.1 }}
+                    className="text-center text-muted-foreground max-w-2xl mx-auto mb-16"
+                >
+                    Whether you&#39;re launching a new product or scaling up operations, we provide full-service support across the entire supply chain — from factory sourcing and quality checks to global logistics and export consulting.
+
+                </motion.p>
+
                 {/* Vertical Timeline Line */}
-                <div className="hidden md:block absolute top-[120px] left-1/2 w-[2px] bg-green-300 z-0 transform -translate-x-1/2"
-                    style={{ height: `${services.length * 390 - 30}px` }} />
+                <div className="hidden md:block absolute top-[380px] left-1/2 w-[2px] bg-green-300 z-0 transform -translate-x-1/2"
+                    style={{ height: `${services.length * 320 - 30}px` }} />
 
                 {/* Service Blocks */}
                 <div className="space-y-32 relative z-10">

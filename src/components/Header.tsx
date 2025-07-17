@@ -1,21 +1,18 @@
-"use client"
-
-import { Button } from "@/components/ui/button"
 import Image from "next/image"
+import { Button } from "@/components/ui/button"
 
 export function Header() {
     return (
-        <header className="w-full border-b border-border bg-background py-4 px-6 sticky top-0 z-50">
+        <header className="w-full bg-white text-foreground py-4 px-6  top-0 z-50">
             <div className="max-w-6xl mx-auto flex items-center justify-between">
-                <div className="flex items-center space-x-2">
+                <div className="flex items-center gap-2">
                     <Image
-                        src="/images/watc-logo1.png"
+                        src="/images/dark-logo.png"
                         alt="World Associates Logo"
-                        width={60}
-                        height={60}
-                        className="rounded-sm"
+                        width={65}
+                        height={65}
                     />
-                    <span className="text-lg font-bold">WATC</span>
+                    <span className="text-lg font-semibold">World Associates</span>
                 </div>
                 <Button asChild>
                     <a href="#contact">Book Consultation</a>
@@ -24,4 +21,3 @@ export function Header() {
         </header>
     )
 }
-

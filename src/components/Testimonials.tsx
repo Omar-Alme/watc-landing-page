@@ -40,14 +40,14 @@ const testimonials = [
 
 export function Testimonials() {
     return (
-        <section className="w-full bg-white py-28 px-6" id="testimonials">
+        <section className="w-full bg-green-50 py-28 px-6" id="testimonials">
             <div className="max-w-6xl mx-auto">
                 <motion.span
                     initial={{ opacity: 0, y: 10 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.4 }}
-                    className="text-lg font-medium text-green-600 mb-2 block text-center"
+                    className="text-xl font-medium text-green-600 mb-2 block text-center"
                 >
                     Testimonials
                 </motion.span>

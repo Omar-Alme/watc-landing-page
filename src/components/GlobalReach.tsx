@@ -37,12 +37,13 @@ export function GlobalReach() {
                     From Sweden to Saudi Arabia, the UK to the UAE — we’ve supported sourcing for brands across Europe, the Middle East, and North America.
                 </motion.p>
 
-                <div className="relative w-full h-72 md:h-96 rounded-lg overflow-hidden shadow border border-muted">
+                <div className="relative w-full h-72 md:h-96 rounded-lg overflow-hidden shadow border border-muted bg-white">
                     <Image
-                        src="/images/world-map.png" // Upload a nice dotted or highlighted map
+                        src="/images/worldmap.png"
                         alt="World map with client locations"
                         fill
-                        className="object-cover"
+                        className="object-contain"
+                        priority
                     />
                 </div>
             </div>

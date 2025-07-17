@@ -12,7 +12,7 @@ export function TrustLogos() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.4 }}
-                    className="text-lg font-medium text-green-600 mb-2 block"
+                    className="text-xl font-medium text-green-600 mb-2 block"
                 >
                     Trusted By Global Clients
                 </motion.span>

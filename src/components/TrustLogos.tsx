@@ -3,9 +3,14 @@
 import { motion } from "framer-motion"
 import Image from "next/image"
 
+const logos = [
+    "brand1.png", "brand1.png", "brand1.png", "brand1.png", "brand1.png",
+    "brand1.png", "brand1.png", "brand1.png", "brand1.png", "brand1.png",
+]
+
 export function TrustLogos() {
     return (
-        <section className="w-full py-16 bg-white px-6">
+        <section className="w-full py-16 bg-white px-6 overflow-hidden">
             <div className="max-w-6xl mx-auto text-center">
                 <motion.span
                     initial={{ opacity: 0, y: 10 }}
@@ -27,12 +32,28 @@ export function TrustLogos() {
                     Brands, wholesalers & startups across 15+ countries trust us to deliver
                 </motion.h2>
 
-                <div className="flex flex-wrap justify-center gap-8 items-center">
-                    {["brand1.png", "brand1.png", "brand1.png", "brand1.png", "brand1.png"].map((logo, i) => (
-                        <div key={i} className="w-38 h-14 relative grayscale hover:grayscale-0 transition">
-                            <Image src={`/images/${logo}`} alt={`Trusted brand ${i}`} fill className="object-contain" />
-                        </div>
-                    ))}
+                {/* Looping Logos */}
+                <div className="relative w-full overflow-hidden">
+                    <motion.div
+                        className="flex gap-12 w-max"
+                        animate={{ x: ["0%", "-50%"] }}
+                        transition={{
+                            duration: 20,
+                            repeat: Infinity,
+                            ease: "linear"
+                        }}
+                    >
+                        {logos.map((logo, i) => (
+                            <div key={i} className="w-36 h-14 relative grayscale hover:grayscale-0 transition">
+                                <Image
+                                    src={`/images/${logo}`}
+                                    alt={`Trusted brand ${i}`}
+                                    fill
+                                    className="object-contain"
+                                />
+                            </div>
+                        ))}
+                    </motion.div>
                 </div>
             </div>
         </section>

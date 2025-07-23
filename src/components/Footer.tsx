@@ -1,3 +1,4 @@
+import Image from "next/image"
 export function Footer() {
     return (
         <footer className="w-full border-t border-border bg-background py-12 px-6">
@@ -5,6 +6,7 @@ export function Footer() {
 
                 {/* Company Description */}
                 <div>
+                    <Image src="/images/dark-logo.png" alt="Logo" width={80} height={40} className="mb-3" />
                     <h4 className="font-semibold text-foreground mb-2">World Associates Trading Company</h4>
                     <p>Your trusted partner for Chinese sourcing and export services.</p>
                     <p>Building bridges between global businesses and Chinese manufacturers.</p>

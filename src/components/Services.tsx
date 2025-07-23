@@ -14,21 +14,21 @@ const services = [
         title: "Factory Sourcing",
         description:
             "We connect you with trusted manufacturers tailored to your product, MOQ, and pricing needs.",
-        image: "/images/shippingcontainer.png",
+        image: "/images/image1.png",
         icon: <Factory className="h-5 w-5 text-green-600" />,
     },
     {
         title: "Quality Inspections",
         description:
             "On-site product checks, factory audits, and pre-shipment inspections for peace of mind.",
-        image: "/images/shippingcontainer.png",
+        image: "/images/image2.png",
         icon: <ShieldCheck className="h-5 w-5 text-green-600" />,
     },
     {
         title: "Shipping & Logistics",
         description:
             "We coordinate freight, customs, documentation, and global container shipping end-to-end.",
-        image: "/images/shippingcontainer.png",
+        image: "/images/image3.png",
         icon: <Truck className="h-5 w-5 text-green-600" />,
     },
     {

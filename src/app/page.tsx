@@ -1,4 +1,7 @@
+import { EstablishedCertificate } from "@/components/Certificate"
 import { ContactForm } from "@/components/ContactForm"
+import { CTA } from "@/components/CTA"
+import { FAQ } from "@/components/FAQ"
 import { Footer } from "@/components/Footer"
 import { GlobalReach } from "@/components/GlobalReach"
 import { Header } from "@/components/Header"
@@ -19,7 +22,10 @@ export default function HomePage() {
         <WhyChooseUs />
         <GlobalReach />
         <Testimonials />
+        <EstablishedCertificate />
+        <CTA />
         <ContactForm />
+        <FAQ />
         <Footer />
       </main>
     </>

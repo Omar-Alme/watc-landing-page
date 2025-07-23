@@ -6,8 +6,16 @@ import { zodResolver } from "@hookform/resolvers/zod"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Button } from "@/components/ui/button"
-import { Form, FormField, FormItem, FormLabel, FormControl, FormMessage } from "@/components/ui/form"
+import {
+    Form,
+    FormField,
+    FormItem,
+    FormLabel,
+    FormControl,
+    FormMessage,
+} from "@/components/ui/form"
 import { toast } from "sonner"
+import { motion } from "framer-motion"
 
 const formSchema = z.object({
     name: z.string().min(2, { message: "Name is required" }),
@@ -30,22 +38,46 @@ export function ContactForm() {
     })
 
     function onSubmit(data: z.infer<typeof formSchema>) {
-        // Replace this with actual form submission logic (e.g., API, Formspree, email handler)
         console.log(data)
         toast.success("Message sent successfully!")
         form.reset()
     }
 
     return (
-        <section className="w-full py-20 px-6 bg-muted" id="contact">
-            <div className="max-w-2xl mx-auto">
-                <h2 className="text-3xl md:text-4xl font-bold text-center">Book a Free Consultation</h2>
-                <p className="mt-4 text-center text-muted-foreground">
+        <section className="w-full py-28 px-6 bg-white border-t border-muted/40" id="contact">
+            <div className="max-w-2xl mx-auto text-center">
+                <motion.span
+                    initial={{ opacity: 0, y: 10 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.4 }}
+                    className="text-lg font-medium text-green-600 mb-2 block"
+                >
+                    Contact Us
+                </motion.span>
+
+                <motion.h2
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6 }}
+                    className="text-3xl md:text-4xl font-bold mb-4"
+                >
+                    Book a Free Consultation
+                </motion.h2>
+
+                <motion.p
+                    initial={{ opacity: 0, y: 10 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: 0.1 }}
+                    className="text-muted-foreground mb-10 max-w-xl mx-auto"
+                >
                     Let us know what you&#39;re looking for and we’ll get in touch within 24 hours.
-                </p>
+                </motion.p>
 
                 <Form {...form}>
-                    <form onSubmit={form.handleSubmit(onSubmit)} className="mt-8 space-y-6">
+                    <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6 text-left">
                         <FormField
                             control={form.control}
                             name="name"
@@ -94,12 +126,16 @@ export function ContactForm() {
                             render={({ field }) => (
                                 <FormItem>
                                     <FormLabel>Message</FormLabel>
-                                    <FormControl><Textarea rows={4} placeholder="Tell us what you need help with..." {...field} /></FormControl>
+                                    <FormControl>
+                                        <Textarea rows={4} placeholder="Tell us what you need help with..." {...field} />
+                                    </FormControl>
                                     <FormMessage />
                                 </FormItem>
                             )}
                         />
-                        <Button type="submit" className="w-full" size="lg">Send Inquiry</Button>
+                        <Button type="submit" className="w-full" size="lg">
+                            Send Inquiry
+                        </Button>
                     </form>
                 </Form>
             </div>

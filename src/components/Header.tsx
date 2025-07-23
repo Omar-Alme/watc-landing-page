@@ -12,7 +12,7 @@ export function Header() {
                         width={65}
                         height={65}
                     />
-                    <span className="text-lg font-semibold">World Associates</span>
+                    <span className="text-lg font-semibold">World Association Trading Consultancy</span>
                 </div>
                 <Button asChild>
                     <a href="#contact">Book Consultation</a>

@@ -67,24 +67,25 @@ export function EstablishedCertificate() {
                         >
 
                             <Image
-                                src="/images/licence.png"
+                                src="/images/license.png"
                                 alt="Chinese business certificate"
-                                width={600}
-                                height={850}
+                                width={800}
+                                height={1150}
                                 className="w-full h-auto object-contain"
                             />
                         </motion.div>
                     </DialogTrigger>
 
-                    <DialogContent className="max-w-4xl p-0 bg-white">
+                    <DialogContent className="w-full max-w-[200vw] max-h-[200vh] p-4 bg-white overflow-auto">
                         <Image
-                            src="/images/licence.png"
+                            src="/images/license.png"
                             alt="Full Chinese certificate"
-                            width={1600}
-                            height={2000}
+                            width={3000}
+                            height={4000}
                             className="w-full h-auto object-contain rounded"
                         />
                     </DialogContent>
+
                 </Dialog>
             </div>
         </section>

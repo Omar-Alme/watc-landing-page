@@ -10,6 +10,7 @@ import { Services } from "@/components/Services"
 import { Testimonials } from "@/components/Testimonials"
 import { TrustLogos } from "@/components/TrustLogos"
 import { WhyChooseUs } from "@/components/WhyChooseUs"
+import { WorkflowSection } from "@/components/Workflow"
 
 export default function HomePage() {
   return (
@@ -23,6 +24,7 @@ export default function HomePage() {
         <GlobalReach />
         <Testimonials />
         <EstablishedCertificate />
+        <WorkflowSection />
         <CTA />
         <ContactForm />
         <FAQ />

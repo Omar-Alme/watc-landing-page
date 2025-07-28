@@ -65,37 +65,59 @@ export function WorkflowSection() {
             {steps.map((step, i) => {
               const isLeft = i % 2 === 0
               const stepNumber = i + 1
+
               return (
                 <motion.div
                   key={i}
-                  initial={{ opacity: 0, y: 40 }}
-                  whileInView={{ opacity: 1, y: 0 }}
+                  initial={{ opacity: 0, x: isLeft ? -60 : 60, scale: 0.95 }}
+                  whileInView={{ opacity: 1, x: 0, scale: 1 }}
                   viewport={{ once: true }}
-                  transition={{ duration: 0.4, delay: i * 0.1 }}
-                  className={`flex flex-col md:flex-row items-center ${
-                    isLeft ? "md:flex-row" : "md:flex-row-reverse"
-                  }`}
+                  transition={{
+                    duration: 0.6,
+                    delay: i * 0.1,
+                    ease: [0.25, 0.8, 0.25, 1], // smooth spring-like
+                  }}
+                  className={`flex flex-col md:flex-row items-center ${isLeft ? "md:flex-row" : "md:flex-row-reverse"
+                    }`}
                 >
-                  {/* Numbered dot */}
+                  {/* Number dot */}
                   <div className="flex items-center justify-center w-10 h-10 rounded-full bg-green-600 text-white font-semibold text-sm z-10 md:mx-6 my-4 md:my-0">
                     {stepNumber}
                   </div>
 
-                  {/* Step Card */}
+                  {/* Card */}
                   <div className="relative backdrop-blur-md bg-white/80 border border-green-200 rounded-xl shadow-md p-6 max-w-md w-full">
                     <p className="text-xs uppercase tracking-wide text-green-600 font-medium mb-1">
                       Step {stepNumber}
                     </p>
-                    <h3 className="text-lg font-semibold text-gray-800 mb-2">
-                      {step.title}
-                    </h3>
-                    <p className="text-muted-foreground text-sm leading-relaxed">
-                      {step.description}
-                    </p>
+                    <h3 className="text-lg font-semibold text-gray-800 mb-2">{step.title}</h3>
+                    <p className="text-muted-foreground text-sm leading-relaxed">{step.description}</p>
                   </div>
                 </motion.div>
               )
             })}
+
+
+            {/* <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="mt-24 text-center"
+            >
+              <h3 className="text-2xl font-semibold mb-4 text-gray-900">
+                Ready to streamline your sourcing process?
+              </h3>
+              <p className="text-muted-foreground mb-6">
+                Book a free consultation with our team and discover how we can simplify your workflow from factory to delivery.
+              </p>
+              <a
+                href="#contact" // Change this to your booking or contact section
+                className="inline-block bg-green-600 hover:bg-green-700 text-white font-medium px-6 py-3 rounded-lg shadow transition-all"
+              >
+                Book a Free Consultation
+              </a>
+            </motion.div> */}
           </div>
         </div>
       </div>

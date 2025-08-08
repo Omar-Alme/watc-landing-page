@@ -56,33 +56,38 @@ export function I18nProvider({ children }: { children: React.ReactNode }) {
       // Supports keys like "Namespace.a.b.0.c" and flat keys-with-dots under intermediate levels
       if (!key) return ""
       const [rawNs, ...rest] = key.split(".")
-      const messagesForLocale: any = (ALL_MESSAGES as any)[locale] || {}
+      const messagesForLocale: typeof en | typeof ar = ALL_MESSAGES[locale] || {}
       const nsKey = Object.keys(messagesForLocale).find((k) => k.toLowerCase() === rawNs.toLowerCase())
-      const namespaceObj = nsKey ? messagesForLocale[nsKey] : undefined
+      const namespaceObj = nsKey ? messagesForLocale[nsKey as keyof typeof messagesForLocale] : undefined
       if (!namespaceObj) return fallback ?? key
 
       // Stepwise traversal; if a segment is missing, try flat lookup using the remaining segments joined with dots at the current level
-      let cursor: any = namespaceObj
+      let cursor: unknown = namespaceObj
       for (let i = 0; i < rest.length; i++) {
         if (cursor == null) break
         const seg = rest[i]
         const idx = Number.isInteger(Number(seg)) ? Number(seg) : seg
-        const next = cursor?.[idx as any]
-        if (next === undefined) {
-          const remaining = rest.slice(i).join(".")
-          const flatHere = cursor?.[remaining]
-          if (typeof flatHere === "string") return flatHere
+        if (typeof cursor === "object" && cursor !== null && idx in cursor) {
+          const next = (cursor as Record<string, unknown>)[idx]
+          if (next === undefined) {
+            const remaining = rest.slice(i).join(".")
+            const flatHere = (cursor as Record<string, unknown>)[remaining]
+            if (typeof flatHere === "string") return flatHere
+            cursor = undefined
+            break
+          } else {
+            cursor = next
+          }
+        } else {
           cursor = undefined
           break
-        } else {
-          cursor = next
         }
       }
       if (typeof cursor === "string") return convertDigits(cursor)
 
       // Fallback to flat lookup at the namespace root
       const flatAtRoot = rest.join(".")
-      const rootVal = (namespaceObj as any)?.[flatAtRoot]
+      const rootVal = (namespaceObj as Record<string, unknown>)?.[flatAtRoot]
       if (typeof rootVal === "string") return convertDigits(rootVal)
 
       return fallback ?? key

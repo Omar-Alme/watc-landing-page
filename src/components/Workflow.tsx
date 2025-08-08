@@ -4,7 +4,6 @@ import { motion } from "framer-motion"
 import { useI18n } from "@/lib/i18n"
 
 function useSteps(t: (k: string) => string) {
-  const items = (Array.isArray as any)((t as any)("Workflow.steps")) ? (t as any)("Workflow.steps") : null
   // We'll read array entries directly using index-based keys to avoid passing arrays via t
   return [0,1,2,3,4,5,6].map((i) => ({
     title: t(`Workflow.steps.${i}.title`),

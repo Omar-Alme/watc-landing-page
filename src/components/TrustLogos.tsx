@@ -1,6 +1,7 @@
 "use client"
 
 import { MotionConfig, motion, useReducedMotion } from "framer-motion"
+import { useI18n } from "@/lib/i18n"
 import Image from "next/image"
 import React from "react"
 
@@ -26,6 +27,7 @@ function dup<T>(arr: T[], times = 2): T[] {
 
 export function TrustLogos() {
     const reduce = useReducedMotion()
+    const { t } = useI18n()
     const row = dup(LOGOS, 2) // duplicated once for continuity
 
     // animation setup
@@ -49,7 +51,7 @@ export function TrustLogos() {
                         transition={{ duration: 0.35 }}
                         className="mb-2 block text-xl font-medium text-emerald-700 dark:text-emerald-400"
                     >
-                        Trusted by global clients
+                        {t("Trust.eyebrow")}
                     </motion.span>
 
                     <motion.h2
@@ -59,11 +61,12 @@ export function TrustLogos() {
                         transition={{ duration: 0.45 }}
                         className="mx-auto mb-10 max-w-2xl text-balance text-2xl font-semibold text-foreground"
                     >
-                        Brands, wholesalers & startups across 15+ countries trust us to deliver
+                        {t("Trust.title")}
                     </motion.h2>
 
                     {/* marquee wrapper with edge fade + pause on hover */}
                     <div
+                        dir="ltr"
                         className="
               group relative w-full overflow-hidden
               [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]
@@ -84,6 +87,7 @@ export function TrustLogos() {
 
                     {/* optional: second row, opposite direction */}
                     <div
+                        dir="ltr"
                         className="
               group relative mt-6 w-full overflow-hidden
               [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]

@@ -2,6 +2,7 @@
 
 import { MotionConfig, motion, useReducedMotion } from "framer-motion"
 import { Button } from "@/components/ui/button"
+import { useI18n } from "@/lib/i18n"
 
 const container = {
   hidden: { opacity: 0, y: 12 },
@@ -14,6 +15,7 @@ const container = {
 
 export function Hero() {
   const reduce = useReducedMotion()
+  const { t } = useI18n()
 
   return (
     <MotionConfig reducedMotion="user">
@@ -49,7 +51,7 @@ export function Hero() {
                   className="inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1 text-sm font-medium text-emerald-700"
                 >
                   <span className="inline-block h-2 w-2 rounded-full bg-emerald-500" />
-                  Trusted by 60+ global clients
+                  {t("Hero.badge")}
                 </motion.div>
 
                 {/* headline */}
@@ -57,7 +59,7 @@ export function Hero() {
                   custom={1}
                   className="text-pretty text-4xl font-bold leading-tight tracking-tight md:text-5xl"
                 >
-                  Your gateway to Chinese factories — with global delivery made easy.
+                  {t("Hero.headline")}
                 </motion.h1>
 
                 {/* subhead */}
@@ -65,16 +67,16 @@ export function Hero() {
                   custom={2}
                   className="max-w-xl text-base text-muted-foreground md:text-lg"
                 >
-                  We handle factory sourcing, quality inspections, and worldwide shipping — so you can scale with confidence.
+                  {t("Hero.subhead")}
                 </motion.p>
 
                 {/* CTAs */}
                 <motion.div custom={3} className="flex flex-wrap items-center gap-3 pt-2">
                   <Button size="lg" className="bg-emerald-600 text-white hover:bg-emerald-500" asChild>
-                    <a href="#contact">Book a Free Consultation</a>
+                    <a href="#contact">{t("Hero.primary")}</a>
                   </Button>
                   <Button size="lg" variant="outline" asChild>
-                    <a href="#workflow">See How It Works</a>
+                    <a href="#workflow">{t("Hero.secondary")}</a>
                   </Button>
                 </motion.div>
 
@@ -83,7 +85,7 @@ export function Hero() {
                   custom={4}
                   className="mt-4 flex items-center gap-6 text-xs text-muted-foreground"
                 >
-                  <span>Verified suppliers • Escrow options • End-to-end logistics</span>
+                  <span>{t("Hero.proof")}</span>
                 </motion.div>
               </motion.div>
             </div>
@@ -96,9 +98,9 @@ export function Hero() {
                 className="grid gap-4"
               >
                 {[
-                  { k: "20+", v: "Years of sourcing & export experience" },
-                  { k: "60+", v: "Clients worldwide" },
-                  { k: "Guangzhou & HK", v: "Local operations on the ground" },
+                  { k: t("Hero.stats.yearsKey"), v: t("Hero.stats.years") },
+                  { k: t("Hero.stats.clientsKey"), v: t("Hero.stats.clients") },
+                  { k: t("Hero.stats.presenceKey"), v: t("Hero.stats.presence") },
                 ].map((item, i) => (
                   <motion.div
                     key={item.k}

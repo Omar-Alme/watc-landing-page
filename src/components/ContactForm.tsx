@@ -17,20 +17,25 @@ import {
 import { toast } from "sonner"
 import { motion } from "framer-motion"
 import { useState } from "react"
+import { useI18n } from "@/lib/i18n"
 
-const formSchema = z.object({
-  name: z.string().min(2, { message: "Name is required" }),
-  company: z.string().optional(),
-  email: z.string().email({ message: "Invalid email address" }),
-  whatsapp: z.string().optional(),
-  message: z.string().min(10, { message: "Please describe your inquiry" }),
-})
+function makeSchema(t: (k: string) => string) {
+  return z.object({
+    name: z.string().min(2, { message: t("Contact.validation.name") }),
+    company: z.string().optional(),
+    email: z.string().email({ message: t("Contact.validation.email") }),
+    whatsapp: z.string().optional(),
+    message: z.string().min(10, { message: t("Contact.validation.message") }),
+  })
+}
 
 export function ContactForm() {
   const [loading, setLoading] = useState(false)
   const [status, setStatus] = useState<"idle" | "success" | "error">("idle")
+  const { t } = useI18n()
+  const formSchema = makeSchema(t)
 
-  const form = useForm<z.infer<typeof formSchema>>({
+  const form = useForm<z.infer<ReturnType<typeof makeSchema>>>({
     resolver: zodResolver(formSchema),
     defaultValues: { name: "", company: "", email: "", whatsapp: "", message: "" },
     mode: "onTouched",
@@ -60,11 +65,11 @@ export function ContactForm() {
 
       if (!res.ok) throw new Error("Request failed")
 
-      toast.success("Message sent! We’ll reply within 24 hours.")
+      toast.success(t("Contact.toastSuccess"))
       setStatus("success")
       form.reset()
     } catch {
-      toast.error("Something went wrong. Please try again.")
+      toast.error(t("Contact.toastError"))
       setStatus("error")
     } finally {
       setLoading(false)
@@ -85,7 +90,7 @@ export function ContactForm() {
           transition={{ duration: 0.4 }}
           className="mb-2 block text-lg font-medium text-emerald-700"
         >
-          Contact us
+          {t("Contact.eyebrow")}
         </motion.span>
 
         <motion.h2
@@ -96,7 +101,7 @@ export function ContactForm() {
           transition={{ duration: 0.6 }}
           className="mb-4 text-3xl font-bold md:text-4xl text-foreground"
         >
-          Book a free consultation
+          {t("Contact.title")}
         </motion.h2>
 
         <motion.p
@@ -106,13 +111,13 @@ export function ContactForm() {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="mx-auto mb-10 max-w-xl text-muted-foreground"
         >
-          Tell us what you need and our team in China will get back to you within 24 hours.
+          {t("Contact.subtitle")}
         </motion.p>
 
         {/* inline status (non-blocking) */}
         <div aria-live="polite" className="sr-only">
-          {status === "success" ? "Your message was sent successfully." : null}
-          {status === "error" ? "There was an error sending your message." : null}
+          {status === "success" ? t("Contact.statusSuccess") : null}
+          {status === "error" ? t("Contact.statusError") : null}
         </div>
 
         <Form {...form}>
@@ -127,10 +132,10 @@ export function ContactForm() {
                 name="name"
                 render={({ field }) => (
                   <FormItem className="md:col-span-1">
-                    <FormLabel>Your name</FormLabel>
+                    <FormLabel>{t("Contact.name")}</FormLabel>
                     <FormControl>
                       <Input
-                        placeholder="John Smith"
+                        placeholder={t("Contact.placeholderName")}
                         autoComplete="name"
                         disabled={loading}
                         {...field}
@@ -146,10 +151,10 @@ export function ContactForm() {
                 name="company"
                 render={({ field }) => (
                   <FormItem className="md:col-span-1">
-                    <FormLabel>Company</FormLabel>
+                    <FormLabel>{t("Contact.company")}</FormLabel>
                     <FormControl>
                       <Input
-                        placeholder="ABC Imports Ltd."
+                        placeholder={t("Contact.placeholderCompany")}
                         autoComplete="organization"
                         disabled={loading}
                         {...field}
@@ -164,11 +169,11 @@ export function ContactForm() {
                 name="email"
                 render={({ field }) => (
                   <FormItem className="md:col-span-1">
-                    <FormLabel>Email address</FormLabel>
+                    <FormLabel>{t("Contact.email")}</FormLabel>
                     <FormControl>
                       <Input
                         type="email"
-                        placeholder="you@email.com"
+                        placeholder={t("Contact.placeholderEmail")}
                         autoComplete="email"
                         inputMode="email"
                         disabled={loading}
@@ -185,10 +190,10 @@ export function ContactForm() {
                 name="whatsapp"
                 render={({ field }) => (
                   <FormItem className="md:col-span-1">
-                    <FormLabel>WhatsApp / WeChat</FormLabel>
+                    <FormLabel>{t("Contact.whatsapp")}</FormLabel>
                     <FormControl>
                       <Input
-                        placeholder="+46 7X XXX XXXX or WeChat ID"
+                        placeholder={t("Contact.placeholderWhats")}
                         autoComplete="tel"
                         inputMode="tel"
                         disabled={loading}
@@ -204,11 +209,11 @@ export function ContactForm() {
                 name="message"
                 render={({ field }) => (
                   <FormItem className="md:col-span-2">
-                    <FormLabel>Message</FormLabel>
+                    <FormLabel>{t("Contact.message")}</FormLabel>
                     <FormControl>
                       <Textarea
                         rows={4}
-                        placeholder="Tell us about your product, target MOQ, timeline, and destination..."
+                        placeholder={t("Contact.placeholderMessage")}
                         disabled={loading}
                         {...field}
                       />
@@ -229,13 +234,11 @@ export function ContactForm() {
             />
 
             <Button type="submit" className="bg-emerald-600 hover:bg-emerald-500 text-white mt-6 w-full cursor-pointer" size="lg" disabled={loading}>
-              {loading ? "Sending…" : "Send inquiry"}
+              {loading ? t("Contact.sending") : t("Contact.submit")}
             </Button>
 
             {/* tiny reassurance */}
-            <p className="mt-3 text-center text-xs text-muted-foreground">
-              We’ll never share your details. Response within 24 hours.
-            </p>
+            <p className="mt-3 text-center text-xs text-muted-foreground">{t("Contact.subnote")}</p>
           </form>
         </Form>
       </div>

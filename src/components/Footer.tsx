@@ -5,9 +5,11 @@ import Link from "next/link"
 import { useState } from "react"
 import { FaWeixin, FaLinkedin, FaWhatsapp } from "react-icons/fa"
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog"
+import { useI18n } from "@/lib/i18n"
 
 export function Footer() {
     const [openWeChat, setOpenWeChat] = useState(false)
+    const { t, toLocaleDigits } = useI18n()
 
     return (
         <footer
@@ -40,48 +42,48 @@ export function Footer() {
                     <h2 id="footer-heading" className="mb-2 text-base font-semibold text-foreground">
                         World Associates Trading Company
                     </h2>
-                    <p>Trusted partner for Chinese sourcing and export services.</p>
-                    <p>We bridge global businesses with vetted manufacturers in China.</p>
+                    <p>{t("Footer.about1")}</p>
+                    <p>{t("Footer.about2")}</p>
                 </div>
 
                 {/* Services / Quick links */}
                 <nav aria-label="Footer navigation">
-                    <h3 className="mb-2 text-base font-semibold text-foreground">Services</h3>
+                    <h3 className="mb-2 text-base font-semibold text-foreground">{t("Footer.services")}</h3>
                     <ul className="space-y-1">
                         <li>
                             <a href="#services" className="hover:text-foreground">
-                                Factory sourcing
+                                {t("Services.items.sourcing.title")}
                             </a>
                         </li>
                         <li>
                             <a href="#services" className="hover:text-foreground">
-                                Product inspections
+                                {t("Services.items.inspection.title")}
                             </a>
                         </li>
                         <li>
                             <a href="#services" className="hover:text-foreground">
-                                Container shipping
+                                {t("Services.items.shipping.title")}
                             </a>
                         </li>
                         <li>
                             <a href="#services" className="hover:text-foreground">
-                                Export consulting
+                                {t("Services.items.consulting.title")}
                             </a>
                         </li>
                     </ul>
                     <div className="mt-4">
                         <a href="#workflow" className="underline underline-offset-4 hover:no-underline">
-                            See how it works
+                            {t("Footer.seeHow")}
                         </a>
                     </div>
                 </nav>
 
                 {/* Contact / Social */}
                 <div>
-                    <h3 className="mb-2 text-base font-semibold text-foreground">Contact</h3>
+                    <h3 className="mb-2 text-base font-semibold text-foreground">{t("Footer.contact")}</h3>
                     <ul className="space-y-2">
                         <li>
-                            Email:{" "}
+                            {t("Footer.emailLabel")} {" "}
                             <a href="mailto:watcglobal@gmail.com" className="underline underline-offset-4 hover:no-underline">
                                 watcglobal@gmail.com
                             </a>
@@ -113,7 +115,7 @@ export function Footer() {
                                     </DialogTrigger>
                                     <DialogContent className="max-w-xs rounded-xl p-0">
                                         <div className="p-4 text-center">
-                                            <h4 className="mb-3 text-sm font-semibold text-foreground">Scan WeChat QR</h4>
+                                            <h4 className="mb-3 text-sm font-semibold text-foreground">{t("Footer.scanWeChat")}</h4>
                                             <Image
                                                 src="/images/wechatqr.png"
                                                 alt="WeChat QR code"
@@ -144,22 +146,22 @@ export function Footer() {
 
             {/* Bottom bar */}
             <div className="mx-auto mt-10 flex max-w-6xl flex-col items-center justify-between gap-3 border-t border-border pt-6 text-xs text-muted-foreground md:flex-row">
-                <p>© {new Date().getFullYear()} World Associates. All rights reserved.</p>
+                <p>{t("Footer.copyright").replace("{year}", toLocaleDigits(String(new Date().getFullYear())))}</p>
                 <div className="flex items-center gap-4">
-                    <a href="#faq" className="hover:text-foreground">
-                        FAQ
+                        <a href="#faq" className="hover:text-foreground">
+                         {t("Common.nav.faq")}
                     </a>
                     <a href="#contact" className="hover:text-foreground">
-                        Contact
+                        {t("Footer.contact")}
                     </a>
                     <a href="#why-us" className="hover:text-foreground">
-                        Why us
+                        {t("Common.nav.why")}
                     </a>
                     <a href="#services" className="hover:text-foreground">
-                        Services
+                        {t("Common.nav.services")}
                     </a>
                     <Link href="/" className="hover:text-foreground">
-                        Back to top
+                        {t("Footer.backToTop")}
                     </Link>
                 </div>
             </div>

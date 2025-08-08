@@ -12,7 +12,7 @@ export function GlobalReach() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.4 }}
-                    className="text-lg font-medium text-green-600 mb-2 block"
+                    className=" text-xl font-medium text-emerald-700 dark:text-emerald-400 mb-2 block"
                 >
                     Global Reach
                 </motion.span>

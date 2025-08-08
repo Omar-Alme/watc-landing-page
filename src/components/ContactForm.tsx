@@ -228,7 +228,7 @@ export function ContactForm() {
               autoComplete="off"
             />
 
-            <Button type="submit" className="mt-6 w-full cursor-pointer" size="lg" disabled={loading}>
+            <Button type="submit" className="bg-emerald-600 hover:bg-emerald-500 text-white mt-6 w-full cursor-pointer" size="lg" disabled={loading}>
               {loading ? "Sending…" : "Send inquiry"}
             </Button>
 

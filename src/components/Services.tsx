@@ -1,6 +1,6 @@
 "use client"
 
-import { motion } from "framer-motion"
+import { MotionConfig, motion, useReducedMotion } from "framer-motion"
 import Image from "next/image"
 import {
     Factory,
@@ -8,130 +8,197 @@ import {
     Truck,
     Briefcase,
 } from "lucide-react"
+import React, { useRef, useEffect, useState } from "react"
 
-const services = [
+type Service = {
+    title: string
+    description: string
+    image: string
+    icon: React.ReactNode
+}
+
+const SERVICES: Service[] = [
     {
         title: "Factory Sourcing",
         description:
             "We connect you with trusted manufacturers tailored to your product, MOQ, and pricing needs.",
         image: "/images/image1.png",
-        icon: <Factory className="h-5 w-5 text-green-600" />,
+        icon: <Factory className="h-5 w-5 text-emerald-600" />,
     },
     {
         title: "Quality Inspections",
         description:
             "On-site product checks, factory audits, and pre-shipment inspections for peace of mind.",
         image: "/images/image2.png",
-        icon: <ShieldCheck className="h-5 w-5 text-green-600" />,
+        icon: <ShieldCheck className="h-5 w-5 text-emerald-600" />,
     },
     {
         title: "Shipping & Logistics",
         description:
             "We coordinate freight, customs, documentation, and global container shipping end-to-end.",
         image: "/images/image3.png",
-        icon: <Truck className="h-5 w-5 text-green-600" />,
+        icon: <Truck className="h-5 w-5 text-emerald-600" />,
     },
     {
         title: "Export Consulting",
         description:
             "From contracts to compliance — we help you navigate China trade with zero friction.",
         image: "/images/shippingcontainer.png",
-        icon: <Briefcase className="h-5 w-5 text-green-600" />,
+        icon: <Briefcase className="h-5 w-5 text-emerald-600" />,
     },
 ]
 
+// Framer variants
+const fadeUp = {
+    hidden: { opacity: 0, y: 24 },
+    show: (i: number = 0) => ({
+        opacity: 1,
+        y: 0,
+        transition: { duration: 0.5, delay: 0.08 * i },
+    }),
+}
+
 export function Services() {
+    const reduce = useReducedMotion()
+    const sectionRef = useRef<HTMLElement>(null)
+    const [lineHeight, setLineHeight] = useState(0)
+
+    // Auto-size vertical timeline between first and last items on desktop
+    useEffect(() => {
+        const el = sectionRef.current
+        if (!el) return
+        const cards = Array.from(el.querySelectorAll("[data-service-card]")) as HTMLElement[]
+        if (cards.length < 2) return
+        const top = cards[0].offsetTop + cards[0].offsetHeight / 2
+        const last = cards[cards.length - 1]
+        const bottom = last.offsetTop + last.offsetHeight / 2
+        setLineHeight(bottom - top)
+    }, [])
+
     return (
-        <section className="w-full bg-white py-28 px-6" id="services">
-            <div className="max-w-6xl mx-auto relative">
-                {/* Heading */}
-                <motion.span
-                    initial={{ opacity: 0, y: 10 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.4 }}
-                    className="text-xl font-medium text-green-600 mb-2 block text-center"
-                >
-                    Our Services
-                </motion.span>
+        <MotionConfig reducedMotion="user">
+            <section
+                ref={sectionRef}
+                id="services"
+                aria-labelledby="services-title"
+                className="relative w-full bg-white py-28 px-6 dark:bg-neutral-950"
+            >
+                <div className="mx-auto max-w-6xl">
+                    {/* Heading */}
+                    <motion.span
+                        variants={fadeUp}
+                        initial="hidden"
+                        whileInView="show"
+                        viewport={{ once: true }}
+                        custom={0}
+                        className="mb-2 block text-center text-xl font-medium text-emerald-700 dark:text-emerald-400"
+                    >
+                        Our Services
+                    </motion.span>
 
-                {/* Heading */}
-                <motion.h2
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.6 }}
-                    className="text-4xl font-bold text-center mb-6"
-                >
-                    From Sourcing to Shipping — We Handle It All
-                </motion.h2>
+                    <motion.h2
+                        id="services-title"
+                        variants={fadeUp}
+                        initial="hidden"
+                        whileInView="show"
+                        viewport={{ once: true }}
+                        custom={1}
+                        className="mb-6 text-center text-4xl font-bold text-foreground"
+                    >
+                        From Sourcing to Shipping — We Handle It All
+                    </motion.h2>
 
-                {/* Subtext */}
-                <motion.p
-                    initial={{ opacity: 0, y: 10 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.6, delay: 0.1 }}
-                    className="text-center text-muted-foreground max-w-2xl mx-auto mb-16"
-                >
-                    Whether you&#39;re launching a new product or scaling up operations, we provide full-service support across the entire supply chain — from factory sourcing and quality checks to global logistics and export consulting.
+                    <motion.p
+                        variants={fadeUp}
+                        initial="hidden"
+                        whileInView="show"
+                        viewport={{ once: true }}
+                        custom={2}
+                        className="mx-auto mb-16 max-w-2xl text-center text-muted-foreground"
+                    >
+                        Whether you&apos;re launching a new product or scaling up operations, we cover the
+                        entire supply chain—factory sourcing, quality checks, global logistics, and export
+                        consulting.
+                    </motion.p>
 
-                </motion.p>
+                    {/* Vertical dotted line (desktop only) */}
+                    <div
+                        aria-hidden="true"
+                        className="pointer-events-none absolute left-1/2 top-[260px] hidden -translate-x-1/2 md:block"
+                        style={{ height: lineHeight || 0 }}
+                    >
+                        <div
+                            className="
+                h-full w-px
+                bg-[linear-gradient(to_bottom,transparent,transparent_6px,rgba(16,185,129,0.6)_6px,rgba(16,185,129,0.6)_8px)]
+                [background-size:1px_14px]
+                opacity-70
+                dark:opacity-60
+              "
+                        />
+                    </div>
 
-                {/* Vertical Timeline Line */}
-                <div className="hidden md:block absolute top-[380px] left-1/2 w-[2px] bg-green-300 z-0 transform -translate-x-1/2"
-                    style={{ height: `${services.length * 320 - 30}px` }} />
-
-                {/* Service Blocks */}
-                <div className="space-y-32 relative z-10">
-                    {services.map((service, index) => {
-                        const isEven = index % 2 === 0
-                        const direction = isEven ? "md:flex-row" : "md:flex-row-reverse"
-
-                        return (
-                            <motion.div
-                                key={index}
-                                initial={{ opacity: 0, y: 60 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true }}
-                                transition={{ duration: 0.6, delay: index * 0.1 }}
-                                className={`flex flex-col ${direction} items-center gap-12 md:gap-20`}
-                            >
-                                {/* Timeline Dot */}
-                                <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 z-10">
+                    {/* Cards */}
+                    <div className="relative space-y-24">
+                        {SERVICES.map((s, i) => {
+                            const even = i % 2 === 0
+                            return (
+                                <motion.article
+                                    key={s.title}
+                                    data-service-card
+                                    variants={fadeUp}
+                                    initial="hidden"
+                                    whileInView="show"
+                                    viewport={{ once: true, amount: 0.4 }}
+                                    custom={i + 3}
+                                    className={`relative grid items-center gap-8 md:gap-16 ${even ? "md:grid-cols-[1fr_1fr]" : "md:grid-cols-[1fr_1fr] md:[&>*:first-child]:order-2"
+                                        }`}
+                                >
+                                    {/* Timeline node (desktop) */}
                                     <div
-                                        className="w-4 h-4 bg-green-500 rounded-full border-4 border-white shadow"
-                                        style={{ top: `${index * 320}px` }}
-                                    />
-                                </div>
-
-                                {/* Text Content */}
-                                <div className="flex-1 md:max-w-[50%] space-y-4 text-left">
-                                    <div className="flex items-center gap-3">
-                                        <div className="h-10 w-10 rounded-lg bg-green-100 flex items-center justify-center shadow-md">
-                                            {service.icon}
-                                        </div>
-                                        <h3 className="text-2xl font-semibold text-gray-900">
-                                            {service.title}
-                                        </h3>
+                                        aria-hidden="true"
+                                        className="absolute left-1/2 top-1/2 hidden -translate-x-1/2 -translate-y-1/2 md:block"
+                                    >
+                                        <span className="block h-4 w-4 rounded-full bg-emerald-500 shadow-[0_0_0_4px_#fff] dark:shadow-[0_0_0_4px_#0a0a0a]" />
                                     </div>
-                                    <p className="text-gray-600 leading-relaxed">{service.description}</p>
-                                </div>
 
-                                {/* Image */}
-                                <div className="flex-1 w-full h-64 md:h-72 relative overflow-hidden rounded-xl shadow-lg border border-gray-200">
-                                    <Image
-                                        src={service.image}
-                                        alt={service.title}
-                                        fill
-                                        className="object-cover"
-                                    />
-                                </div>
-                            </motion.div>
-                        )
-                    })}
+                                    {/* Copy */}
+                                    <div className="space-y-4">
+                                        <div className="flex items-center gap-3">
+                                            <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-emerald-100 shadow-sm dark:bg-emerald-900/30">
+                                                {s.icon}
+                                            </div>
+                                            <h3 className="text-2xl font-semibold text-foreground">{s.title}</h3>
+                                        </div>
+                                        <p className="text-muted-foreground leading-relaxed">{s.description}</p>
+                                    </div>
+
+                                    {/* Image */}
+                                    <motion.div
+                                        whileHover={reduce ? {} : { y: -2 }}
+                                        transition={{ type: "spring", stiffness: 200, damping: 20 }}
+                                        className="
+                      relative h-64 w-full overflow-hidden rounded-xl border border-border/60 shadow-sm md:h-72
+                      bg-gradient-to-br from-emerald-50/50 to-transparent dark:from-emerald-900/10
+                    "
+                                    >
+                                        <Image
+                                            src={s.image}
+                                            alt={s.title}
+                                            fill
+                                            sizes="(min-width: 768px) 560px, 100vw"
+                                            className="object-cover"
+                                            priority={i === 0}
+                                        />
+                                        {/* subtle inner overlay for readability */}
+                                        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/10 to-transparent dark:from-black/20" />
+                                    </motion.div>
+                                </motion.article>
+                            )
+                        })}
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </MotionConfig>
     )
 }

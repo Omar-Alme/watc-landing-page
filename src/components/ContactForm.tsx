@@ -28,59 +28,75 @@ const formSchema = z.object({
 
 export function ContactForm() {
   const [loading, setLoading] = useState(false)
+  const [status, setStatus] = useState<"idle" | "success" | "error">("idle")
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
-    defaultValues: {
-      name: "",
-      company: "",
-      email: "",
-      whatsapp: "",
-      message: "",
-    },
+    defaultValues: { name: "", company: "", email: "", whatsapp: "", message: "" },
+    mode: "onTouched",
   })
 
-  async function onSubmit(data: z.infer<typeof formSchema>) {
+  async function onSubmit(raw: z.infer<typeof formSchema>) {
+    const data = {
+      ...raw,
+      // tiny cleanup
+      name: raw.name.trim(),
+      company: raw.company?.trim() || "",
+      email: raw.email.trim(),
+      whatsapp: raw.whatsapp?.trim() || "",
+      message: raw.message.trim(),
+      _honeypot: "",
+    }
+
     try {
       setLoading(true)
+      setStatus("idle")
+
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...data, _honeypot: "" }), // keep empty for bots
+        body: JSON.stringify(data),
       })
 
       if (!res.ok) throw new Error("Request failed")
 
-      toast.success("Message sent successfully!")
+      toast.success("Message sent! We’ll reply within 24 hours.")
+      setStatus("success")
       form.reset()
     } catch {
       toast.error("Something went wrong. Please try again.")
+      setStatus("error")
     } finally {
       setLoading(false)
     }
   }
 
   return (
-    <section className="w-full py-28 px-6 bg-white border-t border-muted/40" id="contact">
-      <div className="max-w-2xl mx-auto text-center">
+    <section
+      id="contact"
+      aria-labelledby="contact-title"
+      className="w-full border-t border-muted/40 bg-white px-6 py-28"
+    >
+      <div className="mx-auto max-w-2xl text-center">
         <motion.span
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.4 }}
-          className="text-lg font-medium text-green-600 mb-2 block"
+          className="mb-2 block text-lg font-medium text-emerald-700"
         >
-          Contact Us
+          Contact us
         </motion.span>
 
         <motion.h2
+          id="contact-title"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-3xl md:text-4xl font-bold mb-4"
+          className="mb-4 text-3xl font-bold md:text-4xl text-foreground"
         >
-          Book a Free Consultation
+          Book a free consultation
         </motion.h2>
 
         <motion.p
@@ -88,91 +104,138 @@ export function ContactForm() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="text-muted-foreground mb-10 max-w-xl mx-auto"
+          className="mx-auto mb-10 max-w-xl text-muted-foreground"
         >
-          Let us know what you&#39;re looking for and we’ll get in touch within 24 hours.
+          Tell us what you need and our team in China will get back to you within 24 hours.
         </motion.p>
 
+        {/* inline status (non-blocking) */}
+        <div aria-live="polite" className="sr-only">
+          {status === "success" ? "Your message was sent successfully." : null}
+          {status === "error" ? "There was an error sending your message." : null}
+        </div>
+
         <Form {...form}>
-          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6 text-left">
-            <FormField
-              control={form.control}
-              name="name"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>Your Name</FormLabel>
-                  <FormControl>
-                    <Input placeholder="John Smith" {...field} />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
+          <form
+            onSubmit={form.handleSubmit(onSubmit)}
+            className="text-left"
+            aria-busy={loading}
+          >
+            <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+              <FormField
+                control={form.control}
+                name="name"
+                render={({ field }) => (
+                  <FormItem className="md:col-span-1">
+                    <FormLabel>Your name</FormLabel>
+                    <FormControl>
+                      <Input
+                        placeholder="John Smith"
+                        autoComplete="name"
+                        disabled={loading}
+                        {...field}
+                      />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
 
-            <FormField
-              control={form.control}
-              name="company"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>Company</FormLabel>
-                  <FormControl>
-                    <Input placeholder="ABC Imports Ltd." {...field} />
-                  </FormControl>
-                </FormItem>
-              )}
-            />
+              <FormField
+                control={form.control}
+                name="company"
+                render={({ field }) => (
+                  <FormItem className="md:col-span-1">
+                    <FormLabel>Company</FormLabel>
+                    <FormControl>
+                      <Input
+                        placeholder="ABC Imports Ltd."
+                        autoComplete="organization"
+                        disabled={loading}
+                        {...field}
+                      />
+                    </FormControl>
+                  </FormItem>
+                )}
+              />
 
-            <FormField
-              control={form.control}
-              name="email"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>Email Address</FormLabel>
-                  <FormControl>
-                    <Input type="email" placeholder="you@email.com" {...field} />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
+              <FormField
+                control={form.control}
+                name="email"
+                render={({ field }) => (
+                  <FormItem className="md:col-span-1">
+                    <FormLabel>Email address</FormLabel>
+                    <FormControl>
+                      <Input
+                        type="email"
+                        placeholder="you@email.com"
+                        autoComplete="email"
+                        inputMode="email"
+                        disabled={loading}
+                        {...field}
+                      />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
 
-            <FormField
-              control={form.control}
-              name="whatsapp"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>WhatsApp / WeChat</FormLabel>
-                  <FormControl>
-                    <Input placeholder="+46 7X XXX XXXX" {...field} />
-                  </FormControl>
-                </FormItem>
-              )}
-            />
+              <FormField
+                control={form.control}
+                name="whatsapp"
+                render={({ field }) => (
+                  <FormItem className="md:col-span-1">
+                    <FormLabel>WhatsApp / WeChat</FormLabel>
+                    <FormControl>
+                      <Input
+                        placeholder="+46 7X XXX XXXX or WeChat ID"
+                        autoComplete="tel"
+                        inputMode="tel"
+                        disabled={loading}
+                        {...field}
+                      />
+                    </FormControl>
+                  </FormItem>
+                )}
+              />
 
-            <FormField
-              control={form.control}
-              name="message"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>Message</FormLabel>
-                  <FormControl>
-                    <Textarea
-                      rows={4}
-                      placeholder="Tell us what you need help with..."
-                      {...field}
-                    />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
+              <FormField
+                control={form.control}
+                name="message"
+                render={({ field }) => (
+                  <FormItem className="md:col-span-2">
+                    <FormLabel>Message</FormLabel>
+                    <FormControl>
+                      <Textarea
+                        rows={4}
+                        placeholder="Tell us about your product, target MOQ, timeline, and destination..."
+                        disabled={loading}
+                        {...field}
+                      />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+            </div>
 
             {/* Honeypot (hidden) */}
-            <input type="text" name="_honeypot" className="hidden" tabIndex={-1} autoComplete="off" />
+            <input
+              type="text"
+              name="_honeypot"
+              className="hidden"
+              tabIndex={-1}
+              autoComplete="off"
+            />
 
-            <Button type="submit" className="w-full" size="lg" disabled={loading}>
-              {loading ? "Sending..." : "Send Inquiry"}
+            <Button type="submit" className="mt-6 w-full cursor-pointer" size="lg" disabled={loading}>
+              {loading ? "Sending…" : "Send inquiry"}
             </Button>
+
+            {/* tiny reassurance */}
+            <p className="mt-3 text-center text-xs text-muted-foreground">
+              We’ll never share your details. Response within 24 hours.
+            </p>
           </form>
         </Form>
       </div>

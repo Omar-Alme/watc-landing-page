@@ -4,32 +4,32 @@ import { motion } from "framer-motion"
 
 const steps = [
   {
-    title: "Initial Inquiry",
+    title: "Initial inquiry",
     description: "Contact factory → Get quotation → Receive sample",
   },
   {
-    title: "Payment Processing",
+    title: "Payment processing",
     description: "Customer pays → We pay factory",
   },
   {
-    title: "Production Phase",
-    description: "Factory production + follow-up",
+    title: "Production phase",
+    description: "Factory production with proactive follow-ups",
   },
   {
-    title: "Packing & Customs",
-    description: "Packing details & customs prep",
+    title: "Packing & customs",
+    description: "Finalize packing details and customs preparation",
   },
   {
     title: "Shipping",
-    description: "Loading container + export docs",
+    description: "Load container and issue export documentation",
   },
   {
-    title: "Bill of Lading",
-    description: "Confirm bill of lading",
+    title: "Bill of lading",
+    description: "Confirm B/L and share details",
   },
   {
-    title: "Final Delivery",
-    description: "Send documents to customer",
+    title: "Final delivery",
+    description: "Send all documents and handoff to you",
   },
 ]
 
@@ -42,9 +42,9 @@ export function WorkflowSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.3 }}
-          className="text-lg font-medium text-green-600 mb-2 block text-center"
+          className="text-lg font-medium text-emerald-700 mb-2 block text-center"
         >
-          How We Work
+          How we work
         </motion.span>
 
         <motion.h2
@@ -52,14 +52,14 @@ export function WorkflowSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="text-4xl font-bold text-center mb-20"
+          className="text-4xl font-bold text-center mb-20 text-foreground"
         >
-          Our Workflow from Inquiry to Delivery
+          From inquiry to delivery — our workflow
         </motion.h2>
 
         <div className="relative">
           {/* Center line for desktop */}
-          <div className="hidden md:block absolute top-0 left-1/2 w-1 h-full bg-muted/20" />
+          <div className="hidden md:block absolute top-0 left-1/2 w-px h-full bg-muted/30" />
 
           <div className="flex flex-col gap-16 relative z-10">
             {steps.map((step, i) => {
@@ -75,49 +75,34 @@ export function WorkflowSection() {
                   transition={{
                     duration: 0.6,
                     delay: i * 0.1,
-                    ease: [0.25, 0.8, 0.25, 1], // smooth spring-like
+                    ease: [0.25, 0.8, 0.25, 1],
                   }}
-                  className={`flex flex-col md:flex-row items-center ${isLeft ? "md:flex-row" : "md:flex-row-reverse"
-                    }`}
+                  className={`flex flex-col md:flex-row items-center ${
+                    isLeft ? "md:flex-row" : "md:flex-row-reverse"
+                  }`}
                 >
                   {/* Number dot */}
-                  <div className="flex items-center justify-center w-10 h-10 rounded-full bg-green-600 text-white font-semibold text-sm z-10 md:mx-6 my-4 md:my-0">
+                  <div className="flex items-center justify-center w-10 h-10 rounded-full bg-emerald-600 text-white font-semibold text-sm z-10 md:mx-6 my-4 md:my-0">
                     {stepNumber}
                   </div>
 
-                  {/* Card */}
-                  <div className="relative backdrop-blur-md bg-white/80 border border-green-200 rounded-xl shadow-md p-6 max-w-md w-full">
-                    <p className="text-xs uppercase tracking-wide text-green-600 font-medium mb-1">
+                  {/* Card (cleaner styles only) */}
+                  <div className="relative w-full max-w-md rounded-xl border border-border/60 bg-white p-6 shadow-sm">
+                    <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-emerald-700">
                       Step {stepNumber}
                     </p>
-                    <h3 className="text-lg font-semibold text-gray-800 mb-2">{step.title}</h3>
-                    <p className="text-muted-foreground text-sm leading-relaxed">{step.description}</p>
+                    <h3 className="mb-2 text-lg font-semibold text-foreground">{step.title}</h3>
+                    <p className="text-sm leading-relaxed text-muted-foreground">{step.description}</p>
+
+                    {/* subtle bottom accent for consistency with your design language */}
+                    <div
+                      aria-hidden="true"
+                      className="absolute inset-x-0 bottom-0 h-1 rounded-b-xl bg-gradient-to-r from-emerald-500/0 via-emerald-500/25 to-emerald-500/0"
+                    />
                   </div>
                 </motion.div>
               )
             })}
-
-
-            {/* <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              className="mt-24 text-center"
-            >
-              <h3 className="text-2xl font-semibold mb-4 text-gray-900">
-                Ready to streamline your sourcing process?
-              </h3>
-              <p className="text-muted-foreground mb-6">
-                Book a free consultation with our team and discover how we can simplify your workflow from factory to delivery.
-              </p>
-              <a
-                href="#contact" // Change this to your booking or contact section
-                className="inline-block bg-green-600 hover:bg-green-700 text-white font-medium px-6 py-3 rounded-lg shadow transition-all"
-              >
-                Book a Free Consultation
-              </a>
-            </motion.div> */}
           </div>
         </div>
       </div>

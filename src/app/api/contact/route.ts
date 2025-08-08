@@ -31,7 +31,7 @@ export async function POST(req: Request) {
         // For local/dev you can use "onboarding@resend.dev".
         // For prod, verify your domain in Resend and use something like no-reply@watcglobal.com
         await resend.emails.send({
-            from: "WATC <onboarding@resend.dev>",
+            from: "WATC <no-reply@watcglobal.com>",
             to: "watcglobal@gmail.com",
             replyTo: email,
             subject: `New inquiry from ${name}`,

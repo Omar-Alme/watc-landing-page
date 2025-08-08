@@ -3,6 +3,8 @@
 import Image from "next/image"
 import { useState } from "react"
 import { FaWeixin, FaLinkedin, FaWhatsapp } from "react-icons/fa"
+import { motion, AnimatePresence } from "framer-motion"
+
 
 export function Footer() {
 
@@ -86,28 +88,42 @@ export function Footer() {
                 © {new Date().getFullYear()} World Associates. All rights reserved.
             </div>
 
-            {/* WeChat QR Modal */}
-            {isWeChatOpen && (
-                <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-                    <div className="bg-white p-6 rounded-lg shadow-lg max-w-xs w-full relative">
-                        {/* Close button */}
-                        <button
-                            onClick={() => setIsWeChatOpen(false)}
-                            className="absolute top-2 right-2 text-gray-500 hover:text-gray-700 text-xl"
+            <AnimatePresence>
+                {isWeChatOpen && (
+                    <motion.div
+                        className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        onClick={() => setIsWeChatOpen(false)}
+                    >
+                        <motion.div
+                            className="bg-white p-6 rounded-lg shadow-lg max-w-xs w-full relative"
+                            initial={{ opacity: 0, scale: 0.9 }}
+                            animate={{ opacity: 1, scale: 1 }}
+                            exit={{ opacity: 0, scale: 0.9 }}
+                            transition={{ duration: 0.2 }}
+                            onClick={(e) => e.stopPropagation()}
                         >
-                            ×
-                        </button>
-                        <h3 className="text-center font-semibold mb-4">Scan WeChat QR</h3>
-                        <Image
-                            src="/images/wechatqr.png"
-                            alt="WeChat QR Code"
-                            width={250}
-                            height={250}
-                            className="mx-auto"
-                        />
-                    </div>
-                </div>
-            )}
+                            {/* Close button */}
+                            <button
+                                onClick={() => setIsWeChatOpen(false)}
+                                className="absolute top-2 right-2 text-gray-500 hover:text-gray-700 text-xl"
+                            >
+                                ×
+                            </button>
+                            <h3 className="text-center font-semibold mb-4">Scan WeChat QR</h3>
+                            <Image
+                                src="/images/wechatqr.png"
+                                alt="WeChat QR Code"
+                                width={250}
+                                height={250}
+                                className="mx-auto"
+                            />
+                        </motion.div>
+                    </motion.div>
+                )}
+            </AnimatePresence>
         </footer>
     )
 }

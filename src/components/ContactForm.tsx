@@ -16,6 +16,7 @@ import {
 } from "@/components/ui/form"
 import { toast } from "sonner"
 import { motion } from "framer-motion"
+import { useState } from "react"
 
 const formSchema = z.object({
   name: z.string().min(2, { message: "Name is required" }),
@@ -26,7 +27,9 @@ const formSchema = z.object({
 })
 
 export function ContactForm() {
-  const form = useForm({
+  const [loading, setLoading] = useState(false)
+
+  const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
       name: "",
@@ -37,29 +40,25 @@ export function ContactForm() {
     },
   })
 
-async function onSubmit(data: z.infer<typeof formSchema>) {
-  const response = await fetch("https://formspree.io/f/myzpjeql", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      Accept: "application/json",
-    },
-    body: JSON.stringify({
-      name: data.name,
-      company: data.company,
-      email: data.email,
-      whatsapp: data.whatsapp,
-      message: data.message,
-    }),
-  })
+  async function onSubmit(data: z.infer<typeof formSchema>) {
+    try {
+      setLoading(true)
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ ...data, _honeypot: "" }), // keep empty for bots
+      })
 
-  if (response.ok) {
-    toast.success("Message sent successfully!")
-    form.reset()
-  } else {
-    toast.error("Something went wrong. Please try again.")
+      if (!res.ok) throw new Error("Request failed")
+
+      toast.success("Message sent successfully!")
+      form.reset()
+    } catch {
+      toast.error("Something went wrong. Please try again.")
+    } finally {
+      setLoading(false)
+    }
   }
-}
 
   return (
     <section className="w-full py-28 px-6 bg-white border-t border-muted/40" id="contact">
@@ -168,8 +167,11 @@ async function onSubmit(data: z.infer<typeof formSchema>) {
               )}
             />
 
-            <Button type="submit" className="w-full" size="lg">
-              Send Inquiry
+            {/* Honeypot (hidden) */}
+            <input type="text" name="_honeypot" className="hidden" tabIndex={-1} autoComplete="off" />
+
+            <Button type="submit" className="w-full" size="lg" disabled={loading}>
+              {loading ? "Sending..." : "Send Inquiry"}
             </Button>
           </form>
         </Form>

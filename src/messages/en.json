@@ -32,14 +32,22 @@
     "title": "From Sourcing to Shipping — We Handle It All",
     "subtitle": "Whether you're launching a new product or scaling up operations, we cover the entire supply chain—factory sourcing, quality checks, global logistics, and export consulting.",
     "items": {
-      "sourcing.title": "Factory Sourcing",
-      "sourcing.desc": "We connect you with trusted manufacturers tailored to your product, MOQ, and pricing needs.",
-      "inspection.title": "Quality Inspections",
-      "inspection.desc": "On-site product checks, factory audits, and pre-shipment inspections for peace of mind.",
-      "shipping.title": "Shipping & Logistics",
-      "shipping.desc": "We coordinate freight, customs, documentation, and global container shipping end-to-end.",
-      "consulting.title": "Export Consulting",
-      "consulting.desc": "From contracts to compliance — we help you navigate China trade with zero friction."
+      "sourcing": {
+        "title": "Factory Sourcing",
+        "desc": "We connect you with trusted manufacturers tailored to your product, MOQ, and pricing needs."
+      },
+      "inspection": {
+        "title": "Quality Inspections",
+        "desc": "On-site product checks, factory audits, and pre-shipment inspections for peace of mind."
+      },
+      "shipping": {
+        "title": "Shipping & Logistics",
+        "desc": "We coordinate freight, customs, documentation, and global container shipping end-to-end."
+      },
+      "consulting": {
+        "title": "Export Consulting",
+        "desc": "From contracts to compliance — we help you navigate China trade with zero friction."
+      }
     }
   },
   "Why": {
@@ -47,20 +55,34 @@
     "title": "Why Choose Us",
     "subtitle": "We understand the risks of overseas sourcing. With vetted partners and boots on the ground, we give you confidence from inquiry to delivery.",
     "values": {
-      "verified.title": "Verified Factories Only",
-      "verified.desc": "We source from factories we’ve worked with — no middlemen, no Alibaba guessing.",
-      "noMiscomm.title": "No Miscommunication",
-      "noMiscomm.desc": "We speak English, Chinese, and Arabic — and act as your local representative.",
-      "presence.title": "Real Presence in China",
-      "presence.desc": "With offices in Guangzhou & HK, we’re on the ground inspecting your orders personally.",
-      "pricing.title": "Fixed Transparent Pricing",
-      "pricing.desc": "No shady markups or hidden fees — just clear service rates that scale with you.",
-      "end2end.title": "End-to-End Sourcing",
-      "end2end.desc": "From textile to tools — we help clients source clothing, furniture, and industrial goods.",
-      "guide.title": "You’re Not Alone",
-      "guide.desc": "We’ve helped 60+ businesses launch and scale — and we guide you every step of the way.",
-      "shipping.title": "Reliable Shipping",
-      "shipping.desc": "We coordinate container shipping, customs, and timelines — with weekly updates."
+      "verified": {
+        "title": "Verified Factories Only",
+        "desc": "We source from factories we’ve worked with — no middlemen, no Alibaba guessing."
+      },
+      "noMiscomm": {
+        "title": "No Miscommunication",
+        "desc": "We speak English, Chinese, and Arabic — and act as your local representative."
+      },
+      "presence": {
+        "title": "Real Presence in China",
+        "desc": "With offices in Guangzhou & HK, we’re on the ground inspecting your orders personally."
+      },
+      "pricing": {
+        "title": "Fixed Transparent Pricing",
+        "desc": "No shady markups or hidden fees — just clear service rates that scale with you."
+      },
+      "end2end": {
+        "title": "End-to-End Sourcing",
+        "desc": "From textile to tools — we help clients source clothing, furniture, and industrial goods."
+      },
+      "guide": {
+        "title": "You’re Not Alone",
+        "desc": "We’ve helped 60+ businesses launch and scale — and we guide you every step of the way."
+      },
+      "shipping": {
+        "title": "Reliable Shipping",
+        "desc": "We coordinate container shipping, customs, and timelines — with weekly updates."
+      }
     },
     "proofRow": {
       "suppliers": "Verified suppliers",

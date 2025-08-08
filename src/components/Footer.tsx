@@ -105,7 +105,7 @@ export function Footer() {
                                     <DialogTrigger asChild>
                                         <button
                                             aria-label="WeChat QR"
-                                            className="transition hover:opacity-80 focus:outline-none focus:ring-2 focus:ring-emerald-500/30 rounded"
+                                            className="transition hover:opacity-80 focus:outline-none focus:ring-2 focus:ring-emerald-500/30 rounded cursor-pointer"
                                             title="Show WeChat QR"
                                         >
                                             <FaWeixin className="text-emerald-600" />

@@ -8,15 +8,15 @@ type Logo = { src: string; alt: string }
 
 const LOGOS: Logo[] = [
     { src: "brand1.png", alt: "Brand One" },
-    { src: "brand2.png", alt: "Brand Two" },
-    { src: "brand3.png", alt: "Brand Three" },
-    { src: "brand4.png", alt: "Brand Four" },
-    { src: "brand5.png", alt: "Brand Five" },
-    { src: "brand6.png", alt: "Brand Six" },
-    { src: "brand7.png", alt: "Brand Seven" },
-    { src: "brand8.png", alt: "Brand Eight" },
-    { src: "brand9.png", alt: "Brand Nine" },
-    { src: "brand10.png", alt: "Brand Ten" },
+    { src: "brand1.png", alt: "Brand Two" },
+    { src: "brand1.png", alt: "Brand Three" },
+    { src: "brand1.png", alt: "Brand Four" },
+    { src: "brand1.png", alt: "Brand Five" },
+    { src: "brand1.png", alt: "Brand Six" },
+    { src: "brand1.png", alt: "Brand Seven" },
+    { src: "brand1.png", alt: "Brand Eight" },
+    { src: "brand1.png", alt: "Brand Nine" },
+    { src: "brand1.png", alt: "Brand Ten" },
 ]
 
 // utility: duplicate for seamless loop

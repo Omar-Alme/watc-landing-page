@@ -9,7 +9,7 @@ import { GlobalReach } from "@/components/GlobalReach"
 import { Header } from "@/components/Header"
 import { Hero } from "@/components/Hero"
 import { Services } from "@/components/Services"
-import { Testimonials } from "@/components/Testimonials"
+// import { Testimonials } from "@/components/Testimonials"
 import { TrustLogos } from "@/components/TrustLogos"
 import { WhyChooseUs } from "@/components/WhyChooseUs"
 import { WorkflowSection } from "@/components/Workflow"
@@ -24,7 +24,7 @@ export default function HomePage() {
         <Services />
         <WhyChooseUs />
         <GlobalReach />
-        <Testimonials />
+        {/* <Testimonials /> */}
         <EstablishedCertificate />
         <WorkflowSection />
         <CTA />

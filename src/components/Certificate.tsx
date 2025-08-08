@@ -5,10 +5,12 @@ import { MotionConfig, motion, useReducedMotion } from "framer-motion"
 import Image from "next/image"
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog"
 import { ShieldCheck} from "lucide-react"
+import { useI18n } from "@/lib/i18n"
 
 export function EstablishedCertificate() {
     const [open, setOpen] = useState(false)
     const reduce = useReducedMotion()
+    const { t } = useI18n()
 
     return (
         <MotionConfig reducedMotion="user">
@@ -28,7 +30,7 @@ export function EstablishedCertificate() {
                             className="mb-3 inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1 text-sm font-medium text-emerald-700 dark:border-emerald-900/40 dark:bg-emerald-900/20 dark:text-emerald-300"
                         >
                             <ShieldCheck className="h-4 w-4" />
-                            Certified & Established
+                            {t("Certificate.badge")}
                         </motion.span>
 
                         <motion.h2
@@ -39,7 +41,7 @@ export function EstablishedCertificate() {
                             transition={{ duration: 0.45 }}
                             className="mb-4 text-3xl font-bold tracking-tight text-foreground md:text-4xl"
                         >
-                            20+ Years of Verified Operations in China
+                            {t("Certificate.title")}
                         </motion.h2>
 
                         <motion.p
@@ -49,9 +51,7 @@ export function EstablishedCertificate() {
                             transition={{ duration: 0.4, delay: 0.05 }}
                             className="text-base leading-relaxed text-muted-foreground md:text-lg"
                         >
-                            Our official business registration certificate from China verifies legal operations
-                            since <strong>2004</strong>—supporting global brands with compliant sourcing, quality
-                            checks, and end-to-end logistics.
+                            {t("Certificate.body")}
                         </motion.p>
 
                         {/* quick facts */}
@@ -62,10 +62,10 @@ export function EstablishedCertificate() {
                             transition={{ duration: 0.35, delay: 0.1 }}
                             className="mt-5 grid grid-cols-1 gap-2 text-sm text-muted-foreground sm:grid-cols-2"
                         >
-                            <li>• Registered entity: Mainland China</li>
-                            <li>• Since: 2004</li>
-                            <li>• On-ground hubs: Guangzhou & Hong Kong</li>
-                            <li>• Certificate available on request</li>
+                            <li>{t("Certificate.facts.registered")}</li>
+                            <li>{t("Certificate.facts.since")}</li>
+                            <li>{t("Certificate.facts.hubs")}</li>
+                            <li>{t("Certificate.facts.available")}</li>
                         </motion.ul>
                     </div>
 
@@ -85,12 +85,12 @@ export function EstablishedCertificate() {
                                 >
                                     {/* tiny corner hint */}
                                     <div className="pointer-events-none absolute right-2 top-2 rounded-md bg-black/50 px-2 py-0.5 text-[10px] text-white backdrop-blur">
-                                        Click to zoom
+                                        {t("Certificate.thumbHint")}
                                     </div>
 
                                     <Image
                                         src="/images/license.png"
-                                        alt="Business registration certificate (thumbnail)"
+                                        alt={t("Certificate.thumbAlt")}
                                         width={800}
                                         height={1150}
                                         className={`h-auto w-full object-contain ${reduce ? "" : "transition-transform duration-300 hover:scale-[1.01]"}`}
@@ -100,7 +100,7 @@ export function EstablishedCertificate() {
                             </DialogTrigger>
 
                             <figcaption className="mt-3 text-xs text-muted-foreground">
-                                Official registration certificate (sample preview). Personal details redacted.
+                                {t("Certificate.figcaption")}
                             </figcaption>
                         </figure>
 
@@ -108,7 +108,7 @@ export function EstablishedCertificate() {
                             <div className="flex max-h-[85vh] items-center justify-center overflow-auto bg-black/5 p-3 dark:bg-black/20">
                                 <Image
                                     src="/images/license.png"
-                                    alt="Business registration certificate — full size"
+                                    alt={t("Certificate.fullAlt")}
                                     width={2400}
                                     height={3300}
                                     className="h-auto max-h-[85vh] w-auto max-w-full object-contain"

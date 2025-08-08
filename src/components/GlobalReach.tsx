@@ -1,9 +1,11 @@
 "use client"
 
 import { motion } from "framer-motion"
+import { useI18n } from "@/lib/i18n"
 import Image from "next/image"
 
 export function GlobalReach() {
+    const { t } = useI18n()
     return (
         <section className="w-full bg-white py-32 px-6">
             <div className="max-w-6xl mx-auto text-center">
@@ -14,7 +16,7 @@ export function GlobalReach() {
                     transition={{ duration: 0.4 }}
                     className=" text-xl font-medium text-emerald-700 dark:text-emerald-400 mb-2 block"
                 >
-                    Global Reach
+                    {t("Global.eyebrow")}
                 </motion.span>
 
                 <motion.h2
@@ -24,7 +26,7 @@ export function GlobalReach() {
                     transition={{ duration: 0.6 }}
                     className="text-4xl font-bold text-center mb-6"
                 >
-                    Clients in 15+ Countries
+                    {t("Global.title")}
                 </motion.h2>
 
                 <motion.p
@@ -34,13 +36,13 @@ export function GlobalReach() {
                     transition={{ duration: 0.5, delay: 0.1 }}
                     className="text-muted-foreground mb-16 max-w-2xl mx-auto"
                 >
-                    From Sweden to Saudi Arabia, the UK to the UAE — we’ve supported sourcing for brands across Europe, the Middle East, and North America.
+                    {t("Global.subtitle")}
                 </motion.p>
 
                 <div className="relative w-full h-[500px] md:h-[650px] rounded-lg overflow-hidden shadow border border-muted bg-white">
                     <Image
                         src="/images/worldmap.png"
-                        alt="World map with client locations"
+                        alt={t("Global.mapAlt")}
                         fill
                         className="object-contain"
                         priority

@@ -7,6 +7,166 @@
     "nav.faq": "FAQ",
     "cta.title": "Ready to start sourcing with confidence?",
     "cta.subtitle": "Book a free consultation — no obligations, just clear guidance from our team in China.",
-    "cta.button": "Book Free Consultation"
+    "cta.button": "Book Free Consultation",
+    "cta.seeFaqs": "See FAQs",
+    "cta.reassurance": "Response within 24 hours • No hard sell"
+  },
+  "Hero": {
+    "badge": "Trusted by 60+ global clients",
+    "headline": "Your gateway to Chinese factories — with global delivery made easy.",
+    "subhead": "We handle factory sourcing, quality inspections, and worldwide shipping — so you can scale with confidence.",
+    "primary": "Book a Free Consultation",
+    "secondary": "See How It Works",
+    "proof": "Verified suppliers • Escrow options • End-to-end logistics",
+    "stats": {
+      "yearsKey": "20+",
+      "years": "Years of sourcing & export experience",
+      "clientsKey": "60+",
+      "clients": "Clients worldwide",
+      "presenceKey": "Guangzhou & HK",
+      "presence": "Local operations on the ground"
+    }
+  },
+  "Services": {
+    "eyebrow": "Our Services",
+    "title": "From Sourcing to Shipping — We Handle It All",
+    "subtitle": "Whether you're launching a new product or scaling up operations, we cover the entire supply chain—factory sourcing, quality checks, global logistics, and export consulting.",
+    "items": {
+      "sourcing.title": "Factory Sourcing",
+      "sourcing.desc": "We connect you with trusted manufacturers tailored to your product, MOQ, and pricing needs.",
+      "inspection.title": "Quality Inspections",
+      "inspection.desc": "On-site product checks, factory audits, and pre-shipment inspections for peace of mind.",
+      "shipping.title": "Shipping & Logistics",
+      "shipping.desc": "We coordinate freight, customs, documentation, and global container shipping end-to-end.",
+      "consulting.title": "Export Consulting",
+      "consulting.desc": "From contracts to compliance — we help you navigate China trade with zero friction."
+    }
+  },
+  "Why": {
+    "eyebrow": "Our advantage",
+    "title": "Why Choose Us",
+    "subtitle": "We understand the risks of overseas sourcing. With vetted partners and boots on the ground, we give you confidence from inquiry to delivery.",
+    "values": {
+      "verified.title": "Verified Factories Only",
+      "verified.desc": "We source from factories we’ve worked with — no middlemen, no Alibaba guessing.",
+      "noMiscomm.title": "No Miscommunication",
+      "noMiscomm.desc": "We speak English, Chinese, and Arabic — and act as your local representative.",
+      "presence.title": "Real Presence in China",
+      "presence.desc": "With offices in Guangzhou & HK, we’re on the ground inspecting your orders personally.",
+      "pricing.title": "Fixed Transparent Pricing",
+      "pricing.desc": "No shady markups or hidden fees — just clear service rates that scale with you.",
+      "end2end.title": "End-to-End Sourcing",
+      "end2end.desc": "From textile to tools — we help clients source clothing, furniture, and industrial goods.",
+      "guide.title": "You’re Not Alone",
+      "guide.desc": "We’ve helped 60+ businesses launch and scale — and we guide you every step of the way.",
+      "shipping.title": "Reliable Shipping",
+      "shipping.desc": "We coordinate container shipping, customs, and timelines — with weekly updates."
+    },
+    "proofRow": {
+      "suppliers": "Verified suppliers",
+      "escrow": "Escrow options",
+      "updates": "Weekly order updates"
+    }
+  },
+  "Global": {
+    "eyebrow": "Global Reach",
+    "title": "Clients in 15+ Countries",
+    "subtitle": "From Sweden to Saudi Arabia, the UK to the UAE — we’ve supported sourcing for brands across Europe, the Middle East, and North America.",
+    "mapAlt": "World map with client locations"
+  },
+  "Workflow": {
+    "eyebrow": "How we work",
+    "title": "From inquiry to delivery — our workflow",
+    "step": "Step",
+    "steps": [
+      { "title": "Initial inquiry", "desc": "Contact factory → Get quotation → Receive sample" },
+      { "title": "Payment processing", "desc": "Customer pays → We pay factory" },
+      { "title": "Production phase", "desc": "Factory production with proactive follow-ups" },
+      { "title": "Packing & customs", "desc": "Finalize packing details and customs preparation" },
+      { "title": "Shipping", "desc": "Load container and issue export documentation" },
+      { "title": "Bill of lading", "desc": "Confirm B/L and share details" },
+      { "title": "Final delivery", "desc": "Send all documents and handoff to you" }
+    ]
+  },
+  "Trust": {
+    "eyebrow": "Trusted by global clients",
+    "title": "Brands, wholesalers & startups across 15+ countries trust us to deliver"
+  },
+  "Contact": {
+    "eyebrow": "Contact us",
+    "title": "Book a free consultation",
+    "subtitle": "Tell us what you need and our team in China will get back to you within 24 hours.",
+    "name": "Your name",
+    "company": "Company",
+    "email": "Email address",
+    "whatsapp": "WhatsApp / WeChat",
+    "message": "Message",
+    "placeholderName": "John Smith",
+    "placeholderCompany": "ABC Imports Ltd.",
+    "placeholderEmail": "you@email.com",
+    "placeholderWhats": "+46 7X XXX XXXX or WeChat ID",
+    "placeholderMessage": "Tell us about your product, target MOQ, timeline, and destination...",
+    "submit": "Send inquiry",
+    "sending": "Sending…",
+    "subnote": "We’ll never share your details. Response within 24 hours.",
+    "statusSuccess": "Your message was sent successfully.",
+    "statusError": "There was an error sending your message.",
+    "toastSuccess": "Message sent! We’ll reply within 24 hours.",
+    "toastError": "Something went wrong. Please try again.",
+    "validation": {
+      "name": "Name is required",
+      "email": "Invalid email address",
+      "message": "Please describe your inquiry"
+    }
+  },
+  "FAQ": {
+    "eyebrow": "FAQ",
+    "title": "Frequently asked questions",
+    "ctaPrefix": "Can’t find what you’re looking for?",
+    "ctaLink": "Contact our team",
+    "items": [
+      {
+        "q": "What types of products can you help me source?",
+        "a": "We specialize in textiles, clothing, furniture, building materials, and industrial goods — thanks to long-standing factory relationships."
+      },
+      {
+        "q": "Do you work with small businesses or only large orders?",
+        "a": "We work with both. While bulk sourcing is our main service, we also support startups placing their first container orders."
+      },
+      {
+        "q": "How do I know your factories are legit?",
+        "a": "All factories are verified through personal visits and long-term partnerships. No Alibaba resellers or unverified middlemen."
+      },
+      {
+        "q": "Can I track my shipments?",
+        "a": "Yes, we provide weekly updates, shipping documents, and photos from our team in China during inspections."
+      }
+    ]
+  },
+  "Footer": {
+    "about1": "Trusted partner for Chinese sourcing and export services.",
+    "about2": "We bridge global businesses with vetted manufacturers in China.",
+    "services": "Services",
+    "seeHow": "See how it works",
+    "contact": "Contact",
+    "backToTop": "Back to top",
+    "emailLabel": "Email:",
+    "scanWeChat": "Scan WeChat QR",
+    "copyright": "© {year} World Associates. All rights reserved."
+  },
+  "Certificate": {
+    "badge": "Certified & Established",
+    "title": "20+ Years of Verified Operations in China",
+    "body": "Our official business registration certificate from China verifies legal operations since 2004—supporting global brands with compliant sourcing, quality checks, and end-to-end logistics.",
+    "facts": {
+      "registered": "• Registered entity: Mainland China",
+      "since": "• Since: 2004",
+      "hubs": "• On-ground hubs: Guangzhou & Hong Kong",
+      "available": "• Certificate available on request"
+    },
+    "thumbHint": "Click to zoom",
+    "thumbAlt": "Business registration certificate (thumbnail)",
+    "figcaption": "Official registration certificate (sample preview). Personal details redacted.",
+    "fullAlt": "Business registration certificate — full size"
   }
 }

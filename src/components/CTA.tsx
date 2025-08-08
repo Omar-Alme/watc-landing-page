@@ -2,8 +2,10 @@
 
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
+import { useI18n } from "@/lib/i18n"
 
 export function CTA() {
+    const { t } = useI18n()
     return (
         <section
             className="
@@ -26,7 +28,7 @@ export function CTA() {
                     transition={{ duration: 0.45 }}
                     className="text-3xl font-bold text-foreground md:text-4xl"
                 >
-                    Ready to start sourcing with confidence?
+                    {t("Common.cta.title")}
                 </motion.h2>
 
                 <motion.p
@@ -36,7 +38,7 @@ export function CTA() {
                     transition={{ duration: 0.4, delay: 0.05 }}
                     className="mx-auto mt-3 max-w-2xl text-lg text-muted-foreground"
                 >
-                    Book a free consultation — no obligations, just clear guidance from our team on the ground in China.
+                    {t("Common.cta.subtitle")}
                 </motion.p>
 
                 <motion.div
@@ -47,13 +49,13 @@ export function CTA() {
                     className="mt-8 flex flex-wrap items-center justify-center gap-3"
                 >
                     <Button size="lg" className="bg-emerald-600 text-white hover:bg-emerald-500" asChild>
-                        <a href="#contact" aria-label="Book a free consultation">Book Free Consultation</a>
+                        <a href="#contact" aria-label={t("Common.cta.button")}>{t("Common.cta.button")}</a>
                     </Button>
                     <a
                         href="#faq"
                         className="text-sm font-medium text-foreground underline underline-offset-4 hover:no-underline"
                     >
-                        See FAQs
+                        {t("Common.cta.seeFaqs")}
                     </a>
                 </motion.div>
 
@@ -65,7 +67,7 @@ export function CTA() {
                     transition={{ duration: 0.35, delay: 0.2 }}
                     className="mt-4 text-sm text-muted-foreground"
                 >
-                    Response within 24 hours • No hard sell
+                    {t("Common.cta.reassurance")}
                 </motion.p>
             </div>
         </section>

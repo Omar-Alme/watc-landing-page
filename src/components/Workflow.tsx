@@ -1,39 +1,20 @@
 "use client"
 
 import { motion } from "framer-motion"
+import { useI18n } from "@/lib/i18n"
 
-const steps = [
-  {
-    title: "Initial inquiry",
-    description: "Contact factory → Get quotation → Receive sample",
-  },
-  {
-    title: "Payment processing",
-    description: "Customer pays → We pay factory",
-  },
-  {
-    title: "Production phase",
-    description: "Factory production with proactive follow-ups",
-  },
-  {
-    title: "Packing & customs",
-    description: "Finalize packing details and customs preparation",
-  },
-  {
-    title: "Shipping",
-    description: "Load container and issue export documentation",
-  },
-  {
-    title: "Bill of lading",
-    description: "Confirm B/L and share details",
-  },
-  {
-    title: "Final delivery",
-    description: "Send all documents and handoff to you",
-  },
-]
+function useSteps(t: (k: string) => string) {
+  const items = (Array.isArray as any)((t as any)("Workflow.steps")) ? (t as any)("Workflow.steps") : null
+  // We'll read array entries directly using index-based keys to avoid passing arrays via t
+  return [0,1,2,3,4,5,6].map((i) => ({
+    title: t(`Workflow.steps.${i}.title`),
+    description: t(`Workflow.steps.${i}.desc`),
+  }))
+}
 
 export function WorkflowSection() {
+  const { t } = useI18n()
+  const steps = useSteps(t)
   return (
     <section className="w-full bg-white py-28 px-6 border-t border-muted/40" id="workflow">
       <div className="max-w-5xl mx-auto">
@@ -44,7 +25,7 @@ export function WorkflowSection() {
           transition={{ duration: 0.3 }}
           className="text-lg font-medium text-emerald-700 mb-2 block text-center"
         >
-          How we work
+          {t("Workflow.eyebrow")}
         </motion.span>
 
         <motion.h2
@@ -54,7 +35,7 @@ export function WorkflowSection() {
           transition={{ duration: 0.5 }}
           className="text-4xl font-bold text-center mb-20 text-foreground"
         >
-          From inquiry to delivery — our workflow
+          {t("Workflow.title")}
         </motion.h2>
 
         <div className="relative">
@@ -89,7 +70,7 @@ export function WorkflowSection() {
                   {/* Card (cleaner styles only) */}
                   <div className="relative w-full max-w-md rounded-xl border border-border/60 bg-white p-6 shadow-sm">
                     <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-emerald-700">
-                      Step {stepNumber}
+                      {t("Workflow.step")} {stepNumber}
                     </p>
                     <h3 className="mb-2 text-lg font-semibold text-foreground">{step.title}</h3>
                     <p className="text-sm leading-relaxed text-muted-foreground">{step.description}</p>

@@ -1,6 +1,7 @@
 "use client"
 
 import { MotionConfig, motion } from "framer-motion"
+import { useI18n } from "@/lib/i18n"
 import {
   ShieldCheck,
   Languages,
@@ -28,43 +29,17 @@ const ICONS: Record<string, React.ComponentType<React.SVGProps<SVGSVGElement>>> 
   Timer,
 }
 
-const VALUES: ValueItem[] = [
-  {
-    title: "Verified Factories Only",
-    description: "We source from factories we’ve worked with — no middlemen, no Alibaba guessing.",
-    icon: "ShieldCheck",
-  },
-  {
-    title: "No Miscommunication",
-    description: "We speak English, Chinese, and Arabic — and act as your local representative.",
-    icon: "Languages",
-  },
-  {
-    title: "Real Presence in China",
-    description: "With offices in Guangzhou & HK, we’re on the ground inspecting your orders personally.",
-    icon: "MapPin",
-  },
-  {
-    title: "Fixed Transparent Pricing",
-    description: "No shady markups or hidden fees — just clear service rates that scale with you.",
-    icon: "BadgeDollarSign",
-  },
-  {
-    title: "End-to-End Sourcing",
-    description: "From textile to tools — we help clients source clothing, furniture, and industrial goods.",
-    icon: "Boxes",
-  },
-  {
-    title: "You’re Not Alone",
-    description: "We’ve helped 60+ businesses launch and scale — and we guide you every step of the way.",
-    icon: "Handshake",
-  },
-  {
-    title: "Reliable Shipping",
-    description: "We coordinate container shipping, customs, and timelines — with weekly updates.",
-    icon: "Timer",
-  },
-]
+function useValues(t: (k: string) => string): ValueItem[] {
+  return [
+    { title: t("Why.values.verified.title"), description: t("Why.values.verified.desc"), icon: "ShieldCheck" },
+    { title: t("Why.values.noMiscomm.title"), description: t("Why.values.noMiscomm.desc"), icon: "Languages" },
+    { title: t("Why.values.presence.title"), description: t("Why.values.presence.desc"), icon: "MapPin" },
+    { title: t("Why.values.pricing.title"), description: t("Why.values.pricing.desc"), icon: "BadgeDollarSign" },
+    { title: t("Why.values.end2end.title"), description: t("Why.values.end2end.desc"), icon: "Boxes" },
+    { title: t("Why.values.guide.title"), description: t("Why.values.guide.desc"), icon: "Handshake" },
+    { title: t("Why.values.shipping.title"), description: t("Why.values.shipping.desc"), icon: "Timer" },
+  ]
+}
 
 const fade = {
   hidden: { opacity: 0, y: 16 },
@@ -72,7 +47,8 @@ const fade = {
 }
 
 export function WhyChooseUs() {
-  // const reduce = useReducedMotion()
+  const { t } = useI18n()
+  const VALUES = useValues(t)
 
   return (
     <MotionConfig reducedMotion="user">
@@ -100,7 +76,7 @@ export function WhyChooseUs() {
             custom={0}
             className="mb-2 block text-center text-xl font-medium text-emerald-700 dark:text-emerald-400"
           >
-            Our advantage
+            {t("Why.eyebrow")}
           </motion.span>
 
           <motion.h2
@@ -112,7 +88,7 @@ export function WhyChooseUs() {
             custom={1}
             className="mb-6 text-center text-4xl font-bold text-foreground"
           >
-            Why Choose Us
+            {t("Why.title")}
           </motion.h2>
 
           <motion.p
@@ -123,8 +99,7 @@ export function WhyChooseUs() {
             custom={2}
             className="mx-auto mb-14 max-w-2xl text-center text-muted-foreground"
           >
-            We understand the risks of overseas sourcing. With vetted partners and boots on the
-            ground, we give you confidence from inquiry to delivery.
+            {t("Why.subtitle")}
           </motion.p>
 
           {/* values grid */}
@@ -183,11 +158,11 @@ export function WhyChooseUs() {
             custom={VALUES.length + 4}
             className="mt-10 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-muted-foreground"
           >
-            <span>Verified suppliers</span>
+            <span>{t("Why.proofRow.suppliers")}</span>
             <span className="hidden h-1 w-1 rounded-full bg-muted-foreground/40 sm:inline-block" />
-            <span>Escrow options</span>
+            <span>{t("Why.proofRow.escrow")}</span>
             <span className="hidden h-1 w-1 rounded-full bg-muted-foreground/40 sm:inline-block" />
-            <span>Weekly order updates</span>
+            <span>{t("Why.proofRow.updates")}</span>
           </motion.div>
         </div>
       </section>

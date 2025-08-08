@@ -1,24 +1,50 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, useMemo, useRef } from "react"
 import { usePathname } from "next/navigation"
 import Link from "next/link"
 import Image from "next/image"
 import { Menu } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import { useI18n } from "@/lib/i18n"
 
 type NavItem = { href: string; label: string }
-const NAV: NavItem[] = [
-    { href: "#services", label: "Services" },
-    { href: "#workflow", label: "Workflow" },
-    { href: "#why-us", label: "Why Us" },
-    { href: "#faq", label: "FAQ" },
-]
 
 export function Header() {
     const [scrolled, setScrolled] = useState(false)
     const pathname = usePathname()
+    const { t, locale, setLocale } = useI18n()
+    const [langOpen, setLangOpen] = useState(false)
+    const langRef = useRef<HTMLDivElement | null>(null)
+
+    useEffect(() => {
+        function onDocClick(e: MouseEvent) {
+            if (!langRef.current) return
+            if (e.target instanceof Node && !langRef.current.contains(e.target)) {
+                setLangOpen(false)
+            }
+        }
+        function onEsc(e: KeyboardEvent) {
+            if (e.key === "Escape") setLangOpen(false)
+        }
+        document.addEventListener("click", onDocClick)
+        document.addEventListener("keydown", onEsc)
+        return () => {
+            document.removeEventListener("click", onDocClick)
+            document.removeEventListener("keydown", onEsc)
+        }
+    }, [])
+
+    const NAV: NavItem[] = useMemo(
+        () => [
+            { href: "#services", label: t("Common.nav.services") },
+            { href: "#workflow", label: t("Common.nav.workflow") },
+            { href: "#why-us", label: t("Common.nav.why") },
+            { href: "#faq", label: t("Common.nav.faq") },
+        ],
+        [t]
+    )
 
     useEffect(() => {
         const onScroll = () => setScrolled(window.scrollY > 8)
@@ -69,7 +95,7 @@ export function Header() {
                         {/* Light/Dark logo swap */}
                         <Image
                             src="/images/dark-logo.png"
-                            alt="World Associates Trading Company"
+                            alt={t("Common.brand")}
                             width={40}
                             height={40}
                             className="rounded-md dark:hidden"
@@ -77,14 +103,14 @@ export function Header() {
                         />
                         <Image
                             src="/images/light-logo.png"
-                            alt="World Associates Trading Company"
+                            alt={t("Common.brand")}
                             width={40}
                             height={40}
                             className="rounded-md hidden dark:block"
                             priority
                         />
                         <span className="text-sm sm:text-base font-semibold tracking-tight">
-                            World Associates Trading Company
+                            {t("Common.brand")}
                         </span>
                     </Link>
 
@@ -97,10 +123,56 @@ export function Header() {
                         ))}
                     </nav>
 
-                    {/* Desktop CTA */}
-                    <div className="hidden md:block">
+                    {/* Right side: Lang dropdown + CTA */}
+                    <div className="hidden md:flex items-center gap-3">
+                        <div className="relative" ref={langRef}>
+                            <button
+                                onClick={() => setLangOpen((v) => !v)}
+                                aria-haspopup="listbox"
+                                aria-expanded={langOpen}
+                                className="flex items-center gap-2 rounded-md border border-border bg-background px-2 py-1 text-xs hover:bg-muted/40"
+                                title={locale === "en" ? "English" : "العربية"}
+                            >
+                                <Image src={locale === "en" ? "/flags/gb.svg" : "/flags/sa.svg"} alt={locale.toUpperCase()} width={18} height={12} />
+                                <span className="font-medium">{locale.toUpperCase()}</span>
+                                <svg width="12" height="12" viewBox="0 0 20 20" aria-hidden>
+                                    <path d="M5 7l5 6 5-6z" fill="currentColor" />
+                                </svg>
+                            </button>
+                            {langOpen && (
+                                <div
+                                    role="listbox"
+                                    className="absolute right-0 z-20 mt-1 w-32 overflow-hidden rounded-md border border-border bg-popover shadow-sm"
+                                >
+                                    <button
+                                        role="option"
+                                        aria-selected={locale === "en"}
+                                        onClick={() => {
+                                            setLocale("en")
+                                            setLangOpen(false)
+                                        }}
+                                        className={`flex w-full items-center gap-2 px-3 py-2 text-left text-xs hover:bg-muted/40 ${locale === "en" ? "bg-muted/30" : ""}`}
+                                    >
+                                        <Image src="/flags/gb.svg" alt="English" width={18} height={12} />
+                                        <span>English</span>
+                                    </button>
+                                    <button
+                                        role="option"
+                                        aria-selected={locale === "ar"}
+                                        onClick={() => {
+                                            setLocale("ar")
+                                            setLangOpen(false)
+                                        }}
+                                        className={`flex w-full items-center gap-2 px-3 py-2 text-left text-xs hover:bg-muted/40 ${locale === "ar" ? "bg-muted/30" : ""}`}
+                                    >
+                                        <Image src="/flags/sa.svg" alt="العربية" width={18} height={12} />
+                                        <span>العربية</span>
+                                    </button>
+                                </div>
+                            )}
+                        </div>
                         <Button className="bg-emerald-600 hover:bg-emerald-500 text-white" asChild>
-                            <a href="#contact" aria-label="Book a consultation">Book Consultation</a>
+                            <a href="#contact" aria-label={t("Common.cta.button")}>{t("Common.cta.button")}</a>
                         </Button>
                     </div>
 
@@ -114,18 +186,34 @@ export function Header() {
                                 </Button>
                             </SheetTrigger>
                             <SheetContent side="right" className="w-[300px] sm:w-[360px]">
-                                <div className="mt-6 flex flex-col gap-4">
+                                <div className="mt-6 flex flex-col gap-5 px-4">
+                                    <details className="rounded-md border border-border p-3">
+                                        <summary className="flex cursor-pointer items-center gap-2 text-sm">
+                                            <Image src={locale === "en" ? "/flags/gb.svg" : "/flags/sa.svg"} alt={locale.toUpperCase()} width={18} height={12} />
+                                            <span className="font-medium">{locale === "en" ? "English" : "العربية"}</span>
+                                        </summary>
+                                        <div className="mt-3 flex items-center gap-3">
+                                            <button onClick={() => setLocale("en")} className="flex items-center gap-2 rounded border border-border px-3 py-1.5 text-xs">
+                                                <Image src="/flags/gb.svg" alt="English" width={18} height={12} />
+                                                <span>English</span>
+                                            </button>
+                                            <button onClick={() => setLocale("ar")} className="flex items-center gap-2 rounded border border-border px-3 py-1.5 text-xs">
+                                                <Image src="/flags/sa.svg" alt="العربية" width={18} height={12} />
+                                                <span>العربية</span>
+                                            </button>
+                                        </div>
+                                    </details>
                                     {NAV.map((item) => (
                                         <Link
                                             key={item.href}
                                             href={item.href}
-                                            className="text-base text-foreground hover:underline underline-offset-4"
+                                            className="rounded-md px-2 py-2 text-base text-foreground hover:bg-muted/40"
                                         >
                                             {item.label}
                                         </Link>
                                     ))}
-                                    <Button className="mt-2 bg-emerald-600 hover:bg-emerald-500 text-white" asChild>
-                                        <a href="#contact">Book Consultation</a>
+                                    <Button className="mt-4 bg-emerald-600 hover:bg-emerald-500 text-white" asChild>
+                                        <a href="#contact">{t("Common.cta.button")}</a>
                                     </Button>
                                 </div>
                             </SheetContent>

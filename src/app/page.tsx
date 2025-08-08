@@ -1,3 +1,5 @@
+'use client'
+
 import { EstablishedCertificate } from "@/components/Certificate"
 import { ContactForm } from "@/components/ContactForm"
 import { CTA } from "@/components/CTA"

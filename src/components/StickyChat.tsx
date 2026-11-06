@@ -1,50 +1,37 @@
 "use client";
 
-import Link from "next/link";
-import { FaWhatsapp } from "react-icons/fa";
-import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import { FaWhatsapp } from "react-icons/fa";
+import { useWhatsAppHref } from "@/components/Actions";
+import { useI18n } from "@/lib/i18n";
 
+/** Floating WhatsApp shortcut; appears once the hero's own actions have scrolled away. */
 export function StickyChat() {
-  const phone = "46738907053"; // your WhatsApp number
-  const text = encodeURIComponent("Hi! I'm interested in sourcing with WATC.");
-  const href = `https://wa.me/${phone}?text=${text}`;
-
-  const [showPing, setShowPing] = useState(false);
+  const { t } = useI18n();
+  const href = useWhatsAppHref();
+  const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    // Trigger the ping every 10 seconds
-    const interval = setInterval(() => {
-      setShowPing(true);
-      setTimeout(() => setShowPing(false), 2000); // ping lasts ~2s
-    }, 8500); // every 8.5 seconds
-
-    return () => clearInterval(interval);
+    const onScroll = () => setVisible(window.scrollY > window.innerHeight * 0.8);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   return (
-    <div className="fixed right-6 bottom-6 z-50">
-      {/* Ping effect when showPing is true */}
-      {showPing && (
-        <span className="absolute inset-0 rounded-full bg-green-600/40 animate-ping pointer-events-none" />
-      )}
-
-      <Link
-        href={href}
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Chat on WhatsApp"
-        title="Chat on WhatsApp"
-      >
-        <motion.button
-          whileHover={{ scale: 1.06 }}
-          whileTap={{ scale: 0.96 }}
-          className="relative flex h-14 w-14 items-center justify-center rounded-full bg-green-600 text-white shadow-lg ring-1 ring-black/10 transition-colors hover:bg-green-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-green-500"
-        >
-          <FaWhatsapp className="h-6 w-6" />
-          <span className="sr-only">Open WhatsApp chat</span>
-        </motion.button>
-      </Link>
-    </div>
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label={t("Chat.label")}
+      title={t("Chat.label")}
+      tabIndex={visible ? 0 : -1}
+      aria-hidden={!visible}
+      className={`press fixed end-5 bottom-5 z-40 flex size-14 items-center justify-center rounded-full bg-green text-white shadow-[0_10px_28px_rgba(0,0,0,0.3)] transition-[opacity,transform] duration-300 ease-out hover:bg-green-hover ${
+        visible ? "translate-y-0 opacity-100" : "pointer-events-none translate-y-4 opacity-0"
+      }`}
+    >
+      <FaWhatsapp className="size-7" aria-hidden />
+    </a>
   );
 }

@@ -1,0 +1,3318 @@
+{
+ "url": "http://localhost:3000",
+ "at": "2026-10-29T11:03:17.929Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 12,
+   "filled": [
+    1,
+    0.91,
+    0.59,
+    0.45,
+    0.67,
+    0.66,
+    0.76,
+    0.64,
+    0.56,
+    0.63,
+    0.68,
+    0.57
+   ],
+   "motion": {
+    "elements": 197,
+    "css": 1,
+    "transitions": 195,
+    "scripted": 1,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 10448,
+     "screens": 11.6,
+     "words": 780,
+     "img": 16,
+     "video": 0,
+     "canvas": 0,
+     "svg": 20,
+     "sections": 10,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 7,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "image?url=%2Fimages%2Ffactory-visit.jpg&w=640&q=",
+      "image?url=%2Fimages%2Fwarehouse-guangzhou.jpg&w=",
+      "image?url=%2Fimages%2Finspection.jpg&w=640&q=75",
+      "image?url=%2Fimages%2Fship-cosco-guangzhou.jpg&w",
+      "image?url=%2Fimages%2Flicense.png&w=750&q=75",
+      "image?url=%2Fimages%2Ffactory-visit.jpg&w=750&q=",
+      "image?url=%2Fimages%2Fwarehouse-guangzhou.jpg&w="
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Your agent on the ground in China",
+     "words": 7,
+     "chars": 33,
+     "lines": 2,
+     "size": 80.6,
+     "vw": 5.6,
+     "font": "ui-sans-serif",
+     "weight": 600,
+     "tracking": -0.03,
+     "leading": 1,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "center",
+     "position": "center",
+     "widthRatio": 0.47,
+     "top": 144,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Your agent on the ground in China",
+     "words": 7,
+     "lines": 2,
+     "size": 80.6,
+     "font": "ui-sans-serif"
+    },
+    "headings": [
+     {
+      "text": "Your agent on the ground in China",
+      "words": 7,
+      "chars": 33,
+      "lines": 2,
+      "size": 80.6,
+      "vw": 5.6,
+      "font": "ui-sans-serif",
+      "weight": 600,
+      "tracking": -0.03,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.47,
+      "top": 144,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Check us before you call",
+      "words": 5,
+      "chars": 24,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "ui-sans-serif",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.55,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.45,
+      "top": 1491,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "We find the factory , check your goods on site , ship it to your port , and handle the paperwork .",
+      "words": 22,
+      "chars": 98,
+      "lines": 2,
+      "size": 34.6,
+      "vw": 2.4,
+      "font": "ui-sans-serif",
+      "weight": 500,
+      "tracking": -0.015,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.72,
+      "top": 2676,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Seen in person",
+      "words": 3,
+      "chars": 14,
+      "lines": 1,
+      "size": 51.8,
+      "vw": 3.6,
+      "font": "ui-sans-serif",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.5,
+      "top": 3362,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Why importers stay with us",
+      "words": 5,
+      "chars": 26,
+      "lines": 2,
+      "size": 51.8,
+      "vw": 3.6,
+      "font": "ui-sans-serif",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.29,
+      "top": 4314,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "From inquiry to delivery",
+      "words": 4,
+      "chars": 24,
+      "lines": 2,
+      "size": 51.8,
+      "vw": 3.6,
+      "font": "ui-sans-serif",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.28,
+      "top": 5097,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "The record",
+      "words": 2,
+      "chars": 10,
+      "lines": 1,
+      "size": 51.8,
+      "vw": 3.6,
+      "font": "ui-sans-serif",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.47,
+      "top": 6204,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "20+",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 92.2,
+      "vw": 6.4,
+      "font": "ui-sans-serif",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.43,
+      "top": 6236,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "60+",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 72,
+      "vw": 5,
+      "font": "ui-sans-serif",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.19,
+      "top": 6358,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "15+",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 72,
+      "vw": 5,
+      "font": "ui-sans-serif",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.19,
+      "top": 6466,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Start with a free call",
+      "words": 5,
+      "chars": 22,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "ui-sans-serif",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.55,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "right",
+      "widthRatio": 0.47,
+      "top": 7166,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Book a free consultation",
+      "words": 4,
+      "chars": 24,
+      "lines": 2,
+      "size": 44,
+      "vw": 3.1,
+      "font": "ui-sans-serif",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.23,
+      "top": 7724,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Questions, answered",
+      "words": 2,
+      "chars": 19,
+      "lines": 1,
+      "size": 100.8,
+      "vw": 7,
+      "font": "ui-sans-serif",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 8616,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "What types of products can you help me source?",
+      "words": 9,
+      "chars": 46,
+      "lines": 2,
+      "size": 31.7,
+      "vw": 2.2,
+      "font": "ui-sans-serif",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.36,
+      "top": 8813,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Do you work with small businesses or only large orders?",
+      "words": 10,
+      "chars": 55,
+      "lines": 2,
+      "size": 31.7,
+      "vw": 2.2,
+      "font": "ui-sans-serif",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.36,
+      "top": 9004,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "How do I know your factories are legit?",
+      "words": 8,
+      "chars": 39,
+      "lines": 1,
+      "size": 31.7,
+      "vw": 2.2,
+      "font": "ui-sans-serif",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.36,
+      "top": 9196,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Can I track my shipments?",
+      "words": 5,
+      "chars": 25,
+      "lines": 1,
+      "size": 31.7,
+      "vw": 2.2,
+      "font": "ui-sans-serif",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.36,
+      "top": 9366,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "How do payments work?",
+      "words": 4,
+      "chars": 21,
+      "lines": 1,
+      "size": 31.7,
+      "vw": 2.2,
+      "font": "ui-sans-serif",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.36,
+      "top": 9537,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Which languages do you work in?",
+      "words": 6,
+      "chars": 31,
+      "lines": 1,
+      "size": 31.7,
+      "vw": 2.2,
+      "font": "ui-sans-serif",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.36,
+      "top": 9707,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Write to us any time",
+      "words": 5,
+      "chars": 20,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.5,
+      "font": "ui-sans-serif",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.35,
+      "top": 10106,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 20,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 4,
+     "centered": 3,
+     "medianWords": 5,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "ui-sans-serif",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      20,
+      24,
+      32,
+      35,
+      36,
+      44,
+      52,
+      72,
+      81,
+      92,
+      101
+     ],
+     "sizeCount": 17,
+     "notLoaded": [],
+     "body": {
+      "font": "ui-sans-serif",
+      "size": 17,
+      "leading": 1.55,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 8.7
+     },
+     "measureChars": 70,
+     "max": {
+      "size": 100.8,
+      "vw": 7,
+      "font": "ui-sans-serif",
+      "text": "Questions, answered"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.01,
+     "centerShare": 0.18,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f3f3f0",
+     "bodyBgHsl": {
+      "h": 60,
+      "s": 0.11,
+      "l": 0.95
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#1d2433",
+       "top": 0,
+       "hsl": {
+        "h": 221,
+        "s": 0.28,
+        "l": 0.16
+       }
+      },
+      {
+       "color": "#283143",
+       "top": 1315,
+       "hsl": {
+        "h": 220,
+        "s": 0.25,
+        "l": 0.21
+       }
+      },
+      {
+       "color": "#f3f3f0",
+       "top": 1433,
+       "hsl": {
+        "h": 60,
+        "s": 0.11,
+        "l": 0.95
+       }
+      },
+      {
+       "color": "#e6e6e1",
+       "top": 3362,
+       "hsl": {
+        "h": 60,
+        "s": 0.09,
+        "l": 0.89
+       }
+      },
+      {
+       "color": "#18784e",
+       "top": 6204,
+       "hsl": {
+        "h": 154,
+        "s": 0.67,
+        "l": 0.28
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#151b27",
+       "share": 0.7
+      },
+      {
+       "color": "#3d4555",
+       "share": 0.12
+      },
+      {
+       "color": "#f1f2f4",
+       "share": 0.09
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.08
+      },
+      {
+       "color": "#b8c0cd",
+       "share": 0.02
+      }
+     ],
+     "button": {
+      "bg": "#18784e",
+      "hsl": {
+       "h": 154,
+       "s": 0.67,
+       "l": 0.28
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 14,
+     "inHero": 3,
+     "radius": 0,
+     "height": 52,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Free consultation",
+      "Book a free consultation",
+      "WhatsApp us"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 1,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 7,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.1
+     },
+     {
+      "type": "img",
+      "ratio": 0.1
+     },
+     {
+      "type": "img",
+      "ratio": 0.1
+     },
+     {
+      "type": "img",
+      "ratio": 0.1
+     }
+    ],
+    "nav": {
+     "links": 7,
+     "fixed": true,
+     "height": 64,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "geist"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 10448,
+    "margins": {
+     "left": 32,
+     "right": 41
+    },
+    "sections": [
+     {
+      "sel": "section.relative.overflow-hidden",
+      "tag": "section",
+      "top": 0,
+      "height": 1315,
+      "words": 39,
+      "media": 2,
+      "middle": 0,
+      "heading": {
+       "text": "Your agent on the ground in China",
+       "size": 81,
+       "tag": "h1"
+      },
+      "left": 253,
+      "right": 253,
+      "textLeft": 429,
+      "textRight": 429,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.overflow-hidden.bg-navy-2",
+      "tag": "section",
+      "top": 1315,
+      "height": 1201,
+      "words": 43,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Check us before you call",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 394,
+      "right": 386,
+      "textLeft": 408,
+      "textRight": 415,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#services.bg-paper.px-5",
+      "tag": "section",
+      "top": 2516,
+      "height": 846,
+      "words": 102,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "We find the factory",
+       "size": 35,
+       "tag": "span"
+      },
+      "left": 40,
+      "right": 41,
+      "textLeft": 40,
+      "textRight": 41,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.grid.md:grid-cols-2",
+      "tag": "div",
+      "top": 3362,
+      "height": 792,
+      "words": 29,
+      "media": 2,
+      "middle": 64,
+      "heading": {
+       "text": "Seen in person",
+       "size": 52,
+       "tag": "h2"
+      },
+      "left": 32,
+      "right": 32,
+      "textLeft": 32,
+      "textRight": 56,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.bg-paper.px-5",
+      "tag": "div",
+      "top": 4154,
+      "height": 783,
+      "words": 129,
+      "media": 0,
+      "middle": 143,
+      "heading": {
+       "text": "Why importers stay with us",
+       "size": 52,
+       "tag": "h3"
+      },
+      "left": 40,
+      "right": 51,
+      "textLeft": 40,
+      "textRight": 51,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#workflow.bg-paper-2.px-5",
+      "tag": "section",
+      "top": 4937,
+      "height": 1107,
+      "words": 108,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "From inquiry to delivery",
+       "size": 52,
+       "tag": "h2"
+      },
+      "left": 40,
+      "right": 40,
+      "textLeft": 40,
+      "textRight": 40,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.bg-paper.px-5",
+      "tag": "section",
+      "top": 6044,
+      "height": 950,
+      "words": 18,
+      "media": 0,
+      "middle": 428,
+      "heading": {
+       "text": "20+",
+       "size": 92,
+       "tag": "p"
+      },
+      "left": 72,
+      "right": 136,
+      "textLeft": 72,
+      "textRight": 136,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.overflow-hidden.bg-navy",
+      "tag": "section",
+      "top": 6994,
+      "height": 506,
+      "words": 41,
+      "media": 0,
+      "middle": 419,
+      "heading": {
+       "text": "Start with a free call",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 40,
+      "right": 240,
+      "textLeft": 40,
+      "textRight": 240,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#contact.bg-paper.px-3",
+      "tag": "section",
+      "top": 7500,
+      "height": 897,
+      "words": 38,
+      "media": 0,
+      "middle": 214,
+      "heading": {
+       "text": "Book a free consultation",
+       "size": 44,
+       "tag": "h2"
+      },
+      "left": 178,
+      "right": 178,
+      "textLeft": 178,
+      "textRight": 251,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#faq",
+      "tag": "section",
+      "top": 8397,
+      "height": 1424,
+      "words": 160,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Questions, answered",
+       "size": 101,
+       "tag": "h2"
+      },
+      "left": 40,
+      "right": 72,
+      "textLeft": 40,
+      "textRight": 72,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.bg-navy.px-3",
+      "tag": "footer",
+      "top": 9822,
+      "height": 627,
+      "words": 69,
+      "media": 0,
+      "middle": 169,
+      "heading": {
+       "text": "Write to us any time",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 186,
+      "right": 189,
+      "textLeft": 186,
+      "textRight": 439,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [
+     {
+      "top": 1220,
+      "height": 280
+     },
+     {
+      "top": 4776,
+      "height": 316
+     },
+     {
+      "top": 5884,
+      "height": 340
+     },
+     {
+      "top": 6800,
+      "height": 376
+     },
+     {
+      "top": 7428,
+      "height": 292
+     },
+     {
+      "top": 8192,
+      "height": 412
+     }
+    ],
+    "h1s": [
+     {
+      "text": "Your agent on the ground in China",
+      "size": 81,
+      "top": 144,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 732,
+      "n": 9
+     },
+     {
+      "x": 32,
+      "n": 6
+     },
+     {
+      "x": 72,
+      "n": 6
+     },
+     {
+      "x": 178,
+      "n": 1
+     },
+     {
+      "x": 507,
+      "n": 1
+     },
+     {
+      "x": 973,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 24,
+    "bodySize": 17,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.25,
+    "voidBox": {
+     "x": 0,
+     "y": 120,
+     "w": 420,
+     "h": 780
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 11,
+   "filled": [
+    1,
+    0.64,
+    0.34,
+    0.93,
+    0.36,
+    0.93,
+    0.56,
+    0.7,
+    0.66,
+    0.71,
+    0.64
+   ],
+   "motion": {
+    "elements": 197,
+    "css": 1,
+    "transitions": 195,
+    "scripted": 1,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 10926,
+     "screens": 10.7,
+     "words": 773,
+     "img": 16,
+     "video": 0,
+     "canvas": 0,
+     "svg": 20,
+     "sections": 10,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 7,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "image?url=%2Fimages%2Ffactory-visit.jpg&w=640&q=",
+      "image?url=%2Fimages%2Fwarehouse-guangzhou.jpg&w=",
+      "image?url=%2Fimages%2Finspection.jpg&w=640&q=75",
+      "image?url=%2Fimages%2Fship-cosco-guangzhou.jpg&w",
+      "image?url=%2Fimages%2Flicense.png&w=750&q=75",
+      "image?url=%2Fimages%2Ffactory-visit.jpg&w=640&q=",
+      "image?url=%2Fimages%2Fwarehouse-guangzhou.jpg&w="
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Your agent on the ground in China",
+     "words": 7,
+     "chars": 33,
+     "lines": 2,
+     "size": 43,
+     "vw": 5.6,
+     "font": "ui-sans-serif",
+     "weight": 600,
+     "tracking": -0.03,
+     "leading": 1,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "center",
+     "position": "center",
+     "widthRatio": 0.47,
+     "top": 144,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Your agent on the ground in China",
+     "words": 7,
+     "lines": 2,
+     "size": 43,
+     "font": "ui-sans-serif"
+    },
+    "headings": [
+     {
+      "text": "Your agent on the ground in China",
+      "words": 7,
+      "chars": 33,
+      "lines": 2,
+      "size": 43,
+      "vw": 5.6,
+      "font": "ui-sans-serif",
+      "weight": 600,
+      "tracking": -0.03,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.47,
+      "top": 144,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Seen in person",
+      "words": 3,
+      "chars": 14,
+      "lines": 1,
+      "size": 32,
+      "vw": 4.2,
+      "font": "ui-sans-serif",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.5,
+      "top": 3212,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Why importers stay with us",
+      "words": 5,
+      "chars": 26,
+      "lines": 1,
+      "size": 32,
+      "vw": 4.2,
+      "font": "ui-sans-serif",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 4273,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "From inquiry to delivery",
+      "words": 4,
+      "chars": 24,
+      "lines": 2,
+      "size": 32,
+      "vw": 4.2,
+      "font": "ui-sans-serif",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.32,
+      "top": 5242,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "The record",
+      "words": 2,
+      "chars": 10,
+      "lines": 1,
+      "size": 32,
+      "vw": 4.2,
+      "font": "ui-sans-serif",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.45,
+      "top": 6305,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "20+",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 56,
+      "vw": 7.3,
+      "font": "ui-sans-serif",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.37,
+      "top": 6337,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "60+",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 44,
+      "vw": 5.7,
+      "font": "ui-sans-serif",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.15,
+      "top": 6473,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "15+",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 44,
+      "vw": 5.7,
+      "font": "ui-sans-serif",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.15,
+      "top": 6593,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Book a free consultation",
+      "words": 4,
+      "chars": 24,
+      "lines": 2,
+      "size": 32,
+      "vw": 4.2,
+      "font": "ui-sans-serif",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.3,
+      "top": 7863,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Questions, answered",
+      "words": 2,
+      "chars": 19,
+      "lines": 1,
+      "size": 53.8,
+      "vw": 7,
+      "font": "ui-sans-serif",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 8898,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Write to us any time",
+      "words": 5,
+      "chars": 20,
+      "lines": 1,
+      "size": 28,
+      "vw": 3.6,
+      "font": "ui-sans-serif",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.34,
+      "top": 10533,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 11,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 3,
+     "centered": 1,
+     "medianWords": 3,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "ui-sans-serif",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      20,
+      22,
+      24,
+      28,
+      32,
+      43,
+      44,
+      54,
+      56
+     ],
+     "sizeCount": 15,
+     "notLoaded": [],
+     "body": {
+      "font": "ui-sans-serif",
+      "size": 17,
+      "leading": 1.55,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 8.7
+     },
+     "measureChars": 37,
+     "max": {
+      "size": 56,
+      "vw": 7.3,
+      "font": "ui-sans-serif",
+      "text": "20+"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.18,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f3f3f0",
+     "bodyBgHsl": {
+      "h": 60,
+      "s": 0.11,
+      "l": 0.95
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#1d2433",
+       "top": 0,
+       "hsl": {
+        "h": 221,
+        "s": 0.28,
+        "l": 0.16
+       }
+      },
+      {
+       "color": "#283143",
+       "top": 1058,
+       "hsl": {
+        "h": 220,
+        "s": 0.25,
+        "l": 0.21
+       }
+      },
+      {
+       "color": "#f3f3f0",
+       "top": 1176,
+       "hsl": {
+        "h": 60,
+        "s": 0.11,
+        "l": 0.95
+       }
+      },
+      {
+       "color": "#e6e6e1",
+       "top": 1368,
+       "hsl": {
+        "h": 60,
+        "s": 0.09,
+        "l": 0.89
+       }
+      },
+      {
+       "color": "#18784e",
+       "top": 6305,
+       "hsl": {
+        "h": 154,
+        "s": 0.67,
+        "l": 0.28
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#151b27",
+       "share": 0.7
+      },
+      {
+       "color": "#3d4555",
+       "share": 0.12
+      },
+      {
+       "color": "#f1f2f4",
+       "share": 0.09
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.08
+      },
+      {
+       "color": "#b8c0cd",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#18784e",
+      "hsl": {
+       "h": 154,
+       "s": 0.67,
+       "l": 0.28
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 15,
+     "inHero": 4,
+     "radius": 0,
+     "height": 52,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Free consultation",
+      "Menu",
+      "Book a free consultation",
+      "WhatsApp us"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 1,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 7,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.14
+     },
+     {
+      "type": "img",
+      "ratio": 0.14
+     },
+     {
+      "type": "img",
+      "ratio": 0.14
+     },
+     {
+      "type": "img",
+      "ratio": 0.14
+     }
+    ],
+    "nav": {
+     "links": 3,
+     "fixed": true,
+     "height": 64,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "geist"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 10926,
+    "margins": {
+     "left": 32,
+     "right": 33
+    },
+    "sections": [
+     {
+      "sel": "section.relative.overflow-hidden",
+      "tag": "section",
+      "top": 0,
+      "height": 1058,
+      "words": 39,
+      "media": 1,
+      "middle": 4,
+      "heading": {
+       "text": "Your agent on the ground in China",
+       "size": 43,
+       "tag": "h1"
+      },
+      "left": 105,
+      "right": 105,
+      "textLeft": 105,
+      "textRight": 105,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.overflow-hidden.bg-navy-2",
+      "tag": "section",
+      "top": 1058,
+      "height": 1152,
+      "words": 43,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Check us before you call",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 70,
+      "right": 62,
+      "textLeft": 83,
+      "textRight": 89,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#services.bg-paper.px-5",
+      "tag": "section",
+      "top": 2210,
+      "height": 1002,
+      "words": 102,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "We find the factory",
+       "size": 24,
+       "tag": "span"
+      },
+      "left": 32,
+      "right": 34,
+      "textLeft": 32,
+      "textRight": 34,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.grid.md:grid-cols-2",
+      "tag": "div",
+      "top": 3212,
+      "height": 901,
+      "words": 29,
+      "media": 2,
+      "middle": 64,
+      "heading": {
+       "text": "Seen in person",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 32,
+      "right": 32,
+      "textLeft": 32,
+      "textRight": 57,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.bg-paper.px-5",
+      "tag": "div",
+      "top": 4113,
+      "height": 969,
+      "words": 129,
+      "media": 0,
+      "middle": 3,
+      "heading": {
+       "text": "Why importers stay with us",
+       "size": 32,
+       "tag": "h3"
+      },
+      "left": 32,
+      "right": 45,
+      "textLeft": 32,
+      "textRight": 45,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#workflow.bg-paper-2.px-5",
+      "tag": "section",
+      "top": 5082,
+      "height": 1062,
+      "words": 108,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "From inquiry to delivery",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 32,
+      "right": 32,
+      "textLeft": 32,
+      "textRight": 47,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.bg-paper.px-5",
+      "tag": "section",
+      "top": 6145,
+      "height": 1000,
+      "words": 18,
+      "media": 0,
+      "middle": 100,
+      "heading": {
+       "text": "20+",
+       "size": 56,
+       "tag": "p"
+      },
+      "left": 64,
+      "right": 69,
+      "textLeft": 64,
+      "textRight": 69,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.overflow-hidden.bg-navy",
+      "tag": "section",
+      "top": 7145,
+      "height": 494,
+      "words": 41,
+      "media": 0,
+      "middle": 174,
+      "heading": {
+       "text": "Start with a free call",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 32,
+      "right": 85,
+      "textLeft": 32,
+      "textRight": 85,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#contact.bg-paper.px-3",
+      "tag": "section",
+      "top": 7639,
+      "height": 944,
+      "words": 38,
+      "media": 0,
+      "middle": 127,
+      "heading": {
+       "text": "Book a free consultation",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 80,
+      "right": 80,
+      "textLeft": 80,
+      "textRight": 82,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.flex.min-h-[30svh]",
+      "tag": "div",
+      "top": 8582,
+      "height": 410,
+      "words": 2,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Questions, answered",
+       "size": 54,
+       "tag": "h2"
+      },
+      "left": 32,
+      "right": 259,
+      "textLeft": 32,
+      "textRight": 259,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.bg-paper",
+      "tag": "div",
+      "top": 8992,
+      "height": 229,
+      "words": 31,
+      "media": 0,
+      "middle": 107,
+      "heading": {
+       "text": "What types of products can you help me source?",
+       "size": 22,
+       "tag": "h3"
+      },
+      "left": 32,
+      "right": 94,
+      "textLeft": 32,
+      "textRight": 94,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.bg-paper-2",
+      "tag": "div",
+      "top": 9221,
+      "height": 229,
+      "words": 33,
+      "media": 0,
+      "middle": 141,
+      "heading": {
+       "text": "Do you work with small businesses or only large or",
+       "size": 22,
+       "tag": "h3"
+      },
+      "left": 32,
+      "right": 35,
+      "textLeft": 32,
+      "textRight": 35,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.bg-paper",
+      "tag": "div",
+      "top": 9450,
+      "height": 200,
+      "words": 27,
+      "media": 0,
+      "middle": 96,
+      "heading": {
+       "text": "How do I know your factories are legit?",
+       "size": 22,
+       "tag": "h3"
+      },
+      "left": 32,
+      "right": 33,
+      "textLeft": 32,
+      "textRight": 33,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.bg-paper-2",
+      "tag": "div",
+      "top": 9649,
+      "height": 200,
+      "words": 21,
+      "media": 0,
+      "middle": 118,
+      "heading": {
+       "text": "Can I track my shipments?",
+       "size": 22,
+       "tag": "h3"
+      },
+      "left": 32,
+      "right": 35,
+      "textLeft": 32,
+      "textRight": 35,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.bg-paper",
+      "tag": "div",
+      "top": 9849,
+      "height": 200,
+      "words": 23,
+      "media": 0,
+      "middle": 134,
+      "heading": {
+       "text": "How do payments work?",
+       "size": 22,
+       "tag": "h3"
+      },
+      "left": 32,
+      "right": 33,
+      "textLeft": 32,
+      "textRight": 33,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.bg-paper-2",
+      "tag": "div",
+      "top": 10049,
+      "height": 200,
+      "words": 23,
+      "media": 0,
+      "middle": 136,
+      "heading": {
+       "text": "Which languages do you work in?",
+       "size": 22,
+       "tag": "h3"
+      },
+      "left": 32,
+      "right": 37,
+      "textLeft": 32,
+      "textRight": 37,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.bg-navy.px-3",
+      "tag": "footer",
+      "top": 10249,
+      "height": 677,
+      "words": 69,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Write to us any time",
+       "size": 28,
+       "tag": "h2"
+      },
+      "left": 88,
+      "right": 91,
+      "textLeft": 88,
+      "textRight": 110,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [
+     {
+      "top": 896,
+      "height": 344
+     },
+     {
+      "top": 4920,
+      "height": 316
+     },
+     {
+      "top": 5984,
+      "height": 344
+     },
+     {
+      "top": 6952,
+      "height": 376
+     },
+     {
+      "top": 8376,
+      "height": 516
+     }
+    ],
+    "h1s": [
+     {
+      "text": "Your agent on the ground in China",
+      "size": 43,
+      "top": 144,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 32,
+      "n": 12
+     },
+     {
+      "x": 396,
+      "n": 9
+     },
+     {
+      "x": 80,
+      "n": 1
+     },
+     {
+      "x": 280,
+      "n": 1
+     },
+     {
+      "x": 528,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 24,
+    "bodySize": 17,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 12,
+   "filled": [
+    0.99,
+    0.8,
+    0.49,
+    0.57,
+    0.99,
+    0.58,
+    0.52,
+    0.96,
+    0.77,
+    0.7,
+    0.64,
+    0.66
+   ],
+   "motion": {
+    "elements": 185,
+    "css": 1,
+    "transitions": 183,
+    "scripted": 1,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 12439,
+     "screens": 14.7,
+     "words": 769,
+     "img": 16,
+     "video": 0,
+     "canvas": 0,
+     "svg": 20,
+     "sections": 10,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 7,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "image?url=%2Fimages%2Ffactory-visit.jpg&w=640&q=",
+      "image?url=%2Fimages%2Fwarehouse-guangzhou.jpg&w=",
+      "image?url=%2Fimages%2Finspection.jpg&w=640&q=75",
+      "image?url=%2Fimages%2Fship-cosco-guangzhou.jpg&w",
+      "image?url=%2Fimages%2Flicense.png&w=640&q=75",
+      "image?url=%2Fimages%2Ffactory-visit.jpg&w=640&q=",
+      "image?url=%2Fimages%2Fwarehouse-guangzhou.jpg&w="
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Your agent on the ground in China",
+     "words": 7,
+     "chars": 33,
+     "lines": 2,
+     "size": 40,
+     "vw": 10.3,
+     "font": "ui-sans-serif",
+     "weight": 600,
+     "tracking": -0.03,
+     "leading": 1,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "center",
+     "position": "center",
+     "widthRatio": 0.85,
+     "top": 120,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Your agent on the ground in China",
+     "words": 7,
+     "lines": 2,
+     "size": 40,
+     "font": "ui-sans-serif"
+    },
+    "headings": [
+     {
+      "text": "Your agent on the ground in China",
+      "words": 7,
+      "chars": 33,
+      "lines": 2,
+      "size": 40,
+      "vw": 10.3,
+      "font": "ui-sans-serif",
+      "weight": 600,
+      "tracking": -0.03,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.85,
+      "top": 120,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Check us before you call",
+      "words": 5,
+      "chars": 24,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "ui-sans-serif",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.55,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.78,
+      "top": 1204,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "We find the factory , check your goods on site , ship it to your port , and handle the paperwork .",
+      "words": 22,
+      "chars": 98,
+      "lines": 3,
+      "size": 22,
+      "vw": 5.6,
+      "font": "ui-sans-serif",
+      "weight": 500,
+      "tracking": -0.015,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 2150,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Seen in person",
+      "words": 3,
+      "chars": 14,
+      "lines": 1,
+      "size": 32,
+      "vw": 8.2,
+      "font": "ui-sans-serif",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 1,
+      "top": 3176,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Why importers stay with us",
+      "words": 5,
+      "chars": 26,
+      "lines": 2,
+      "size": 32,
+      "vw": 8.2,
+      "font": "ui-sans-serif",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.84,
+      "top": 4604,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "From inquiry to delivery",
+      "words": 4,
+      "chars": 24,
+      "lines": 2,
+      "size": 32,
+      "vw": 8.2,
+      "font": "ui-sans-serif",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.63,
+      "top": 5806,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "The record",
+      "words": 2,
+      "chars": 10,
+      "lines": 1,
+      "size": 32,
+      "vw": 8.2,
+      "font": "ui-sans-serif",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 7273,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "20+",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 56,
+      "vw": 14.4,
+      "font": "ui-sans-serif",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.77,
+      "top": 7362,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "60+",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 44,
+      "vw": 11.3,
+      "font": "ui-sans-serif",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.34,
+      "top": 7640,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "15+",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 44,
+      "vw": 11.3,
+      "font": "ui-sans-serif",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.34,
+      "top": 7672,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Start with a free call",
+      "words": 5,
+      "chars": 22,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "ui-sans-serif",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.55,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.76,
+      "top": 8192,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Book a free consultation",
+      "words": 4,
+      "chars": 24,
+      "lines": 2,
+      "size": 32,
+      "vw": 8.2,
+      "font": "ui-sans-serif",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.63,
+      "top": 8652,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Questions, answered",
+      "words": 2,
+      "chars": 19,
+      "lines": 2,
+      "size": 44,
+      "vw": 11.3,
+      "font": "ui-sans-serif",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 9987,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "What types of products can you help me source?",
+      "words": 9,
+      "chars": 46,
+      "lines": 2,
+      "size": 22,
+      "vw": 5.6,
+      "font": "ui-sans-serif",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 10171,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Do you work with small businesses or only large orders?",
+      "words": 10,
+      "chars": 55,
+      "lines": 2,
+      "size": 22,
+      "vw": 5.6,
+      "font": "ui-sans-serif",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 10439,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "How do I know your factories are legit?",
+      "words": 8,
+      "chars": 39,
+      "lines": 2,
+      "size": 22,
+      "vw": 5.6,
+      "font": "ui-sans-serif",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 10677,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Can I track my shipments?",
+      "words": 5,
+      "chars": 25,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.6,
+      "font": "ui-sans-serif",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 10916,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "How do payments work?",
+      "words": 4,
+      "chars": 21,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.6,
+      "font": "ui-sans-serif",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 11127,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Which languages do you work in?",
+      "words": 6,
+      "chars": 31,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.6,
+      "font": "ui-sans-serif",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 11339,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Write to us any time",
+      "words": 5,
+      "chars": 20,
+      "lines": 1,
+      "size": 28,
+      "vw": 7.2,
+      "font": "ui-sans-serif",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.82,
+      "top": 11722,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 20,
+     "maxLines": 3,
+     "over2Lines": 0,
+     "statements": 4,
+     "centered": 3,
+     "medianWords": 5,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "ui-sans-serif",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      20,
+      22,
+      24,
+      28,
+      32,
+      40,
+      44,
+      56
+     ],
+     "sizeCount": 14,
+     "notLoaded": [],
+     "body": {
+      "font": "ui-sans-serif",
+      "size": 17,
+      "leading": 1.55,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 8.7
+     },
+     "measureChars": 39,
+     "max": {
+      "size": 56,
+      "vw": 14.4,
+      "font": "ui-sans-serif",
+      "text": "20+"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.18,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f3f3f0",
+     "bodyBgHsl": {
+      "h": 60,
+      "s": 0.11,
+      "l": 0.95
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#1d2433",
+       "top": 0,
+       "hsl": {
+        "h": 221,
+        "s": 0.28,
+        "l": 0.16
+       }
+      },
+      {
+       "color": "#283143",
+       "top": 1062,
+       "hsl": {
+        "h": 220,
+        "s": 0.25,
+        "l": 0.21
+       }
+      },
+      {
+       "color": "#f3f3f0",
+       "top": 1155,
+       "hsl": {
+        "h": 60,
+        "s": 0.11,
+        "l": 0.95
+       }
+      },
+      {
+       "color": "#e6e6e1",
+       "top": 3176,
+       "hsl": {
+        "h": 60,
+        "s": 0.09,
+        "l": 0.89
+       }
+      },
+      {
+       "color": "#18784e",
+       "top": 8624,
+       "hsl": {
+        "h": 154,
+        "s": 0.67,
+        "l": 0.28
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#151b27",
+       "share": 0.7
+      },
+      {
+       "color": "#3d4555",
+       "share": 0.12
+      },
+      {
+       "color": "#f1f2f4",
+       "share": 0.09
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.07
+      },
+      {
+       "color": "#b8c0cd",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#151b27",
+      "hsl": {
+       "h": 220,
+       "s": 0.3,
+       "l": 0.12
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 14,
+     "inHero": 3,
+     "radius": 0,
+     "height": 52,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Menu",
+      "Book a free consultation",
+      "WhatsApp us"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 1,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 7,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.26
+     },
+     {
+      "type": "img",
+      "ratio": 0.26
+     },
+     {
+      "type": "img",
+      "ratio": 0.26
+     },
+     {
+      "type": "img",
+      "ratio": 0.26
+     }
+    ],
+    "nav": {
+     "links": 2,
+     "fixed": true,
+     "height": 64,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "geist"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 12439,
+    "margins": {
+     "left": 20,
+     "right": 22
+    },
+    "sections": [
+     {
+      "sel": "section.relative.overflow-hidden",
+      "tag": "section",
+      "top": 0,
+      "height": 1062,
+      "words": 39,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Your agent on the ground in China",
+       "size": 40,
+       "tag": "h1"
+      },
+      "left": 29,
+      "right": 29,
+      "textLeft": 29,
+      "textRight": 29,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.overflow-hidden.bg-navy-2",
+      "tag": "section",
+      "top": 1062,
+      "height": 975,
+      "words": 43,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Check us before you call",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 41,
+      "right": 39,
+      "textLeft": 45,
+      "textRight": 48,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#services.bg-paper.px-5",
+      "tag": "section",
+      "top": 2038,
+      "height": 1138,
+      "words": 102,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Factory Sourcing",
+       "size": 20,
+       "tag": "h3"
+      },
+      "left": 20,
+      "right": 22,
+      "textLeft": 20,
+      "textRight": 22,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.grid.md:grid-cols-2",
+      "tag": "div",
+      "top": 3176,
+      "height": 1317,
+      "words": 29,
+      "media": 2,
+      "middle": 0,
+      "heading": {
+       "text": "Seen in person",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 22,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.bg-paper.px-5",
+      "tag": "div",
+      "top": 4492,
+      "height": 1202,
+      "words": 129,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Why importers stay with us",
+       "size": 32,
+       "tag": "h3"
+      },
+      "left": 20,
+      "right": 22,
+      "textLeft": 20,
+      "textRight": 22,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#workflow.bg-paper-2.px-5",
+      "tag": "section",
+      "top": 5694,
+      "height": 1467,
+      "words": 108,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "From inquiry to delivery",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 20,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.bg-paper.px-5",
+      "tag": "section",
+      "top": 7161,
+      "height": 759,
+      "words": 18,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "20+",
+       "size": 56,
+       "tag": "p"
+      },
+      "left": 20,
+      "right": 66,
+      "textLeft": 20,
+      "textRight": 66,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.overflow-hidden.bg-navy",
+      "tag": "section",
+      "top": 7920,
+      "height": 560,
+      "words": 41,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Start with a free call",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 50,
+      "textLeft": 20,
+      "textRight": 50,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#contact.bg-paper.px-3",
+      "tag": "section",
+      "top": 8480,
+      "height": 1373,
+      "words": 38,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Book a free consultation",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 40,
+      "right": 40,
+      "textLeft": 40,
+      "textRight": 57,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.flex.min-h-[30svh]",
+      "tag": "div",
+      "top": 9854,
+      "height": 253,
+      "words": 2,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Questions, answered",
+       "size": 44,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 170,
+      "textLeft": 20,
+      "textRight": 170,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.bg-paper",
+      "tag": "div",
+      "top": 10107,
+      "height": 268,
+      "words": 0,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": null,
+      "right": null,
+      "textLeft": null,
+      "textRight": null,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.bg-paper-2",
+      "tag": "div",
+      "top": 10375,
+      "height": 239,
+      "words": 0,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": null,
+      "right": null,
+      "textLeft": null,
+      "textRight": null,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.bg-paper",
+      "tag": "div",
+      "top": 10613,
+      "height": 239,
+      "words": 0,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": null,
+      "right": null,
+      "textLeft": null,
+      "textRight": null,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.bg-paper-2",
+      "tag": "div",
+      "top": 10852,
+      "height": 211,
+      "words": 0,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": null,
+      "right": null,
+      "textLeft": null,
+      "textRight": null,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.bg-paper",
+      "tag": "div",
+      "top": 11063,
+      "height": 211,
+      "words": 0,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": null,
+      "right": null,
+      "textLeft": null,
+      "textRight": null,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.bg-paper-2",
+      "tag": "div",
+      "top": 11275,
+      "height": 211,
+      "words": 0,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": null,
+      "right": null,
+      "textLeft": null,
+      "textRight": null,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.bg-navy.px-3",
+      "tag": "footer",
+      "top": 11486,
+      "height": 953,
+      "words": 69,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Write to us any time",
+       "size": 28,
+       "tag": "h2"
+      },
+      "left": 36,
+      "right": 40,
+      "textLeft": 36,
+      "textRight": 42,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [
+     {
+      "top": 948,
+      "height": 260
+     },
+     {
+      "top": 9712,
+      "height": 268
+     },
+     {
+      "top": 10080,
+      "height": 1576
+     }
+    ],
+    "h1s": [
+     {
+      "text": "Your agent on the ground in China",
+      "size": 40,
+      "top": 120,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 20,
+      "n": 8
+     },
+     {
+      "x": 177,
+      "n": 3
+     },
+     {
+      "x": 40,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 12,
+    "bodySize": 17,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "size-count",
+   "width": 1440,
+   "message": "17 different font sizes (13, 14, 15, 16, 17, 18, 20, 24, 32, 35, 36, 44, 52, 72, 81, 92, 101).",
+   "fix": "A page needs about five: display, heading, lead, body, small.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "WARN",
+   "id": "blank-gap",
+   "width": 1440,
+   "message": "A 412px stretch at 8192px holds nothing.",
+   "fix": "Check that it is a deliberate rest (once per page at most); otherwise close it to the normal section gap.",
+   "alsoAt": [
+    768
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "blank-gap",
+   "width": 390,
+   "message": "1 stretch(es) of the page hold nothing at all: 1576px at 10080px (the screen is 844px tall).",
+   "fix": "Close the gap: a section gap is 120–240px on desktop and 72–112px on a phone. Look for a min-height: 100vh on a short section, an empty grid row, a hidden element still holding its space, or a reveal that never fired. A deliberate rest is a placed picture or colour field, not nothing."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "/Users/omar/Desktop/Silknorth AB/Clients/WATC Global/watc-landing-page/.taste-skill/after/desktop-fold.jpg",
+   "pages": [
+    "/Users/omar/Desktop/Silknorth AB/Clients/WATC Global/watc-landing-page/.taste-skill/after/desktop-page-01.jpg",
+    "/Users/omar/Desktop/Silknorth AB/Clients/WATC Global/watc-landing-page/.taste-skill/after/desktop-page-02.jpg",
+    "/Users/omar/Desktop/Silknorth AB/Clients/WATC Global/watc-landing-page/.taste-skill/after/desktop-page-03.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "/Users/omar/Desktop/Silknorth AB/Clients/WATC Global/watc-landing-page/.taste-skill/after/tablet-fold.jpg",
+   "pages": [
+    "/Users/omar/Desktop/Silknorth AB/Clients/WATC Global/watc-landing-page/.taste-skill/after/tablet-page-01.jpg",
+    "/Users/omar/Desktop/Silknorth AB/Clients/WATC Global/watc-landing-page/.taste-skill/after/tablet-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "/Users/omar/Desktop/Silknorth AB/Clients/WATC Global/watc-landing-page/.taste-skill/after/mobile-fold.jpg",
+   "pages": [
+    "/Users/omar/Desktop/Silknorth AB/Clients/WATC Global/watc-landing-page/.taste-skill/after/mobile-page-01.jpg",
+    "/Users/omar/Desktop/Silknorth AB/Clients/WATC Global/watc-landing-page/.taste-skill/after/mobile-page-02.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

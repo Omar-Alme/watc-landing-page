@@ -30,15 +30,22 @@ function getInitialLocale(): Locale {
 }
 
 export function I18nProvider({ children }: { children: React.ReactNode }) {
-  const [locale, setLocale] = useState<Locale>(getInitialLocale)
+  // Start in English on both server and client, then switch after mount (avoids a hydration mismatch)
+  const [locale, setLocale] = useState<Locale>("en")
+  const [loaded, setLoaded] = useState(false)
+
+  useEffect(() => {
+    setLocale(getInitialLocale())
+    setLoaded(true)
+  }, [])
 
   // Update <html> attributes when locale changes
   useEffect(() => {
-    if (typeof document === "undefined") return
+    if (typeof document === "undefined" || !loaded) return
     document.documentElement.lang = locale
     document.documentElement.dir = locale === "ar" ? "rtl" : "ltr"
     window.localStorage.setItem("lang", locale)
-  }, [locale])
+  }, [locale, loaded])
 
   const dir = locale === "ar" ? "rtl" : "ltr"
 

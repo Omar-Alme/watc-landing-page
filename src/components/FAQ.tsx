@@ -1,72 +1,51 @@
 "use client"
 
-import { motion } from "framer-motion"
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { useI18n } from "@/lib/i18n"
+import { useInView } from "@/lib/use-in-view"
 
+const COUNT = 6
+
+function Band({ index }: { index: number }) {
+  const { t } = useI18n()
+  const [ref, inView] = useInView()
+  return (
+    <div
+      className={`group relative transition-colors duration-500 hover:bg-green-pale ${index % 2 === 0 ? "bg-paper" : "bg-paper-2"}`}
+    >
+      <span
+        aria-hidden
+        className="absolute inset-y-0 start-0 w-1 origin-top scale-y-0 bg-green transition-transform duration-500 ease-[var(--ease-out-strong)] group-hover:scale-y-100"
+      />
+      <div
+        ref={ref}
+        data-reveal
+        data-in={inView}
+        className="mx-auto grid max-w-[1360px] gap-4 px-5 py-8 sm:px-8 md:grid-cols-12 md:gap-8 md:py-14"
+      >
+        <h3 className="text-[clamp(1.375rem,2.2vw,2rem)] leading-tight font-semibold tracking-tight text-ink md:col-span-5">
+          {t(`FAQ.items.${index}.q`)}
+        </h3>
+        <p className="max-w-[60ch] text-lg leading-relaxed text-ink md:col-span-6 md:col-start-7">
+          {t(`FAQ.items.${index}.a`)}
+        </p>
+      </div>
+    </div>
+  )
+}
+
+/** A band per question; every answer is visible, no toggles. */
 export function FAQ() {
   const { t } = useI18n()
-  const items = [0,1,2,3].map((i) => ({
-    question: t(`FAQ.items.${i}.q`),
-    answer: t(`FAQ.items.${i}.a`),
-  }))
   return (
-    <section id="faq" className="w-full bg-muted/50 py-28 px-6 dark:bg-neutral-950">
-      <div className="mx-auto max-w-4xl">
-        <motion.span
-          initial={{ opacity: 0, y: 8 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.35 }}
-          className="mb-2 block text-center text-lg font-medium text-emerald-700 dark:text-emerald-400"
-        >
-          {t("FAQ.eyebrow")}
-        </motion.span>
-
-        <motion.h2
-          initial={{ opacity: 0, y: 12 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.45 }}
-          className="mb-3 text-center text-3xl font-bold text-foreground md:text-4xl"
-        >
+    <section id="faq" aria-labelledby="faq-title">
+      <div className="flex min-h-[30svh] items-end bg-paper-2 px-5 pt-20 pb-8 text-ink sm:px-8 md:min-h-[40svh] md:pb-10">
+        <h2 id="faq-title" className="mx-auto w-full max-w-[1360px] text-[clamp(2.75rem,7vw,6.5rem)] leading-none font-semibold tracking-tight">
           {t("FAQ.title")}
-        </motion.h2>
-
-        <motion.p
-          initial={{ opacity: 0, y: 6 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.35, delay: 0.05 }}
-          className="mx-auto mb-10 max-w-2xl text-center text-sm text-muted-foreground"
-        >
-          {t("FAQ.ctaPrefix")} {" "}
-          <a href="#contact" className="font-medium text-foreground underline underline-offset-4 hover:no-underline">
-            {t("FAQ.ctaLink")}
-          </a>
-          .
-        </motion.p>
-
-        <Accordion type="single" collapsible className="space-y-4">
-          {items.map((item, i) => (
-            <AccordionItem
-              key={i}
-              value={`item-${i}`}
-              className="
-                rounded-xl border border-border/60 bg-white shadow-sm transition
-                hover:shadow-md focus-within:ring-2 focus-within:ring-emerald-500/20 dark:bg-neutral-900
-              "
-            >
-              <AccordionTrigger className="px-4 py-3 text-left text-base font-medium hover:no-underline">
-                {item.question}
-              </AccordionTrigger>
-              <AccordionContent className="px-4 pb-4 text-sm leading-relaxed text-muted-foreground">
-                {item.answer}
-              </AccordionContent>
-            </AccordionItem>
-          ))}
-        </Accordion>
+        </h2>
       </div>
+      {Array.from({ length: COUNT }, (_, i) => (
+        <Band key={i} index={i} />
+      ))}
     </section>
   )
 }

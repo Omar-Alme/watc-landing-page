@@ -32,16 +32,16 @@ export async function POST(req: Request) {
         // For prod, verify your domain in Resend and use something like no-reply@watcglobal.com
         await resend.emails.send({
             from: "WATC <no-reply@watcglobal.com>",
-            to: "watcglobal@gmail.com",
+            to: "yusuf@watcglobal.com",
             replyTo: email,
             subject: `New inquiry from ${name}`,
             html: `
         <div style="font-family: -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height:1.6;">
           <h2 style="margin:0 0 12px;">New Inquiry</h2>
           <p><strong>Name:</strong> ${name}</p>
-          <p><strong>Company:</strong> ${company || "—"}</p>
+          <p><strong>Company:</strong> ${company || "-"}</p>
           <p><strong>Email:</strong> ${email}</p>
-          <p><strong>WhatsApp / WeChat:</strong> ${whatsapp || "—"}</p>
+          <p><strong>WhatsApp / WeChat:</strong> ${whatsapp || "-"}</p>
           <p><strong>Message:</strong></p>
           <div>${message.replace(/\n/g, "<br/>")}</div>
         </div>

@@ -1,36 +1,94 @@
 {
   "Common": {
     "brand": "World Associates Trading Company",
+    "short": "WATC Global",
     "nav.services": "Services",
-    "nav.workflow": "Workflow",
-    "nav.why": "Why Us",
+    "nav.workflow": "How it works",
+    "nav.why": "Why us",
     "nav.faq": "FAQ",
-    "cta.title": "Ready to start sourcing with confidence?",
-    "cta.subtitle": "Book a free consultation — no obligations, just clear guidance from our team in China.",
-    "cta.button": "Book Free Consultation",
-    "cta.seeFaqs": "See FAQs",
-    "cta.reassurance": "Response within 24 hours • No hard sell"
+    "nav.contact": "Contact",
+    "cta.button": "Book a free consultation",
+    "cta.short": "Free consultation",
+    "cta.whatsapp": "WhatsApp us",
+    "whatsappPrefill": "Hi! I'm interested in sourcing with WATC.",
+    "menu": "Menu",
+    "skip": "Skip to content",
+    "language": "Language"
   },
   "Hero": {
-    "badge": "Trusted by 60+ global clients",
-    "headline": "Your gateway to Chinese factories — with global delivery made easy.",
-    "subhead": "We handle factory sourcing, quality inspections, and worldwide shipping — so you can scale with confidence.",
-    "primary": "Book a Free Consultation",
-    "secondary": "See How It Works",
-    "proof": "Verified suppliers • Escrow options • End-to-end logistics",
-    "stats": {
-      "yearsKey": "20+",
-      "years": "Years of sourcing & export experience",
-      "clientsKey": "60+",
-      "clients": "Clients worldwide",
-      "presenceKey": "Guangzhou & HK",
-      "presence": "Local operations on the ground"
+    "headline": "Your agent on the ground in China",
+    "subhead": "We find verified factories, inspect your goods on site and ship them to your door.",
+    "city": "Guangzhou",
+    "awake": "our team is at work",
+    "asleep": "night here, reply by morning",
+    "since": "Registered in Guangzhou since 2004",
+    "photos": [
+      "Our team with a factory owner at his gate in Guangzhou",
+      "Partner freight warehouse in Guangzhou, packed for export",
+      "Inspectors checking a production line",
+      "The container ship Cosco Guangzhou alongside the cranes"
+    ],
+    "freight": {
+      "letters": "OUR SERVICES",
+      "kmh": "KM/H",
+      "lines": [
+        "Everything your",
+        "sourcing needs.",
+        "Under one roof."
+      ],
+      "paras": [
+        "From the factory floor to your port, we handle every step of buying from China.",
+        "One team in Guangzhou means one point of contact and a weekly update from first quote to bill of lading."
+      ],
+      "servicesLabel": "Our services"
+    }
+  },
+  "Proof": {
+    "title": "Check us before you call",
+    "lead": "Every claim on this page can be checked. Start with our business licence.",
+    "licenceAlt": "WATC business licence issued in Guangzhou",
+    "zoom": "View full licence",
+    "fullAlt": "WATC business licence, full size",
+    "entity": "广州市协诺信息咨询有限公司",
+    "registered": "Registered 9 December 2004",
+    "district": "Yuexiu District, Guangzhou",
+    "stamp": "Registered in Guangzhou · Since 2004 · "
+  },
+  "Clients": {
+    "title": "Our clients, on four continents",
+    "lead": "We ship from our offices in Guangzhou and Hong Kong to buyers in Brazil, South Africa, Saudi Arabia, the UAE, Malaysia, Sweden and across China.",
+    "hint": "Drag to turn the globe, or pick a country to fly there.",
+    "offices": {
+      "cn": "Office in Guangzhou",
+      "hk": "Office in Hong Kong"
+    },
+    "globeAlt": "Globe showing WATC's offices and the countries where it has clients",
+    "countries": {
+      "br": "Brazil",
+      "se": "Sweden",
+      "za": "South Africa",
+      "sa": "Saudi Arabia",
+      "ae": "UAE",
+      "my": "Malaysia",
+      "cn": "China",
+      "hk": "Hong Kong"
     }
   },
   "Services": {
-    "eyebrow": "Our Services",
-    "title": "From Sourcing to Shipping — We Handle It All",
-    "subtitle": "Whether you're launching a new product or scaling up operations, we cover the entire supply chain—factory sourcing, quality checks, global logistics, and export consulting.",
+    "title": "Our services",
+    "clauses": [
+      "We find the factory",
+      "check your goods on site",
+      "ship it to your port",
+      "and handle the paperwork"
+    ],
+    "alts": [
+      "Factory visit",
+      "Quality inspection",
+      "Container ship",
+      "Partner warehouse"
+    ],
+    "support": "Four services, one team and one point of contact from the first quote to the bill of lading.",
     "items": {
       "sourcing": {
         "title": "Factory Sourcing",
@@ -46,22 +104,29 @@
       },
       "consulting": {
         "title": "Export Consulting",
-        "desc": "From contracts to compliance — we help you navigate China trade with zero friction."
+        "desc": "From contracts to compliance, we help you navigate China trade with zero friction."
       }
     }
   },
   "Why": {
-    "eyebrow": "Our advantage",
-    "title": "Why Choose Us",
-    "subtitle": "We understand the risks of overseas sourcing. With vetted partners and boots on the ground, we give you confidence from inquiry to delivery.",
+    "title": "Seen in person",
+    "panelA": {
+      "name": "Factory visits",
+      "fact": "We meet the factory before you place an order."
+    },
+    "panelB": {
+      "name": "Partner warehouse, Guangzhou",
+      "fact": "Goods are consolidated and loaded for export here."
+    },
+    "listTitle": "Why importers stay with us",
     "values": {
       "verified": {
         "title": "Verified Factories Only",
-        "desc": "We source from factories we’ve worked with — no middlemen, no Alibaba guessing."
+        "desc": "We source from factories we’ve worked with. No middlemen, no Alibaba guessing."
       },
       "noMiscomm": {
         "title": "No Miscommunication",
-        "desc": "We speak English, Chinese, and Arabic — and act as your local representative."
+        "desc": "We speak English, Chinese and Arabic, and act as your local representative."
       },
       "presence": {
         "title": "Real Presence in China",
@@ -69,37 +134,40 @@
       },
       "pricing": {
         "title": "Fixed Transparent Pricing",
-        "desc": "No shady markups or hidden fees — just clear service rates that scale with you."
+        "desc": "No shady markups or hidden fees. Just clear service rates that scale with you."
       },
       "end2end": {
         "title": "End-to-End Sourcing",
-        "desc": "From textile to tools — we help clients source clothing, furniture, and industrial goods."
+        "desc": "From textiles to tools, we help clients source clothing, furniture and industrial goods."
       },
       "guide": {
         "title": "You’re Not Alone",
-        "desc": "We’ve helped 60+ businesses launch and scale — and we guide you every step of the way."
+        "desc": "We’ve helped 60+ businesses launch and scale, and we guide you every step of the way."
       },
       "shipping": {
         "title": "Reliable Shipping",
-        "desc": "We coordinate container shipping, customs, and timelines — with weekly updates."
+        "desc": "We coordinate container shipping, customs and timelines, with weekly updates."
       }
-    },
-    "proofRow": {
-      "suppliers": "Verified suppliers",
-      "escrow": "Escrow options",
-      "updates": "Weekly order updates"
     }
   },
-  "Global": {
-    "eyebrow": "Global Reach",
-    "title": "Clients in 15+ Countries",
-    "subtitle": "From Sweden to Saudi Arabia, the UK to the UAE — we’ve supported sourcing for brands across Europe, the Middle East, and North America.",
-    "mapAlt": "World map with client locations"
-  },
   "Workflow": {
-    "eyebrow": "How we work",
-    "title": "From inquiry to delivery — our workflow",
-    "step": "Step",
+    "title": "From inquiry to delivery",
+    "intro": "Many factories, one agent, one container. Seven steps, with an update from us every week.",
+    "diagramAlt": "Scattered suppliers gathered into one controlled flow and delivered as ordered shipments",
+    "phases": [
+      {
+        "name": "Find",
+        "desc": "Quotes, samples and payment to the factory through us."
+      },
+      {
+        "name": "Control",
+        "desc": "We follow production and prepare packing and customs."
+      },
+      {
+        "name": "Deliver",
+        "desc": "Loading, export documents and the bill of lading, to you."
+      }
+    ],
     "steps": [
       {
         "title": "Initial inquiry",
@@ -121,21 +189,33 @@
         "title": "Shipping",
         "desc": "Load container and issue export documentation"
       },
-      { "title": "Bill of lading", "desc": "Confirm B/L and share details" },
+      {
+        "title": "Bill of lading",
+        "desc": "Confirm B/L and share details"
+      },
       {
         "title": "Final delivery",
         "desc": "Send all documents and handoff to you"
       }
     ]
   },
-  "Trust": {
-    "eyebrow": "Trusted by global clients",
-    "title": "Brands, wholesalers & startups across 15+ countries trust us to deliver"
+  "Stats": {
+    "title": "The record",
+    "years": "20+",
+    "yearsLabel": "years sourcing and exporting from Guangzhou",
+    "clients": "60+",
+    "clientsLabel": "businesses supplied",
+    "countries": "15+",
+    "countriesLabel": "countries our clients ship to"
+  },
+  "CTA": {
+    "lead": "Tell us the product, the quantity and where it needs to go. We reply within 24 hours with a clear plan.",
+    "title": "Start with a free call",
+    "body": "No obligation. Straight answers from our team in Guangzhou."
   },
   "Contact": {
-    "eyebrow": "Contact us",
     "title": "Book a free consultation",
-    "subtitle": "Tell us what you need and our team in China will get back to you within 24 hours.",
+    "subtitle": "Our team in China replies within 24 hours.",
     "name": "Your name",
     "company": "Company",
     "email": "Email address",
@@ -157,17 +237,18 @@
       "name": "Name is required",
       "email": "Invalid email address",
       "message": "Please describe your inquiry"
-    }
+    },
+    "orChat": "Prefer to chat?",
+    "wechat": "WeChat",
+    "whatsappLabel": "WhatsApp",
+    "emailLabel": "Email"
   },
   "FAQ": {
-    "eyebrow": "FAQ",
-    "title": "Frequently asked questions",
-    "ctaPrefix": "Can’t find what you’re looking for?",
-    "ctaLink": "Contact our team",
+    "title": "Questions, answered",
     "items": [
       {
         "q": "What types of products can you help me source?",
-        "a": "We specialize in textiles, clothing, furniture, building materials, and industrial goods — thanks to long-standing factory relationships."
+        "a": "We specialize in textiles, clothing, furniture, building materials, and industrial goods, thanks to long-standing factory relationships."
       },
       {
         "q": "Do you work with small businesses or only large orders?",
@@ -180,34 +261,31 @@
       {
         "q": "Can I track my shipments?",
         "a": "Yes, we provide weekly updates, shipping documents, and photos from our team in China during inspections."
+      },
+      {
+        "q": "How do payments work?",
+        "a": "You pay us and we pay the factory, so you never send money to a supplier nobody has visited."
+      },
+      {
+        "q": "Which languages do you work in?",
+        "a": "English, Chinese and Arabic. We speak to the factory for you and act as your local representative."
       }
     ]
   },
   "Footer": {
+    "signoff": "Write to us any time",
     "about1": "Trusted partner for Chinese sourcing and export services.",
     "about2": "We bridge global businesses with vetted manufacturers in China.",
-    "services": "Services",
-    "seeHow": "See how it works",
-    "contact": "Contact",
-    "backToTop": "Back to top",
-    "emailLabel": "Email:",
+    "registered": "Yuexiu District, Guangzhou",
     "scanWeChat": "Scan WeChat QR",
-    "copyright": "© {year} World Associates. All rights reserved."
+    "backToTop": "Back to top",
+    "privacy": "Privacy policy",
+    "credit": "Ship photograph: “Cosco Guangzhou” by Iglheaz, public domain, via Wikimedia Commons.",
+    "copyright": "© {year} World Associates. All rights reserved.",
+    "stampAlt": "Container ship Cosco Guangzhou"
   },
-  "Certificate": {
-    "badge": "Certified & Established",
-    "title": "20+ Years of Verified Operations in China",
-    "body": "Our official business registration certificate from China verifies legal operations since 2004—supporting global brands with compliant sourcing, quality checks, and end-to-end logistics.",
-    "facts": {
-      "registered": "• Registered entity: Mainland China",
-      "since": "• Since: 2004",
-      "hubs": "• On-ground hubs: Guangzhou & Hong Kong",
-      "available": "• Certificate available on request"
-    },
-    "thumbHint": "Click to zoom",
-    "thumbAlt": "Business registration certificate (thumbnail)",
-    "figcaption": "Official registration certificate (sample preview). Personal details redacted.",
-    "fullAlt": "Business registration certificate — full size"
+  "Chat": {
+    "label": "Chat on WhatsApp"
   },
   "PrivacyPolicy": {
     "eyebrow": "Privacy & Legal",

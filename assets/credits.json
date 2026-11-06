@@ -1,0 +1,48 @@
+[
+ {
+  "file": "assets/cosco-guangzhou.jpg",
+  "media": "image",
+  "ref": "commons:5176134",
+  "title": "Cosco Guangzhou",
+  "creator": "Iglheaz",
+  "creatorUrl": null,
+  "date": "1.11.08",
+  "license": "public domain",
+  "licenseCode": "pd",
+  "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "creditRequired": false,
+  "page": "https://commons.wikimedia.org/wiki/File:Cosco_Guangzhou.jpg",
+  "via": "Wikimedia Commons",
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Cosco_Guangzhou.jpg/1920px-Cosco_Guangzhou.jpg",
+  "width": 1920,
+  "height": 1280,
+  "bytes": 501565,
+  "credit": "\"Cosco Guangzhou\" by Iglheaz, public domain, via Wikimedia Commons",
+  "notes": [],
+  "saved": "2026-10-29T10:45:44.498Z"
+ },
+ {
+  "file": "assets/guangzhou-skyline-20210522-02.jpg",
+  "media": "image",
+  "ref": "commons:111145563",
+  "title": "Guangzhou Skyline 20210522-02",
+  "creator": "中少",
+  "creatorUrl": null,
+  "date": "2021-05-22",
+  "license": "CC BY-SA 4.0",
+  "licenseCode": "by-sa",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "creditRequired": true,
+  "page": "https://commons.wikimedia.org/wiki/File:Guangzhou_Skyline_20210522-02.jpg",
+  "via": "Wikimedia Commons",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Guangzhou_Skyline_20210522-02.jpg",
+  "width": 1836,
+  "height": 3264,
+  "bytes": 1150494,
+  "credit": "\"Guangzhou Skyline 20210522-02\" by 中少, CC BY-SA 4.0, via Wikimedia Commons",
+  "notes": [
+   "Share-alike: an altered version (recoloured, combined with other pictures) must be shared under the same licence."
+  ],
+  "saved": "2026-10-29T10:46:24.376Z"
+ }
+]

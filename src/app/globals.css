@@ -3,24 +3,28 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/*
+ * WATC tokens, taken from the hero: white ground, #111 ink and dark fields, a light grey,
+ * green for actions and a brighter green for accents on black.
+ * Everything downstream references these roles only.
+ */
 @theme inline {
+  --color-paper: var(--paper);
+  --color-paper-2: var(--paper-2);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-navy: var(--navy);
+  --color-navy-2: var(--navy-2);
+  --color-on-navy: var(--on-navy);
+  --color-on-navy-soft: var(--on-navy-soft);
+  --color-green: var(--green);
+  --color-green-hover: var(--green-hover);
+  --color-green-pale: var(--green-pale);
+  --color-lift: var(--lift);
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-  --color-sidebar-ring: var(--sidebar-ring);
-  --color-sidebar-border: var(--sidebar-border);
-  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
-  --color-sidebar-accent: var(--sidebar-accent);
-  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
-  --color-sidebar-primary: var(--sidebar-primary);
-  --color-sidebar-foreground: var(--sidebar-foreground);
-  --color-sidebar: var(--sidebar);
-  --color-chart-5: var(--chart-5);
-  --color-chart-4: var(--chart-4);
-  --color-chart-3: var(--chart-3);
-  --color-chart-2: var(--chart-2);
-  --color-chart-1: var(--chart-1);
+  --font-sans: var(--font-geist-sans), var(--font-arabic), ui-sans-serif, system-ui, sans-serif;
   --color-ring: var(--ring);
   --color-input: var(--input);
   --color-border: var(--border);
@@ -37,121 +41,571 @@
   --color-popover: var(--popover);
   --color-card-foreground: var(--card-foreground);
   --color-card: var(--card);
-  --radius-sm: calc(var(--radius) - 4px);
-  --radius-md: calc(var(--radius) - 2px);
-  --radius-lg: var(--radius);
-  --radius-xl: calc(var(--radius) + 4px);
+  --radius-sm: 0px;
+  --radius-md: 0px;
+  --radius-lg: 0px;
+  --radius-xl: 0px;
+
+  /* Type: display, heading, statement, body, small */
+  --text-display: clamp(2.5rem, 5.6vw, 5.75rem);
+  --text-display--line-height: 1;
+  --text-display--letter-spacing: -0.03em;
+  --text-heading: clamp(2rem, 3.6vw, 3.5rem);
+  --text-heading--line-height: 1.04;
+  --text-heading--letter-spacing: -0.025em;
+  --text-statement: clamp(1.5rem, 2.4vw, 2.25rem);
+  --text-statement--line-height: 1.22;
+  --text-statement--letter-spacing: -0.015em;
+  --text-body: 1.0625rem;
+  --text-body--line-height: 1.55;
+  --text-small: 0.875rem;
+  --text-small--line-height: 1.45;
+
+  --ease-out-strong: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out-strong: cubic-bezier(0.77, 0, 0.175, 1);
 }
 
 :root {
-  --radius: 0.65rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.141 0.005 285.823);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.141 0.005 285.823);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.141 0.005 285.823);
-  --primary: oklch(0.723 0.219 149.579);
-  --primary-foreground: oklch(0.982 0.018 155.826);
-  --secondary: oklch(0.967 0.001 286.375);
-  --secondary-foreground: oklch(0.21 0.006 285.885);
-  --muted: oklch(0.967 0.001 286.375);
-  --muted-foreground: oklch(0.552 0.016 285.938);
-  --accent: oklch(0.967 0.001 286.375);
-  --accent-foreground: oklch(0.21 0.006 285.885);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.92 0.004 286.32);
-  --input: oklch(0.92 0.004 286.32);
-  --ring: oklch(0.723 0.219 149.579);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.141 0.005 285.823);
-  --sidebar-primary: oklch(0.723 0.219 149.579);
-  --sidebar-primary-foreground: oklch(0.982 0.018 155.826);
-  --sidebar-accent: oklch(0.967 0.001 286.375);
-  --sidebar-accent-foreground: oklch(0.21 0.006 285.885);
-  --sidebar-border: oklch(0.92 0.004 286.32);
-  --sidebar-ring: oklch(0.723 0.219 149.579);
-}
+  --paper: #ffffff;
+  --paper-2: #efefef;
+  --ink: #111111;
+  --ink-soft: #555555;
+  --navy: #111111;
+  --navy-2: #1c1c1c;
+  --on-navy: #ffffff;
+  --on-navy-soft: #a3a3a3;
+  --green: #18784e;
+  --green-hover: #126540;
+  --green-pale: #e2f2e9;
+  --lift: #4cc38a;
 
-.dark {
-  --background: oklch(0.141 0.005 285.823);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.21 0.006 285.885);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.21 0.006 285.885);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.696 0.17 162.48);
-  --primary-foreground: oklch(0.393 0.095 152.535);
-  --secondary: oklch(0.274 0.006 286.033);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.274 0.006 286.033);
-  --muted-foreground: oklch(0.705 0.015 286.067);
-  --accent: oklch(0.274 0.006 286.033);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.527 0.154 150.069);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.21 0.006 285.885);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.696 0.17 162.48);
-  --sidebar-primary-foreground: oklch(0.393 0.095 152.535);
-  --sidebar-accent: oklch(0.274 0.006 286.033);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.527 0.154 150.069);
-}
-
-
-.dark {
-  --background: oklch(0.129 0.042 264.695);
-  --foreground: oklch(0.984 0.003 247.858);
-  --card: oklch(0.208 0.042 265.755);
-  --card-foreground: oklch(0.984 0.003 247.858);
-  --popover: oklch(0.208 0.042 265.755);
-  --popover-foreground: oklch(0.984 0.003 247.858);
-  --primary: oklch(0.929 0.013 255.508);
-  --primary-foreground: oklch(0.208 0.042 265.755);
-  --secondary: oklch(0.279 0.041 260.031);
-  --secondary-foreground: oklch(0.984 0.003 247.858);
-  --muted: oklch(0.279 0.041 260.031);
-  --muted-foreground: oklch(0.704 0.04 256.788);
-  --accent: oklch(0.279 0.041 260.031);
-  --accent-foreground: oklch(0.984 0.003 247.858);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.551 0.027 264.364);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.208 0.042 265.755);
-  --sidebar-foreground: oklch(0.984 0.003 247.858);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.984 0.003 247.858);
-  --sidebar-accent: oklch(0.279 0.041 260.031);
-  --sidebar-accent-foreground: oklch(0.984 0.003 247.858);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.551 0.027 264.364);
+  --radius: 0px;
+  --background: var(--paper);
+  --foreground: var(--ink);
+  --card: var(--paper);
+  --card-foreground: var(--ink);
+  --popover: var(--paper);
+  --popover-foreground: var(--ink);
+  --primary: var(--green);
+  --primary-foreground: #ffffff;
+  --secondary: var(--paper-2);
+  --secondary-foreground: var(--ink);
+  --muted: var(--paper-2);
+  --muted-foreground: var(--ink-soft);
+  --accent: var(--paper-2);
+  --accent-foreground: var(--ink);
+  --destructive: #b42318;
+  --border: #dcdcdc;
+  --input: #dcdcdc;
+  --ring: var(--green);
 }
 
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
+  html {
+    scroll-padding-top: 5rem;
+    background: var(--navy);
+  }
   body {
     @apply bg-background text-foreground;
+    font-size: var(--text-body);
+    line-height: 1.55;
+    font-feature-settings: "ss01", "cv11";
+  }
+  :lang(ar) body {
+    line-height: 1.7;
+  }
+  ::selection {
+    background: var(--green);
+    color: #fff;
+  }
+  :focus-visible {
+    outline: 2px solid var(--green);
+    outline-offset: 3px;
+  }
+  a {
+    text-underline-offset: 0.2em;
+    text-decoration-thickness: 1px;
+  }
+  input,
+  textarea {
+    caret-color: var(--green);
+  }
+  html {
+    scrollbar-color: var(--ink-soft) var(--paper-2);
+  }
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Pressable things answer the press. */
+@layer components {
+  .press {
+    transition:
+      transform 160ms var(--ease-out-strong),
+      background-color 200ms ease,
+      color 200ms ease;
+  }
+  .press:active {
+    transform: scale(0.97);
+  }
+}
+
+/*
+ * Section entrances: the parts of a block rise in turn as it enters.
+ * Only applies once script has run (html.js), so nothing stays hidden without it.
+ */
+.js [data-reveal] > * {
+  opacity: 0;
+  transform: translateY(24px);
+}
+.js [data-reveal][data-in="true"] > * {
+  opacity: 1;
+  transform: none;
+  transition:
+    opacity 700ms var(--ease-out-strong),
+    transform 900ms var(--ease-out-strong);
+  transition-delay: calc(var(--i, 0) * 75ms);
+}
+[data-reveal] > :nth-child(2) { --i: 1; }
+[data-reveal] > :nth-child(3) { --i: 2; }
+[data-reveal] > :nth-child(4) { --i: 3; }
+[data-reveal] > :nth-child(5) { --i: 4; }
+[data-reveal] > :nth-child(6) { --i: 5; }
+[data-reveal] > :nth-child(7) { --i: 6; }
+[data-reveal] > :nth-child(8) { --i: 7; }
+
+/* A photograph settles into its frame as it arrives. */
+.js [data-settle] img {
+  transform: scale(1.08);
+}
+.js [data-settle][data-in="true"] img {
+  transform: scale(1);
+  transition: transform 1800ms var(--ease-out-strong);
+}
+
+/* The contact coupon: semicircle notches where the perforation meets each edge. */
+@media (min-width: 768px) {
+  .coupon {
+    /* A shape mask (hard-edged cut), not a visible gradient. taste-skill-ignore */
+    --notch: radial-gradient(circle 14px at var(--notch-x, 46%) 0, transparent 13px, #000 14px) top / 100% 51% no-repeat, /* taste-skill-ignore */
+      radial-gradient(circle 14px at var(--notch-x, 46%) 100%, transparent 13px, #000 14px) bottom / 100% 51% no-repeat; /* taste-skill-ignore */
+    -webkit-mask: var(--notch);
+    mask: var(--notch);
+  }
+}
+
+/* The footer postcard's top edge, cut into scallops (six on a phone, twelve wider). */
+.postcard {
+  --scallops: 6;
+  --scallop: radial-gradient(50% 22px at 50% 0, transparent 97%, #000 100%) 0 0 / calc(100% / var(--scallops)) 100% repeat-x; /* taste-skill-ignore: shape mask */
+  -webkit-mask: var(--scallop);
+  mask: var(--scallop);
+}
+@media (min-width: 768px) {
+  .postcard {
+    --scallops: 12;
+  }
+}
+
+/* Diagram squares drift into place once. */
+.js .flow-sq {
+  opacity: 0;
+  transform: translate(var(--dx, 0px), var(--dy, 0px));
+}
+.js [data-in="true"] .flow-sq {
+  opacity: 1;
+  transform: none;
+  transition:
+    opacity 600ms ease,
+    transform 1400ms var(--ease-in-out-strong);
+  transition-delay: var(--d, 0ms);
+}
+
+/* Hero headline: words rise in turn, then the rest follows. */
+@keyframes word-rise {
+  from {
+    opacity: 0;
+    transform: translateY(0.45em);
+    filter: blur(6px);
+  }
+}
+.word-rise {
+  display: inline-block;
+  white-space: pre;
+  animation: word-rise 900ms var(--ease-out-strong) both;
+  animation-delay: calc(var(--w, 0) * 90ms + 80ms);
+}
+.hero-after {
+  animation: word-rise 900ms var(--ease-out-strong) 520ms both;
+}
+
+/* The live "at work" dot breathes. */
+@keyframes pulse-dot {
+  70%,
+  100% {
+    transform: scale(2.6);
+    opacity: 0;
+  }
+}
+.pulse-dot {
+  animation: pulse-dot 2.4s var(--ease-out-strong) infinite;
+}
+
+/* Cards lean toward the pointer and straighten while you look at them. */
+.tilt {
+  transform: rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));
+  transition:
+    transform 700ms var(--ease-out-strong),
+    rotate 900ms var(--ease-out-strong);
+  will-change: transform;
+}
+.tilt[data-tilting] {
+  rotate: 0deg;
+  transition:
+    transform 150ms linear,
+    rotate 900ms var(--ease-out-strong);
+}
+
+/* The licence stamp thumps down once, then its ring turns slowly. */
+.js .stamp {
+  opacity: 0;
+  transform: scale(1.7) rotate(-40deg);
+}
+.js [data-in="true"] .stamp {
+  opacity: 0.92;
+  transform: scale(1) rotate(-12deg);
+  transition:
+    opacity 200ms ease 700ms,
+    transform 550ms cubic-bezier(0.3, 1.5, 0.5, 1) 700ms;
+}
+.stamp {
+  mix-blend-mode: multiply;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.stamp-ring {
+  transform-origin: 60px 60px;
+  animation: spin 40s linear infinite;
+}
+
+/*
+ * Freight hero: one sticky scene scrubbed by scroll. The clip owns all vehicle motion;
+ * code only frames it and moves the type around it. u = one design pixel.
+ */
+.freight {
+  --u: min(calc(100vw / 1440), calc(100vh / 960));
+}
+.freight-track {
+  position: relative;
+  height: 560vh;
+  background: #fff;
+}
+.freight-scene {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  height: 100lvh;
+  overflow: hidden;
+  /* Hard split: white above the clip's ground, #111 below. taste-skill-ignore */
+  background: linear-gradient(#fff var(--ground-px, 80%), #111 var(--ground-px, 80%)); /* taste-skill-ignore */
+}
+.freight-video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+}
+.freight-letters {
+  position: absolute;
+  left: 0;
+  top: var(--edge-px, 45vh);
+  font-family: var(--font-anton), var(--font-arabic), sans-serif;
+  font-size: calc(330 * var(--u));
+  line-height: 0.8;
+  color: #e9e9e9;
+  white-space: nowrap;
+  mix-blend-mode: darken;
+  transform: translate(100vw, -100%);
+  will-change: transform;
+  pointer-events: none;
+}
+/* Arabic letterforms carry a deep descent; a tight box puts the baseline on the ground line. */
+:lang(ar) .freight-letters {
+  font-weight: 700;
+  line-height: 0.55;
+}
+.freight-speed {
+  position: absolute;
+  top: calc(64px + 52 * var(--u));
+  inset-inline-start: calc(26 * var(--u));
+  font-family: var(--font-jetbrains), ui-monospace, monospace; /* taste-skill-ignore: speedometer readout */
+  font-size: calc(10.5 * var(--u));
+  letter-spacing: 0.08em;
+  color: #111;
+  opacity: 0;
+  transition: opacity 500ms ease;
+}
+.freight-band {
+  position: absolute;
+  inset-inline: 0;
+  top: var(--edge-px, 45vh);
+  bottom: 0;
+  color: #fff;
+}
+.freight-strip {
+  position: absolute;
+  left: 0;
+  top: calc(76 * var(--u));
+  display: flex;
+  align-items: flex-start;
+  gap: calc(120 * var(--u));
+  transform: translateX(100vw);
+  will-change: transform;
+}
+.freight-lead {
+  display: flex;
+  gap: calc(64 * var(--u));
+  flex: none;
+}
+.freight-lead h2 {
+  font-family: var(--font-anton), var(--font-arabic), sans-serif;
+  font-size: calc(64 * var(--u));
+  line-height: 0.98;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+:lang(ar) .freight-lead h2,
+:lang(ar) .freight-card h3 {
+  font-weight: 700;
+  line-height: 1.25;
+}
+.freight-lead-copy {
+  width: calc(250 * var(--u));
+  display: grid;
+  align-content: start;
+  gap: 1em;
+  font-size: calc(12 * var(--u));
+  line-height: 1.55;
+  color: rgb(255 255 255 / 0.62);
+}
+.freight-cards {
+  display: flex;
+  flex: none;
+}
+.freight-card {
+  width: calc(270 * var(--u));
+  padding-inline: calc(30 * var(--u));
+  border-inline-start: 1px solid rgb(255 255 255 / 0.12);
+}
+.freight-card:first-child {
+  border-inline-start: 0;
+}
+.freight-card svg {
+  width: calc(38 * var(--u));
+  height: calc(38 * var(--u));
+}
+.freight-card h3 {
+  margin-top: calc(26 * var(--u));
+  font-family: var(--font-anton), var(--font-arabic), sans-serif;
+  font-size: calc(26 * var(--u));
+  line-height: 1.05;
+  text-transform: uppercase;
+}
+.freight-card p {
+  margin-top: calc(14 * var(--u));
+  font-size: calc(12.4 * var(--u));
+  line-height: 1.55;
+}
+/* Card text sweeps in green, then settles to white, as the card travels in. */
+.freight-sweep {
+  background-image: linear-gradient(90deg, #fff calc(var(--s, -40%) - 34%), var(--lift) calc(var(--s, -40%) - 6%), transparent calc(var(--s, -40%) + 26%)); /* taste-skill-ignore: text reveal */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+[dir="rtl"] .freight-sweep {
+  background-image: linear-gradient(270deg, #fff calc(var(--s, -40%) - 34%), var(--lift) calc(var(--s, -40%) - 6%), transparent calc(var(--s, -40%) + 26%)); /* taste-skill-ignore: text reveal */
+}
+.freight-pill {
+  position: absolute;
+  left: 50%;
+  bottom: calc(36 * var(--u));
+  translate: -50% 24px;
+  opacity: 0;
+  pointer-events: none;
+  transition:
+    opacity 500ms ease,
+    translate 700ms var(--ease-out-strong);
+}
+.freight-scene[data-settled="true"] .freight-pill {
+  translate: -50% 0;
+  opacity: 1;
+  pointer-events: auto;
+}
+.freight-scene[data-settled="true"] .freight-speed {
+  opacity: 1;
+}
+
+/* What the page says before you scroll: headline in the white, actions on the ground. */
+.freight-intro {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.freight-intro > * {
+  pointer-events: auto;
+}
+.freight-head {
+  position: absolute;
+  top: calc(64px + 7vh);
+  inset-inline-start: max(5vw, 32px);
+  max-width: min(36rem, 40vw);
+  color: #111;
+}
+.freight-actions {
+  position: absolute;
+  top: calc(var(--start-px, 80vh) + 26 * var(--u));
+  inset-inline-start: max(5vw, 32px);
+  color: #fff;
+}
+
+@media (max-width: 767px), (orientation: portrait) {
+  .freight {
+    --u: min(calc(100vw / 430), 1.4px);
+  }
+  .freight-letters {
+    font-size: calc(180 * var(--u));
+  }
+  .freight-speed {
+    top: calc(64px + 22px);
+    inset-inline-start: 20px;
+    font-size: 11px;
+  }
+  .freight-strip {
+    top: calc(44 * var(--u));
+    gap: calc(56 * var(--u));
+    padding-inline-start: 22px;
+  }
+  .freight-lead {
+    flex-direction: column;
+    gap: calc(24 * var(--u));
+  }
+  .freight-lead h2 {
+    font-size: calc(46 * var(--u));
+  }
+  .freight-lead-copy {
+    width: calc(300 * var(--u));
+    font-size: calc(13 * var(--u));
+  }
+  .freight-card {
+    width: calc(250 * var(--u));
+  }
+  .freight-card p {
+    font-size: calc(13 * var(--u));
+  }
+  .freight-intro {
+    inset: auto 0 0;
+    top: calc(var(--start-px, 55vh) + 18px);
+    display: flex;
+    flex-direction: column;
+    padding-inline: 20px;
+  }
+  .freight-head,
+  .freight-actions {
+    position: static;
+    max-width: none;
+  }
+  .freight-head {
+    color: #fff;
+  }
+  .freight-actions {
+    margin-top: 18px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .freight-pill {
+    transition: opacity 300ms ease;
+  }
+}
+
+/* Clients globe. Vertical swipes still scroll the page; sideways drags turn the globe. */
+.globe {
+  cursor: grab;
+  touch-action: pan-y;
+}
+.globe[data-dragging] {
+  cursor: grabbing;
+}
+.globe-label {
+  display: none;
+}
+@supports (anchor-name: --a) {
+  .globe-label {
+    display: block;
+    position: absolute;
+    bottom: anchor(top);
+    left: anchor(center);
+    translate: -50% -10px;
+    padding: 3px 8px;
+    background: rgb(17 17 17 / 0.72);
+    color: #fff;
+    font: 500 12px/1.2 var(--font-jetbrains), ui-monospace, monospace;
+    white-space: nowrap;
+    pointer-events: none;
+    /* cobe sets its visibility variable to a non-number while a marker faces us,
+       which leaves opacity at its initial 1; behind the globe it falls back to 0. */
+    opacity: var(--seen);
+    transition: opacity 300ms ease, color 300ms ease;
+  }
+  .globe-label[data-active="true"] {
+    color: var(--lift);
+  }
+  /* Neighbouring markers would stack their labels, so a few hang off another side */
+  .globe-label[data-side="below"] {
+    bottom: auto;
+    top: anchor(bottom);
+    translate: -50% 10px;
+  }
+  .globe-label[data-side="left"] {
+    bottom: auto;
+    top: anchor(center);
+    left: auto;
+    right: anchor(left);
+    translate: -10px -50%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .js [data-reveal] > *,
+  .js [data-settle] img,
+  .js .flow-sq {
+    transform: none !important;
+  }
+  .word-rise,
+  .hero-after,
+  .pulse-dot,
+  .stamp-ring {
+    animation: none;
+  }
+  .js .stamp,
+  .js [data-in="true"] .stamp {
+    transform: rotate(-12deg);
+  }
+  .js [data-reveal] > * {
+    transition: opacity 300ms ease !important;
+  }
+  .press:active {
+    transform: none;
   }
 }

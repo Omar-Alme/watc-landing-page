@@ -6,14 +6,11 @@ export function PrivacyPolicy() {
   const { t } = useI18n();
 
   return (
-    <section className="w-full min-h-screen border-t border-border bg-background px-6 py-16 sm:py-24">
+    <section className="w-full min-h-screen bg-background px-6 pt-36 pb-24 sm:pt-44">
       <div className="mx-auto max-w-3xl">
         {/* Header */}
-        <div className="mb-12 text-center">
-          <p className="text-sm font-semibold uppercase tracking-widest text-emerald-600 dark:text-emerald-400">
-            {t("PrivacyPolicy.eyebrow")}
-          </p>
-          <h1 className="mt-3 text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
+        <div className="mb-12">
+          <h1 className="text-heading font-semibold text-foreground">
             {t("PrivacyPolicy.title")}
           </h1>
           <p className="mt-6 text-lg text-muted-foreground">
@@ -118,10 +115,10 @@ export function PrivacyPolicy() {
             <p className="mt-4 text-muted-foreground">
               {t("PrivacyPolicy.section9.email")}{" "}
               <a
-                href="mailto:watcglobal@gmail.com"
+                href="mailto:yusuf@watcglobal.com"
                 className="font-semibold text-emerald-600 underline underline-offset-4 hover:text-emerald-700 dark:text-emerald-400 dark:hover:text-emerald-300"
               >
-                watcglobal@gmail.com
+                yusuf@watcglobal.com
               </a>
             </p>
           </div>
@@ -198,10 +195,10 @@ export function PrivacyPolicy() {
             <p className="mt-4 text-muted-foreground">
               {t("PrivacyPolicy.section9.email")}{" "}
               <a
-                href="mailto:watcglobal@gmail.com"
+                href="mailto:yusuf@watcglobal.com"
                 className="font-semibold text-emerald-600 underline underline-offset-4 hover:text-emerald-700 dark:text-emerald-400 dark:hover:text-emerald-300"
               >
-                watcglobal@gmail.com
+                yusuf@watcglobal.com
               </a>
             </p>
           </div>

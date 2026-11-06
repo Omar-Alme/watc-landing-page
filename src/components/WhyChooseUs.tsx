@@ -1,171 +1,97 @@
 "use client"
 
-import { MotionConfig, motion } from "framer-motion"
+import Image from "next/image"
+import { BookAction, WhatsAppAction } from "@/components/Actions"
 import { useI18n } from "@/lib/i18n"
-import {
-  ShieldCheck,
-  Languages,
-  MapPin,
-  BadgeDollarSign,
-  Boxes,
-  Handshake,
-  Timer,
-} from "lucide-react"
-import React from "react"
+import { useInView } from "@/lib/use-in-view"
 
-type ValueItem = {
-  title: string
-  description: string
-  icon: keyof typeof ICONS
-}
-
-const ICONS: Record<string, React.ComponentType<React.SVGProps<SVGSVGElement>>> = {
-  ShieldCheck,
-  Languages,
-  MapPin,
-  BadgeDollarSign,
-  Boxes,
-  Handshake,
-  Timer,
-}
-
-function useValues(t: (k: string) => string): ValueItem[] {
-  return [
-    { title: t("Why.values.verified.title"), description: t("Why.values.verified.desc"), icon: "ShieldCheck" },
-    { title: t("Why.values.noMiscomm.title"), description: t("Why.values.noMiscomm.desc"), icon: "Languages" },
-    { title: t("Why.values.presence.title"), description: t("Why.values.presence.desc"), icon: "MapPin" },
-    { title: t("Why.values.pricing.title"), description: t("Why.values.pricing.desc"), icon: "BadgeDollarSign" },
-    { title: t("Why.values.end2end.title"), description: t("Why.values.end2end.desc"), icon: "Boxes" },
-    { title: t("Why.values.guide.title"), description: t("Why.values.guide.desc"), icon: "Handshake" },
-    { title: t("Why.values.shipping.title"), description: t("Why.values.shipping.desc"), icon: "Timer" },
-  ]
-}
-
-const fade = {
-  hidden: { opacity: 0, y: 16 },
-  show: (i = 0) => ({ opacity: 1, y: 0, transition: { duration: 0.45, delay: 0.06 * i } }),
-}
+const VALUES = ["verified", "noMiscomm", "presence", "pricing", "end2end", "guide", "shipping"] as const
 
 export function WhyChooseUs() {
   const { t } = useI18n()
-  const VALUES = useValues(t)
+  const [aRef, aIn] = useInView()
+  const [bRef, bIn] = useInView()
+  const [listRef, listIn] = useInView()
 
   return (
-    <MotionConfig reducedMotion="user">
-      <section
-        id="why-us"
-        aria-labelledby="why-title"
-        className="
-          relative w-full py-28 px-6
-          bg-muted/40 dark:bg-neutral-950
-        "
-      >
-        {/* soft decorative backdrop */}
+    <section id="why-us" aria-labelledby="why-title">
+      {/* Two photographs, two fields, meeting on one edge */}
+      <div className="grid md:grid-cols-2">
         <div
-          aria-hidden="true"
-          className="pointer-events-none absolute inset-0 -z-10 opacity-[0.06]
-                     bg-[radial-gradient(#000_1px,transparent_1px)] [background-size:36px_36px]"
-        />
-
-        <div className="mx-auto max-w-6xl">
-          <motion.span
-            variants={fade}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true }}
-            custom={0}
-            className="mb-2 block text-center text-xl font-medium text-emerald-700 dark:text-emerald-400"
-          >
-            {t("Why.eyebrow")}
-          </motion.span>
-
-          <motion.h2
+          ref={aRef}
+          data-settle
+          data-in={aIn}
+          className="group relative flex min-h-[60svh] flex-col justify-between overflow-hidden bg-paper-2 md:min-h-[88svh]"
+        >
+          <h2
             id="why-title"
-            variants={fade}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true }}
-            custom={1}
-            className="mb-6 text-center text-4xl font-bold text-foreground"
+            className="relative z-10 px-5 pt-10 text-heading font-semibold text-ink sm:px-8 md:pt-14"
           >
             {t("Why.title")}
-          </motion.h2>
-
-          <motion.p
-            variants={fade}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true }}
-            custom={2}
-            className="mx-auto mb-14 max-w-2xl text-center text-muted-foreground"
-          >
-            {t("Why.subtitle")}
-          </motion.p>
-
-          {/* values grid */}
-          <ul
-            role="list"
-            className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
-          >
-            {VALUES.map((v, i) => {
-              const Icon = ICONS[v.icon]
-              return (
-                <motion.li
-                  role="listitem"
-                  key={v.title}
-                  variants={fade}
-                  initial="hidden"
-                  whileInView="show"
-                  viewport={{ once: true, amount: 0.35 }}
-                  custom={i + 3}
-                >
-                  <div
-                    className="
-                      group relative h-full rounded-xl border border-border/60 bg-white dark:bg-neutral-900
-                      p-5 shadow-sm transition
-                      hover:-translate-y-0.5 hover:shadow-md
-                    "
-                  >
-                    <div className="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-emerald-100 dark:bg-emerald-900/30">
-                      <Icon className="h-5 w-5 text-emerald-600 dark:text-emerald-400" />
-                    </div>
-                    <h3 className="text-lg font-semibold text-foreground">{v.title}</h3>
-                    <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
-                      {v.description}
-                    </p>
-
-                    {/* subtle bottom accent */}
-                    <div
-                      aria-hidden="true"
-                      className="
-                        absolute inset-x-0 bottom-0 h-1 rounded-b-xl
-                        bg-gradient-to-r from-emerald-500/0 via-emerald-500/30 to-emerald-500/0
-                        opacity-0 transition-opacity group-hover:opacity-100
-                      "
-                    />
-                  </div>
-                </motion.li>
-              )
-            })}
-          </ul>
-
-          {/* optional: mini-proof strip */}
-          <motion.div
-            variants={fade}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true }}
-            custom={VALUES.length + 4}
-            className="mt-10 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-muted-foreground"
-          >
-            <span>{t("Why.proofRow.suppliers")}</span>
-            <span className="hidden h-1 w-1 rounded-full bg-muted-foreground/40 sm:inline-block" />
-            <span>{t("Why.proofRow.escrow")}</span>
-            <span className="hidden h-1 w-1 rounded-full bg-muted-foreground/40 sm:inline-block" />
-            <span>{t("Why.proofRow.updates")}</span>
-          </motion.div>
+          </h2>
+          <div className="relative mx-5 mt-8 flex-1 overflow-hidden sm:mx-8">
+            <div className="absolute inset-0 transition-transform duration-[1600ms] ease-[var(--ease-out-strong)] group-hover:scale-[1.04]">
+              <Image
+                src="/images/factory-visit.jpg"
+                alt={t("Hero.photos.0")}
+                fill
+                sizes="(min-width: 768px) 50vw, 100vw"
+                className="object-cover"
+                style={{ objectPosition: "50% 40%" }}
+              />
+            </div>
+          </div>
+          <div className="flex flex-col gap-5 px-5 py-7 sm:px-8 lg:flex-row lg:items-end lg:justify-between">
+            <div>
+              <p className="text-xl font-medium text-ink">{t("Why.panelA.name")}</p>
+              <p className="mt-1 text-body text-ink">{t("Why.panelA.fact")}</p>
+            </div>
+            <BookAction tone="ink" label={t("Common.cta.short")} className="shrink-0" />
+          </div>
         </div>
-      </section>
-    </MotionConfig>
+
+        <div
+          ref={bRef}
+          data-settle
+          data-in={bIn}
+          className="group relative flex min-h-[60svh] flex-col justify-between overflow-hidden bg-navy text-on-navy md:min-h-[88svh]"
+        >
+          <div className="relative mx-5 mt-10 flex-1 overflow-hidden sm:mx-8 md:mt-14">
+            <div className="absolute inset-0 transition-transform duration-[1600ms] ease-[var(--ease-out-strong)] group-hover:scale-[1.04]">
+              <Image
+                src="/images/warehouse-guangzhou.jpg"
+                alt={t("Hero.photos.1")}
+                fill
+                sizes="(min-width: 768px) 50vw, 100vw"
+                className="object-cover"
+                style={{ objectPosition: "45% 60%" }}
+              />
+            </div>
+          </div>
+          <div className="flex flex-col gap-5 px-5 py-7 sm:px-8 lg:flex-row lg:items-end lg:justify-between">
+            <div>
+              <p className="text-xl font-medium">{t("Why.panelB.name")}</p>
+              <p className="mt-1 text-body text-on-navy">{t("Why.panelB.fact")}</p>
+            </div>
+            <WhatsAppAction className="shrink-0" />
+          </div>
+        </div>
+      </div>
+
+      {/* The reasons, in full */}
+      <div className="bg-paper px-5 py-20 sm:px-8 md:py-40">
+        <div ref={listRef} data-reveal data-in={listIn} className="mx-auto grid max-w-[1360px] gap-12 md:grid-cols-12">
+          <h3 className="max-w-[16ch] text-heading font-semibold text-ink md:col-span-12 md:max-w-none lg:col-span-4 lg:max-w-[16ch]">{t("Why.listTitle")}</h3>
+          <dl className="grid gap-x-12 gap-y-9 sm:grid-cols-2 md:col-span-12 lg:col-span-8">
+            {VALUES.map((key) => (
+              <div key={key}>
+                <dt className="text-xl font-semibold tracking-tight text-ink">{t(`Why.values.${key}.title`)}</dt>
+                <dd className="mt-2 text-body text-ink">{t(`Why.values.${key}.desc`)}</dd>
+              </div>
+            ))}
+          </dl>
+        </div>
+      </div>
+    </section>
   )
 }

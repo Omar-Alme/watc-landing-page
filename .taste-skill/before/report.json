@@ -1,0 +1,2772 @@
+{
+ "url": "http://localhost:3000",
+ "at": "2026-10-29T10:49:38.462Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 11,
+   "filled": [
+    0.94,
+    0.98,
+    0.98,
+    0.98,
+    0.98,
+    0.98,
+    0.98,
+    0.98,
+    0.98,
+    0.98,
+    0.98
+   ],
+   "motion": {
+    "elements": 57,
+    "css": 1,
+    "transitions": 1,
+    "scripted": 55,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 9186,
+     "screens": 10.2,
+     "words": 706,
+     "img": 51,
+     "video": 0,
+     "canvas": 0,
+     "svg": 22,
+     "sections": 11,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 6,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "image?url=%2Fimages%2Fimage1.png&w=640&q=75",
+      "image?url=%2Fimages%2Fimage2.png&w=640&q=75",
+      "image?url=%2Fimages%2Fimage3.png&w=640&q=75",
+      "image?url=%2Fimages%2Fshippingcontainer.png&w=64",
+      "image?url=%2Fimages%2Fworldmap.png&w=1920&q=75",
+      "image?url=%2Fimages%2Flicense.png&w=828&q=75"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Your gateway to Chinese factories — with global delivery made easy.",
+     "words": 11,
+     "chars": 67,
+     "lines": 3,
+     "size": 48,
+     "vw": 3.3,
+     "font": "ui-sans-serif",
+     "weight": 700,
+     "tracking": -0.025,
+     "leading": 1.25,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.37,
+     "top": 166,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Your gateway to Chinese factories — with global delivery made easy.",
+     "words": 11,
+     "lines": 3,
+     "size": 48,
+     "font": "ui-sans-serif"
+    },
+    "headings": [
+     {
+      "text": "Your gateway to Chinese factories — with global delivery made easy.",
+      "words": 11,
+      "chars": 67,
+      "lines": 3,
+      "size": 48,
+      "vw": 3.3,
+      "font": "ui-sans-serif",
+      "weight": 700,
+      "tracking": -0.025,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.37,
+      "top": 166,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "From Sourcing to Shipping — We Handle It All",
+      "words": 9,
+      "chars": 44,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.5,
+      "font": "ui-sans-serif",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.11,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.8,
+      "top": 1186,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Why Choose Us",
+      "words": 3,
+      "chars": 13,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.5,
+      "font": "ui-sans-serif",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.11,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.8,
+      "top": 2710,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Clients in 15+ Countries",
+      "words": 4,
+      "chars": 24,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.5,
+      "font": "ui-sans-serif",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.11,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.8,
+      "top": 3777,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "20+ Years of Verified Operations in China",
+      "words": 7,
+      "chars": 41,
+      "lines": 2,
+      "size": 36,
+      "vw": 2.5,
+      "font": "ui-sans-serif",
+      "weight": 700,
+      "tracking": -0.025,
+      "leading": 1.11,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.37,
+      "top": 4932,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "From inquiry to delivery — our workflow",
+      "words": 7,
+      "chars": 39,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.5,
+      "font": "ui-sans-serif",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.11,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.71,
+      "top": 5512,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Ready to start sourcing with confidence?",
+      "words": 6,
+      "chars": 40,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.5,
+      "font": "ui-sans-serif",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.11,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.71,
+      "top": 7126,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Book a free consultation",
+      "words": 4,
+      "chars": 24,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.5,
+      "font": "ui-sans-serif",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.11,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.47,
+      "top": 7587,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Frequently asked questions",
+      "words": 3,
+      "chars": 26,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.5,
+      "font": "ui-sans-serif",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.11,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.62,
+      "top": 8333,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 9,
+     "maxLines": 3,
+     "over2Lines": 1,
+     "statements": 0,
+     "centered": 7,
+     "medianWords": 6,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "ui-sans-serif",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      10,
+      12,
+      14,
+      15,
+      16,
+      18,
+      20,
+      24,
+      36,
+      48
+     ],
+     "sizeCount": 10,
+     "notLoaded": [],
+     "body": {
+      "font": "ui-sans-serif",
+      "size": 14,
+      "leading": 1.63,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 4.8
+     },
+     "measureChars": 60,
+     "max": {
+      "size": 48,
+      "vw": 3.3,
+      "font": "ui-sans-serif",
+      "text": "Your gateway to Chinese factories — with"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.01,
+     "centerShare": 0.27,
+     "smallText": 6
+    },
+    "eyebrows": [
+     {
+      "text": "Trusted by 60+ global clients",
+      "above": "Your gateway to Chinese factories — with",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": true,
+      "size": 14,
+      "top": 112
+     },
+     {
+      "text": "Certified & Established",
+      "above": "20+ Years of Verified Operations in Chin",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": true,
+      "size": 14,
+      "top": 4890
+     },
+     {
+      "text": "How we work",
+      "above": "From inquiry to delivery — our workflow",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 18,
+      "top": 5476
+     },
+     {
+      "text": "Contact us",
+      "above": "Book a free consultation",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 18,
+      "top": 7551
+     },
+     {
+      "text": "FAQ",
+      "above": "Frequently asked questions",
+      "upper": true,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 18,
+      "top": 8297
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#ffffff",
+       "top": 0,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#71717b",
+       "share": 0.69
+      },
+      {
+       "color": "#09090b",
+       "share": 0.25
+      },
+      {
+       "color": "#007a55",
+       "share": 0.04
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.02
+      }
+     ],
+     "button": {
+      "bg": "#009966",
+      "hsl": {
+       "h": 160,
+       "s": 1,
+       "l": 0.3
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 6,
+     "inHero": 4,
+     "radius": 8,
+     "height": 40,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "EN",
+      "Book Free Consultation",
+      "Book a Free Consultation",
+      "See How It Works"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 41,
+     "shadowOverlay": 1,
+     "shadowSamples": [
+      "a.inline-flex.items-center → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0",
+      "a.inline-flex.items-center → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0",
+      "a.inline-flex.items-center → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0",
+      "div.rounded-xl.border → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0"
+     ],
+     "gradients": 9,
+     "scrims": 3,
+     "gradientSamples": [
+      "div.relative.h-48 → linear-gradient(to right bottom, oklab(0.978997 -0.020394 0.0050624 / 0.5) 0%, rgba(0, 0, 0, 0) 100%)",
+      "div.pointer-events-none.absolute → linear-gradient(to top, oklab(0 0 0 / 0.1) 0%, rgba(0, 0, 0, 0) 100%)",
+      "div.relative.h-48 → linear-gradient(to right bottom, oklab(0.978997 -0.020394 0.0050624 / 0.5) 0%, rgba(0, 0, 0, 0) 100%)",
+      "div.pointer-events-none.absolute → linear-gradient(to top, oklab(0 0 0 / 0.1) 0%, rgba(0, 0, 0, 0) 100%)"
+     ],
+     "gradientText": 0,
+     "hairlines": 9,
+     "hairlineSamples": [
+      "section#certificate.w-full.bg-white 1440px",
+      "section#workflow.w-full.bg-white 1440px",
+      "section.w-full.border-t 1440px",
+      "section#contact.w-full.border-t 1440px",
+      "div.last:border-b-0.rounded-xl 896px"
+     ],
+     "outlinedBoxes": 27,
+     "dashed": 0,
+     "blurred": 2,
+     "roundedBoxes": 29,
+     "boxRadius": 14,
+     "squareMedia": 0,
+     "roundedMedia": 6,
+     "mediaRadius": 16,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 162
+      }
+     ]
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 7,
+     "fixed": true,
+     "height": 76,
+     "floatingPill": false,
+     "blur": true
+    },
+    "fontsLoaded": []
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 9186,
+    "margins": {
+     "left": 144,
+     "right": 145
+    },
+    "sections": [
+     {
+      "sel": "section.relative.w-full",
+      "tag": "section",
+      "top": 0,
+      "height": 650,
+      "words": 69,
+      "media": 0,
+      "middle": 78,
+      "heading": {
+       "text": "Your gateway to Chinese factories — with global de",
+       "size": 48,
+       "tag": "h1"
+      },
+      "left": 168,
+      "right": 430,
+      "textLeft": 168,
+      "textRight": 430,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.w-full.bg-white",
+      "tag": "section",
+      "top": 650,
+      "height": 388,
+      "words": 15,
+      "media": 0,
+      "middle": 1389,
+      "heading": {
+       "text": "Brands, wholesalers & startups across 15+ countrie",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 0,
+      "right": 0,
+      "textLeft": 513,
+      "textRight": 513,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#services.relative.w-full",
+      "tag": "section",
+      "top": 1038,
+      "height": 1524,
+      "words": 103,
+      "media": 4,
+      "middle": 0,
+      "heading": {
+       "text": "From Sourcing to Shipping — We Handle It All",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 165,
+      "right": 145,
+      "textLeft": 165,
+      "textRight": 346,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#why-us.relative.w-full",
+      "tag": "section",
+      "top": 2562,
+      "height": 1051,
+      "words": 159,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Why Choose Us",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 165,
+      "right": 170,
+      "textLeft": 165,
+      "textRight": 170,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.w-full.bg-white",
+      "tag": "section",
+      "top": 3613,
+      "height": 1118,
+      "words": 32,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Clients in 15+ Countries",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 145,
+      "right": 145,
+      "textLeft": 400,
+      "textRight": 400,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#certificate.w-full.bg-white",
+      "tag": "section",
+      "top": 4731,
+      "height": 632,
+      "words": 72,
+      "media": 1,
+      "middle": 102,
+      "heading": {
+       "text": "20+ Years of Verified Operations in China",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 144,
+      "right": 145,
+      "textLeft": 144,
+      "textRight": 161,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#workflow.w-full.bg-white",
+      "tag": "section",
+      "top": 5363,
+      "height": 1666,
+      "words": 75,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "From inquiry to delivery — our workflow",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 321,
+      "right": 393,
+      "textLeft": 321,
+      "textRight": 393,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.w-full.border-t",
+      "tag": "section",
+      "top": 7029,
+      "height": 409,
+      "words": 34,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Ready to start sourcing with confidence?",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 379,
+      "right": 379,
+      "textLeft": 379,
+      "textRight": 379,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#contact.w-full.border-t",
+      "tag": "section",
+      "top": 7438,
+      "height": 747,
+      "words": 43,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Book a free consultation",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 384,
+      "right": 384,
+      "textLeft": 384,
+      "textRight": 454,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#faq.w-full.bg-muted/50",
+      "tag": "section",
+      "top": 8185,
+      "height": 619,
+      "words": 46,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Frequently asked questions",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 273,
+      "right": 273,
+      "textLeft": 289,
+      "textRight": 490,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "footer.w-full.border-t",
+      "tag": "footer",
+      "top": 8804,
+      "height": 382,
+      "words": 57,
+      "media": 0,
+      "middle": 232,
+      "heading": {
+       "text": "World Associates Trading Company",
+       "size": 16,
+       "tag": "h2"
+      },
+      "left": 144,
+      "right": 144,
+      "textLeft": 144,
+      "textRight": 144,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Your gateway to Chinese factories — with global delivery made easy.",
+      "size": 48,
+      "top": 166,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 165,
+      "n": 6
+     },
+     {
+      "x": 217,
+      "n": 4
+     },
+     {
+      "x": 289,
+      "n": 4
+     },
+     {
+      "x": 321,
+      "n": 4
+     },
+     {
+      "x": 721,
+      "n": 3
+     },
+     {
+      "x": 144,
+      "n": 2
+     }
+    ],
+    "leftBlocks": 23,
+    "bodySize": 14,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.21,
+    "voidBox": {
+     "x": 1020,
+     "y": 120,
+     "w": 420,
+     "h": 660
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 10,
+   "filled": [
+    0.88,
+    0.99,
+    0.98,
+    0.98,
+    0.98,
+    0.98,
+    0.98,
+    0.98,
+    0.99,
+    0.98
+   ],
+   "motion": {
+    "elements": 57,
+    "css": 1,
+    "transitions": 1,
+    "scripted": 55,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 9740,
+     "screens": 9.5,
+     "words": 706,
+     "img": 51,
+     "video": 0,
+     "canvas": 0,
+     "svg": 22,
+     "sections": 11,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 6,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "image?url=%2Fimages%2Fimage1.png&w=640&q=75",
+      "image?url=%2Fimages%2Fimage2.png&w=640&q=75",
+      "image?url=%2Fimages%2Fimage3.png&w=640&q=75",
+      "image?url=%2Fimages%2Fshippingcontainer.png&w=64",
+      "image?url=%2Fimages%2Fworldmap.png&w=828&q=75",
+      "image?url=%2Fimages%2Flicense.png&w=828&q=75"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Your gateway to Chinese factories — with global delivery made easy.",
+     "words": 11,
+     "chars": 67,
+     "lines": 5,
+     "size": 48,
+     "vw": 6.3,
+     "font": "ui-sans-serif",
+     "weight": 700,
+     "tracking": -0.025,
+     "leading": 1.25,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.44,
+     "top": 166,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Your gateway to Chinese factories — with global delivery made easy.",
+     "words": 11,
+     "lines": 5,
+     "size": 48,
+     "font": "ui-sans-serif"
+    },
+    "headings": [
+     {
+      "text": "Your gateway to Chinese factories — with global delivery made easy.",
+      "words": 11,
+      "chars": 67,
+      "lines": 5,
+      "size": 48,
+      "vw": 6.3,
+      "font": "ui-sans-serif",
+      "weight": 700,
+      "tracking": -0.025,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.44,
+      "top": 166,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "From Sourcing to Shipping — We Handle It All",
+      "words": 9,
+      "chars": 44,
+      "lines": 2,
+      "size": 36,
+      "vw": 4.7,
+      "font": "ui-sans-serif",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.11,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 1386,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Why Choose Us",
+      "words": 3,
+      "chars": 13,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "ui-sans-serif",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.11,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 2950,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Clients in 15+ Countries",
+      "words": 4,
+      "chars": 24,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "ui-sans-serif",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.11,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 4212,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "20+ Years of Verified Operations in China",
+      "words": 7,
+      "chars": 41,
+      "lines": 3,
+      "size": 36,
+      "vw": 4.7,
+      "font": "ui-sans-serif",
+      "weight": 700,
+      "tracking": -0.025,
+      "leading": 1.11,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.42,
+      "top": 5321,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "From inquiry to delivery — our workflow",
+      "words": 7,
+      "chars": 39,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "ui-sans-serif",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.11,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 6022,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Ready to start sourcing with confidence?",
+      "words": 6,
+      "chars": 40,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "ui-sans-serif",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.11,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 7636,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Book a free consultation",
+      "words": 4,
+      "chars": 24,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "ui-sans-serif",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.11,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 8097,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Frequently asked questions",
+      "words": 3,
+      "chars": 26,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "ui-sans-serif",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.11,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 8843,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 9,
+     "maxLines": 5,
+     "over2Lines": 2,
+     "statements": 0,
+     "centered": 7,
+     "medianWords": 6,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "ui-sans-serif",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      10,
+      12,
+      14,
+      15,
+      16,
+      18,
+      20,
+      24,
+      36,
+      48
+     ],
+     "sizeCount": 10,
+     "notLoaded": [],
+     "body": {
+      "font": "ui-sans-serif",
+      "size": 14,
+      "leading": 1.63,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 4.8
+     },
+     "measureChars": 36,
+     "max": {
+      "size": 48,
+      "vw": 6.3,
+      "font": "ui-sans-serif",
+      "text": "Your gateway to Chinese factories — with"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.01,
+     "centerShare": 0.27,
+     "smallText": 6
+    },
+    "eyebrows": [
+     {
+      "text": "Trusted by 60+ global clients",
+      "above": "Your gateway to Chinese factories — with",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": true,
+      "size": 14,
+      "top": 112
+     },
+     {
+      "text": "Certified & Established",
+      "above": "20+ Years of Verified Operations in Chin",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": true,
+      "size": 14,
+      "top": 5279
+     },
+     {
+      "text": "How we work",
+      "above": "From inquiry to delivery — our workflow",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 18,
+      "top": 5986
+     },
+     {
+      "text": "Contact us",
+      "above": "Book a free consultation",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 18,
+      "top": 8061
+     },
+     {
+      "text": "FAQ",
+      "above": "Frequently asked questions",
+      "upper": true,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 18,
+      "top": 8807
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#ffffff",
+       "top": 0,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#71717b",
+       "share": 0.69
+      },
+      {
+       "color": "#09090b",
+       "share": 0.25
+      },
+      {
+       "color": "#007a55",
+       "share": 0.04
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.02
+      }
+     ],
+     "button": {
+      "bg": "#009966",
+      "hsl": {
+       "h": 160,
+       "s": 1,
+       "l": 0.3
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 5,
+     "inHero": 3,
+     "radius": 8,
+     "height": 40,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Book Free Consultation",
+      "Book a Free Consultation",
+      "See How It Works"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 41,
+     "shadowOverlay": 1,
+     "shadowSamples": [
+      "a.inline-flex.items-center → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0",
+      "a.inline-flex.items-center → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0",
+      "a.inline-flex.items-center → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0",
+      "div.rounded-xl.border → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0"
+     ],
+     "gradients": 9,
+     "scrims": 3,
+     "gradientSamples": [
+      "div.relative.h-48 → linear-gradient(to right bottom, oklab(0.978997 -0.020394 0.0050624 / 0.5) 0%, rgba(0, 0, 0, 0) 100%)",
+      "div.pointer-events-none.absolute → linear-gradient(to top, oklab(0 0 0 / 0.1) 0%, rgba(0, 0, 0, 0) 100%)",
+      "div.relative.h-48 → linear-gradient(to right bottom, oklab(0.978997 -0.020394 0.0050624 / 0.5) 0%, rgba(0, 0, 0, 0) 100%)",
+      "div.pointer-events-none.absolute → linear-gradient(to top, oklab(0 0 0 / 0.1) 0%, rgba(0, 0, 0, 0) 100%)"
+     ],
+     "gradientText": 0,
+     "hairlines": 9,
+     "hairlineSamples": [
+      "section#certificate.w-full.bg-white 768px",
+      "section#workflow.w-full.bg-white 768px",
+      "section.w-full.border-t 768px",
+      "section#contact.w-full.border-t 768px",
+      "div.last:border-b-0.rounded-xl 720px"
+     ],
+     "outlinedBoxes": 27,
+     "dashed": 0,
+     "blurred": 2,
+     "roundedBoxes": 29,
+     "boxRadius": 14,
+     "squareMedia": 0,
+     "roundedMedia": 6,
+     "mediaRadius": 16,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 262
+      }
+     ]
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 7,
+     "fixed": true,
+     "height": 132,
+     "floatingPill": false,
+     "blur": true
+    },
+    "fontsLoaded": []
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 9740,
+    "margins": {
+     "left": 24,
+     "right": 25
+    },
+    "sections": [
+     {
+      "sel": "section.relative.w-full",
+      "tag": "section",
+      "top": 0,
+      "height": 850,
+      "words": 69,
+      "media": 0,
+      "middle": 70,
+      "heading": {
+       "text": "Your gateway to Chinese factories — with global de",
+       "size": 48,
+       "tag": "h1"
+      },
+      "left": 24,
+      "right": 94,
+      "textLeft": 24,
+      "textRight": 94,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.w-full.bg-white",
+      "tag": "section",
+      "top": 850,
+      "height": 388,
+      "words": 15,
+      "media": 0,
+      "middle": 2091,
+      "heading": {
+       "text": "Brands, wholesalers & startups across 15+ countrie",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 0,
+      "right": 0,
+      "textLeft": 177,
+      "textRight": 177,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#services.relative.w-full",
+      "tag": "section",
+      "top": 1238,
+      "height": 1564,
+      "words": 103,
+      "media": 4,
+      "middle": 0,
+      "heading": {
+       "text": "From Sourcing to Shipping — We Handle It All",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 36,
+      "right": 25,
+      "textLeft": 36,
+      "textRight": 36,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#why-us.relative.w-full",
+      "tag": "section",
+      "top": 2802,
+      "height": 1246,
+      "words": 159,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Why Choose Us",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 45,
+      "right": 46,
+      "textLeft": 45,
+      "textRight": 46,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.w-full.bg-white",
+      "tag": "section",
+      "top": 4048,
+      "height": 1118,
+      "words": 32,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Clients in 15+ Countries",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 25,
+      "right": 25,
+      "textLeft": 64,
+      "textRight": 64,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#certificate.w-full.bg-white",
+      "tag": "section",
+      "top": 5166,
+      "height": 707,
+      "words": 72,
+      "media": 1,
+      "middle": 91,
+      "heading": {
+       "text": "20+ Years of Verified Operations in China",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 25,
+      "textLeft": 24,
+      "textRight": 41,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#workflow.w-full.bg-white",
+      "tag": "section",
+      "top": 5873,
+      "height": 1666,
+      "words": 75,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "From inquiry to delivery — our workflow",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 57,
+      "right": 57,
+      "textLeft": 57,
+      "textRight": 57,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.w-full.border-t",
+      "tag": "section",
+      "top": 7539,
+      "height": 409,
+      "words": 34,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Ready to start sourcing with confidence?",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 43,
+      "right": 43,
+      "textLeft": 43,
+      "textRight": 43,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#contact.w-full.border-t",
+      "tag": "section",
+      "top": 7948,
+      "height": 747,
+      "words": 43,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Book a free consultation",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 48,
+      "right": 48,
+      "textLeft": 48,
+      "textRight": 118,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#faq.w-full.bg-muted/50",
+      "tag": "section",
+      "top": 8695,
+      "height": 619,
+      "words": 46,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Frequently asked questions",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 25,
+      "right": 25,
+      "textLeft": 41,
+      "textRight": 154,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "footer.w-full.border-t",
+      "tag": "footer",
+      "top": 9314,
+      "height": 426,
+      "words": 57,
+      "media": 0,
+      "middle": 16,
+      "heading": {
+       "text": "World Associates Trading Company",
+       "size": 16,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 24,
+      "textLeft": 24,
+      "textRight": 24,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Your gateway to Chinese factories — with global delivery made easy.",
+      "size": 48,
+      "top": 166,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 41,
+      "n": 8
+     },
+     {
+      "x": 24,
+      "n": 4
+     },
+     {
+      "x": 97,
+      "n": 4
+     },
+     {
+      "x": 137,
+      "n": 4
+     },
+     {
+      "x": 233,
+      "n": 3
+     }
+    ],
+    "leftBlocks": 23,
+    "bodySize": 14,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 12,
+   "filled": [
+    0.87,
+    0.91,
+    0.91,
+    0.91,
+    0.91,
+    0.91,
+    0.91,
+    0.91,
+    0.91,
+    0.91,
+    0.91,
+    0.97
+   ],
+   "motion": {
+    "elements": 48,
+    "css": 1,
+    "transitions": 1,
+    "scripted": 46,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 12475,
+     "screens": 14.8,
+     "words": 680,
+     "img": 51,
+     "video": 0,
+     "canvas": 0,
+     "svg": 22,
+     "sections": 11,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 6,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "image?url=%2Fimages%2Fimage1.png&w=640&q=75",
+      "image?url=%2Fimages%2Fimage2.png&w=640&q=75",
+      "image?url=%2Fimages%2Fimage3.png&w=640&q=75",
+      "image?url=%2Fimages%2Fshippingcontainer.png&w=64",
+      "image?url=%2Fimages%2Fworldmap.png&w=640&q=75",
+      "image?url=%2Fimages%2Flicense.png&w=828&q=75"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Your gateway to Chinese factories — with global delivery made easy.",
+     "words": 11,
+     "chars": 67,
+     "lines": 4,
+     "size": 36,
+     "vw": 9.2,
+     "font": "ui-sans-serif",
+     "weight": 700,
+     "tracking": -0.025,
+     "leading": 1.25,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.88,
+     "top": 150,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Your gateway to Chinese factories — with global delivery made easy.",
+     "words": 11,
+     "lines": 4,
+     "size": 36,
+     "font": "ui-sans-serif"
+    },
+    "headings": [
+     {
+      "text": "Your gateway to Chinese factories — with global delivery made easy.",
+      "words": 11,
+      "chars": 67,
+      "lines": 4,
+      "size": 36,
+      "vw": 9.2,
+      "font": "ui-sans-serif",
+      "weight": 700,
+      "tracking": -0.025,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 150,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Brands, wholesalers & startups across 15+ countries trust us to deliver",
+      "words": 11,
+      "chars": 71,
+      "lines": 3,
+      "size": 24,
+      "vw": 6.2,
+      "font": "ui-sans-serif",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 786,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "From Sourcing to Shipping — We Handle It All",
+      "words": 9,
+      "chars": 44,
+      "lines": 3,
+      "size": 36,
+      "vw": 9.2,
+      "font": "ui-sans-serif",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.11,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 1254,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Factory Sourcing",
+      "words": 2,
+      "chars": 16,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "ui-sans-serif",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.47,
+      "top": 1583,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Quality Inspections",
+      "words": 2,
+      "chars": 19,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "ui-sans-serif",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.54,
+      "top": 2033,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Shipping & Logistics",
+      "words": 3,
+      "chars": 20,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "ui-sans-serif",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.57,
+      "top": 2461,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Export Consulting",
+      "words": 2,
+      "chars": 17,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "ui-sans-serif",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.5,
+      "top": 2911,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Why Choose Us",
+      "words": 3,
+      "chars": 13,
+      "lines": 1,
+      "size": 36,
+      "vw": 9.2,
+      "font": "ui-sans-serif",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.11,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 3510,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Clients in 15+ Countries",
+      "words": 4,
+      "chars": 24,
+      "lines": 2,
+      "size": 36,
+      "vw": 9.2,
+      "font": "ui-sans-serif",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.11,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 5457,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "20+ Years of Verified Operations in China",
+      "words": 7,
+      "chars": 41,
+      "lines": 2,
+      "size": 30,
+      "vw": 7.7,
+      "font": "ui-sans-serif",
+      "weight": 700,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 6504,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "From inquiry to delivery — our workflow",
+      "words": 7,
+      "chars": 39,
+      "lines": 3,
+      "size": 36,
+      "vw": 9.2,
+      "font": "ui-sans-serif",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.11,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 7441,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Ready to start sourcing with confidence?",
+      "words": 6,
+      "chars": 40,
+      "lines": 2,
+      "size": 30,
+      "vw": 7.7,
+      "font": "ui-sans-serif",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 9707,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Book a free consultation",
+      "words": 4,
+      "chars": 24,
+      "lines": 1,
+      "size": 30,
+      "vw": 7.7,
+      "font": "ui-sans-serif",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 10248,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Frequently asked questions",
+      "words": 3,
+      "chars": 26,
+      "lines": 2,
+      "size": 30,
+      "vw": 7.7,
+      "font": "ui-sans-serif",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 11148,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 14,
+     "maxLines": 4,
+     "over2Lines": 4,
+     "statements": 0,
+     "centered": 8,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "ui-sans-serif",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      10,
+      12,
+      14,
+      16,
+      18,
+      20,
+      24,
+      30,
+      36
+     ],
+     "sizeCount": 9,
+     "notLoaded": [],
+     "body": {
+      "font": "ui-sans-serif",
+      "size": 14,
+      "leading": 1.63,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 4.8
+     },
+     "measureChars": 43,
+     "max": {
+      "size": 36,
+      "vw": 9.2,
+      "font": "ui-sans-serif",
+      "text": "Your gateway to Chinese factories — with"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.01,
+     "centerShare": 0.28,
+     "smallText": 6
+    },
+    "eyebrows": [
+     {
+      "text": "Trusted by 60+ global clients",
+      "above": "Your gateway to Chinese factories — with",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": true,
+      "size": 14,
+      "top": 96
+     },
+     {
+      "text": "Certified & Established",
+      "above": "20+ Years of Verified Operations in Chin",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": true,
+      "size": 14,
+      "top": 6462
+     },
+     {
+      "text": "How we work",
+      "above": "From inquiry to delivery — our workflow",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 18,
+      "top": 7405
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#ffffff",
+       "top": 0,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#71717b",
+       "share": 0.69
+      },
+      {
+       "color": "#09090b",
+       "share": 0.25
+      },
+      {
+       "color": "#007a55",
+       "share": 0.04
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.02
+      }
+     ],
+     "button": {
+      "bg": "#009966",
+      "hsl": {
+       "h": 160,
+       "s": 1,
+       "l": 0.3
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 5,
+     "inHero": 3,
+     "radius": 8,
+     "height": 40,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Menu",
+      "Book a Free Consultation",
+      "See How It Works"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 38,
+     "shadowOverlay": 1,
+     "shadowSamples": [
+      "button.inline-flex.items-center → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0",
+      "a.inline-flex.items-center → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0",
+      "a.inline-flex.items-center → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0",
+      "div.group.overflow-hidden → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0"
+     ],
+     "gradients": 9,
+     "scrims": 3,
+     "gradientSamples": [
+      "div.relative.h-48 → linear-gradient(to right bottom, oklab(0.978997 -0.020394 0.0050624 / 0.5) 0%, rgba(0, 0, 0, 0) 100%)",
+      "div.pointer-events-none.absolute → linear-gradient(to top, oklab(0 0 0 / 0.1) 0%, rgba(0, 0, 0, 0) 100%)",
+      "div.relative.h-48 → linear-gradient(to right bottom, oklab(0.978997 -0.020394 0.0050624 / 0.5) 0%, rgba(0, 0, 0, 0) 100%)",
+      "div.pointer-events-none.absolute → linear-gradient(to top, oklab(0 0 0 / 0.1) 0%, rgba(0, 0, 0, 0) 100%)"
+     ],
+     "gradientText": 0,
+     "hairlines": 7,
+     "hairlineSamples": [
+      "section#certificate.w-full.bg-white 390px",
+      "section#workflow.w-full.bg-white 390px",
+      "section.w-full.border-t 390px",
+      "section#contact.w-full.border-t 390px",
+      "div.last:border-b-0.rounded-xl 342px"
+     ],
+     "outlinedBoxes": 24,
+     "dashed": 0,
+     "blurred": 2,
+     "roundedBoxes": 26,
+     "boxRadius": 14,
+     "squareMedia": 0,
+     "roundedMedia": 6,
+     "mediaRadius": 16,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 2,
+     "fixed": true,
+     "height": 76,
+     "floatingPill": false,
+     "blur": true
+    },
+    "fontsLoaded": []
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 12475,
+    "margins": {
+     "left": 24,
+     "right": 24
+    },
+    "sections": [
+     {
+      "sel": "section.relative.w-full",
+      "tag": "section",
+      "top": 0,
+      "height": 686,
+      "words": 51,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Your gateway to Chinese factories — with global de",
+       "size": 36,
+       "tag": "h1"
+      },
+      "left": 24,
+      "right": 33,
+      "textLeft": 24,
+      "textRight": 33,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.w-full.bg-white",
+      "tag": "section",
+      "top": 686,
+      "height": 420,
+      "words": 15,
+      "media": 0,
+      "middle": 2347,
+      "heading": {
+       "text": "Brands, wholesalers & startups across 15+ countrie",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 0,
+      "right": 0,
+      "textLeft": 47,
+      "textRight": 47,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#services.relative.w-full",
+      "tag": "section",
+      "top": 1106,
+      "height": 2256,
+      "words": 103,
+      "media": 4,
+      "middle": 0,
+      "heading": {
+       "text": "From Sourcing to Shipping — We Handle It All",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 25,
+      "right": 25,
+      "textLeft": 25,
+      "textRight": 25,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "div.pointer-events-none.absolute",
+      "tag": "div",
+      "top": 3362,
+      "height": 1931,
+      "words": 0,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": null,
+      "right": null,
+      "textLeft": null,
+      "textRight": null,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.mx-auto.max-w-6xl",
+      "tag": "div",
+      "top": 3474,
+      "height": 1707,
+      "words": 159,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Why Choose Us",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 27,
+      "right": 27,
+      "textLeft": 27,
+      "textRight": 27,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.w-full.bg-white",
+      "tag": "section",
+      "top": 5293,
+      "height": 1056,
+      "words": 32,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Clients in 15+ Countries",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 25,
+      "right": 25,
+      "textLeft": 35,
+      "textRight": 35,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#certificate.w-full.bg-white",
+      "tag": "section",
+      "top": 6349,
+      "height": 943,
+      "words": 72,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "20+ Years of Verified Operations in China",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 25,
+      "textLeft": 24,
+      "textRight": 25,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#workflow.w-full.bg-white",
+      "tag": "section",
+      "top": 7292,
+      "height": 2319,
+      "words": 75,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "From inquiry to delivery — our workflow",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 49,
+      "right": 52,
+      "textLeft": 49,
+      "textRight": 52,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.w-full.border-t",
+      "tag": "section",
+      "top": 9610,
+      "height": 469,
+      "words": 34,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Ready to start sourcing with confidence?",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 27,
+      "right": 27,
+      "textLeft": 27,
+      "textRight": 27,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#contact.w-full.border-t",
+      "tag": "section",
+      "top": 10079,
+      "height": 909,
+      "words": 20,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 24,
+      "right": 24,
+      "textLeft": 24,
+      "textRight": 34,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#faq.w-full.bg-muted/50",
+      "tag": "section",
+      "top": 10988,
+      "height": 743,
+      "words": 33,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "What types of products can you help me source?",
+       "size": 16,
+       "tag": "h3"
+      },
+      "left": 25,
+      "right": 25,
+      "textLeft": 41,
+      "textRight": 77,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "footer.w-full.border-t",
+      "tag": "footer",
+      "top": 11731,
+      "height": 744,
+      "words": 57,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "World Associates Trading Company",
+       "size": 16,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 30,
+      "textLeft": 24,
+      "textRight": 30,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [
+     {
+      "top": 9984,
+      "height": 380
+     },
+     {
+      "top": 10876,
+      "height": 424
+     }
+    ],
+    "h1s": [
+     {
+      "text": "Your gateway to Chinese factories — with global delivery made easy.",
+      "size": 36,
+      "top": 150,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 41,
+      "n": 15
+     },
+     {
+      "x": 24,
+      "n": 4
+     },
+     {
+      "x": 97,
+      "n": 4
+     }
+    ],
+    "leftBlocks": 23,
+    "bodySize": 14,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "FAIL",
+   "id": "headline-lines",
+   "width": 1440,
+   "message": "1 headline(s) wrap past two lines at 1440px: \"Your gateway to Chinese factories — with global \" → 3 lines (11 words, 48px)",
+   "fix": "Cut words first (a headline is a title, not a sentence). Then give it a wider measure. Lower the size only as a last resort and never below the scale you chose. A real statement paragraph belongs in a <p> or <blockquote> at 36px or less."
+  },
+  {
+   "level": "WARN",
+   "id": "hero-words",
+   "width": 1440,
+   "message": "Hero headline is 11 words (\"Your gateway to Chinese factories — with global delivery mad\"). Gallery median is 5.",
+   "fix": "Say the one thing. Move the rest to the supporting line.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "eyebrow",
+   "width": 1440,
+   "message": "5 eyebrow/kicker label(s) above headings: \"Trusted by 60+ global clients\" (pill) above \"Your gateway to Chinese factories — with\"; \"Certified & Established\" (pill) above \"20+ Years of Verified Operations in Chin\"; \"How we work\" above \"From inquiry to delivery — our workflow\"; \"Contact us\" above \"Book a free consultation\"; \"FAQ\" above \"Frequently asked questions\"",
+   "fix": "Delete them. If the label carried real information, fold it into the headline or the supporting sentence.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "gradient",
+   "width": 1440,
+   "message": "9 gradient fill(s): div.relative.h-48 → linear-gradient(to right bottom, oklab(0.978997 -0.020394 0.0050624 / 0.5) 0%, rgba(0, 0, 0, 0) 100%) | div.pointer-events-none.absolute → linear-gradient(to top, oklab(0 0 0 / 0.1) 0%, rgba(0, 0, 0, 0) 100%) | div.relative.h-48 → linear-gradient(to right bottom, oklab(0.978997 -0.020394 0.0050624 / 0.5) 0%, rgba(0, 0, 0, 0) 100%)",
+   "fix": "Use a flat colour or a real image. The only gradient allowed by default is a neutral scrim over a photo for legibility.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "shadow",
+   "width": 1440,
+   "message": "41 box-shadow(s) on elements at rest: a.inline-flex.items-center → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0 | a.inline-flex.items-center → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0 | a.inline-flex.items-center → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0",
+   "fix": "Remove. Separate surfaces with a tone step or space. Shadows are for things that really float (menus, dialogs, sticky bars).",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "hairline",
+   "width": 1440,
+   "message": "9 thin rule(s)/divider line(s): section#certificate.w-full.bg-white 1440px | section#workflow.w-full.bg-white 1440px | section.w-full.border-t 1440px | section#contact.w-full.border-t 1440px",
+   "fix": "Delete. Separate with space, a tone change, or scale. Lines are only for real tables and form fields.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "outlined-box",
+   "width": 1440,
+   "message": "27 boxes drawn with a 1px outline.",
+   "fix": "Define a surface by its fill (one tone step from the page) or leave the content unboxed.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "glass",
+   "width": 1440,
+   "message": "2 backdrop-blur surfaces.",
+   "fix": "One blurred sticky bar at most; glass cards are a tell.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "size-count",
+   "width": 1440,
+   "message": "10 different font sizes (10, 12, 14, 15, 16, 18, 20, 24, 36, 48).",
+   "fix": "A page needs about five: display, heading, lead, body, small.",
+   "alsoAt": [
+    768
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "body-size",
+   "width": 1440,
+   "message": "Body text is 14px (the size most of the running text is set in).",
+   "fix": "Body copy 16–20px. Map small sizes from blueprints onto your body step.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "grey-body",
+   "width": 1440,
+   "message": "The running text is a soft grey on its ground (4.8:1).",
+   "fix": "Set body copy in the full ink (7:1 or more). Keep the muted ink for secondary notes; pages read thin and unfinished when everything is grey.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "FAIL",
+   "id": "small-text",
+   "width": 1440,
+   "message": "6 text blocks under 13px.",
+   "fix": "Nothing meant to be read goes below 13px.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "focal-point",
+   "width": 1440,
+   "message": "The first screen has no dominant element: the largest type is 48px (3.3vw) and no single picture holds a third of the viewport.",
+   "fix": "Make one thing lead: the headline at display size, or one large picture. A grid of many small pictures is not one thing; in blind tests jurors marked a first screen without a headline down every time. On the strongest studied sites the largest type has a median of 8.4vw."
+  },
+  {
+   "level": "FAIL",
+   "id": "late-title",
+   "width": 1440,
+   "message": "The title is not readable 1.2s after the page loaded (it is at 5% opacity).",
+   "fix": "Put the headline in the HTML, painted on the first frame; the load sequence only adds arrival and is settled by 1.2s (references/motion.md, \"Load sequence in 1.2 seconds\"). No preloader, no gate, no waiting for the load event."
+  },
+  {
+   "level": "WARN",
+   "id": "empty-middle",
+   "width": 1440,
+   "message": "1 section(s) have content at both edges and 1389px of nothing between: \"Brands, wholesalers & startups across 15+ countrie\"",
+   "fix": "Bring the two parts together on the grid, or put the picture or figure of the section in the middle. An empty middle third reads as a hole, the same as an empty half.",
+   "alsoAt": [
+    768
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "headline-lines",
+   "width": 768,
+   "message": "2 headline(s) wrap past two lines at 768px: \"Your gateway to Chinese factories — with global \" → 5 lines (11 words, 48px); \"20+ Years of Verified Operations in China\" → 3 lines (7 words, 36px)",
+   "fix": "Cut words first (a headline is a title, not a sentence). Then give it a wider measure. Lower the size only as a last resort and never below the scale you chose. A real statement paragraph belongs in a <p> or <blockquote> at 32px or less."
+  },
+  {
+   "level": "FAIL",
+   "id": "headline-lines",
+   "width": 390,
+   "message": "4 headline(s) wrap past two lines at 390px: \"Your gateway to Chinese factories — with global \" → 4 lines (11 words, 36px); \"Brands, wholesalers & startups across 15+ countr\" → 3 lines (11 words, 24px); \"From Sourcing to Shipping — We Handle It All\" → 3 lines (9 words, 36px); \"From inquiry to delivery — our workflow\" → 3 lines (7 words, 36px)",
+   "fix": "Cut words first (a headline is a title, not a sentence). Then give it a wider measure. Lower the size only as a last resort and never below the scale you chose. A real statement paragraph belongs in a <p> or <blockquote> at 24px or less."
+  },
+  {
+   "level": "FAIL",
+   "id": "blank-gap",
+   "width": 390,
+   "message": "2 stretch(es) of the page hold nothing at all: 380px at 9984px; 424px at 10876px (the screen is 844px tall).",
+   "fix": "Close the gap: a section gap is 120–240px on desktop and 72–112px on a phone. Look for a min-height: 100vh on a short section, an empty grid row, a hidden element still holding its space, or a reveal that never fired. A deliberate rest is a placed picture or colour field, not nothing."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "/Users/omar/Desktop/Silknorth AB/Clients/WATC Global/watc-landing-page/.taste-skill/before/desktop-fold.jpg",
+   "pages": [
+    "/Users/omar/Desktop/Silknorth AB/Clients/WATC Global/watc-landing-page/.taste-skill/before/desktop-page-01.jpg",
+    "/Users/omar/Desktop/Silknorth AB/Clients/WATC Global/watc-landing-page/.taste-skill/before/desktop-page-02.jpg",
+    "/Users/omar/Desktop/Silknorth AB/Clients/WATC Global/watc-landing-page/.taste-skill/before/desktop-page-03.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "/Users/omar/Desktop/Silknorth AB/Clients/WATC Global/watc-landing-page/.taste-skill/before/tablet-fold.jpg",
+   "pages": [
+    "/Users/omar/Desktop/Silknorth AB/Clients/WATC Global/watc-landing-page/.taste-skill/before/tablet-page-01.jpg",
+    "/Users/omar/Desktop/Silknorth AB/Clients/WATC Global/watc-landing-page/.taste-skill/before/tablet-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "/Users/omar/Desktop/Silknorth AB/Clients/WATC Global/watc-landing-page/.taste-skill/before/mobile-fold.jpg",
+   "pages": [
+    "/Users/omar/Desktop/Silknorth AB/Clients/WATC Global/watc-landing-page/.taste-skill/before/mobile-page-01.jpg",
+    "/Users/omar/Desktop/Silknorth AB/Clients/WATC Global/watc-landing-page/.taste-skill/before/mobile-page-02.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

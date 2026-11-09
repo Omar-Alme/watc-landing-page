@@ -361,6 +361,8 @@
   top: var(--edge-px, 45vh);
   bottom: 0;
   color: #fff;
+  /* The band sits over the intro's actions; let clicks through (the pill opts back in). */
+  pointer-events: none;
 }
 .freight-strip {
   position: absolute;
